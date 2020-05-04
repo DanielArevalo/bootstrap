@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2682ACEE-0325-4A67-84E4-801E2BB6ABA7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Xpinn.Tesoreria.Entities</RootNamespace>
+    <AssemblyName>Xpinn.Tesoreria.Entities</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACHcampo.cs" />
+    <Compile Include="ACHplantilla.cs" />
+    <Compile Include="ACHregistro.cs" />
+    <Compile Include="AreasCaj.cs" />
+    <Compile Include="Chequera.cs" />
+    <Compile Include="ConciliacionBancaria.cs" />
+    <Compile Include="ArqueoPagos.cs" />
+    <Compile Include="CambioMoneda.cs" />
+    <Compile Include="AprobacionCtasPorPagar.cs" />
+    <Compile Include="Concepto_CuentasXpagarImp.cs" />
+    <Compile Include="ACHdet_reg.cs" />
+    <Compile Include="ConvenioRecaudo.cs" />
+    <Compile Include="CuentasPorPagarAnticipos.cs" />
+    <Compile Include="CuentasXpagarImpuesto.cs" />
+    <Compile Include="GiroDistribucion.cs" />
+    <Compile Include="GiroFusionado.cs" />
+    <Compile Include="GiroRealizado.cs" />
+    <Compile Include="EntregaCheques.cs" />
+    <Compile Include="Inventarios\ivconceptos.cs" />
+    <Compile Include="Inventarios\ivdatospago.cs" />
+    <Compile Include="Inventarios\ivmovimientodetalle.cs" />
+    <Compile Include="Inventarios\ivalmacen.cs" />
+    <Compile Include="Inventarios\ivcategoria.cs" />
+    <Compile Include="Inventarios\ivimpuesto.cs" />
+    <Compile Include="Inventarios\ivmovimiento.cs" />
+    <Compile Include="Inventarios\ivordenconcepto.cs" />
+    <Compile Include="Inventarios\ivpersonas_autoret.cs" />
+    <Compile Include="Inventarios\ivproducto.cs" />
+    <Compile Include="ParametrosFlujoCaja.cs" />
+    <Compile Include="ParCueIvimpuesto.cs" />
+    <Compile Include="ParCueInventarios.cs" />
+    <Compile Include="PaymentACH.cs" />
+    <Compile Include="PaymentACHResult.cs" />
+    <Compile Include="ProcesoTipoGiro.cs" />
+    <Compile Include="ReporteArqueoCajaMenor.cs" />
+    <Compile Include="ReporteMovimientos.cs" />
+    <Compile Include="CuentasBancarias.cs" />
+    <Compile Include="CuentasPorPagar.cs" />
+    <Compile Include="Giro.cs" />
+    <Compile Include="Operacion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SoporteCaj.cs" />
+    <Compile Include="ConceptoCta.cs" />
+    <Compile Include="TipSopCaj.cs" />
+    <Compile Include="Vacaciones.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xpinn.Comun.Entities\Xpinn.Comun.Entities.csproj">
+      <Project>{955A6F00-17CF-4CB4-97F7-B8E98E9B3297}</Project>
+      <Name>Xpinn.Comun.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Util\Xpinn.Util.csproj">
+      <Project>{1DC267F2-1877-46D6-AF5E-F92EB286DFC4}</Project>
+      <Name>Xpinn.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

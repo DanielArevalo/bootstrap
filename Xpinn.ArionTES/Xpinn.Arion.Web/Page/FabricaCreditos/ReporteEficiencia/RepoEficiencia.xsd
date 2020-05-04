@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RepoEficiencia" targetNamespace="http://tempuri.org/RepoEficiencia.xsd" xmlns:mstns="http://tempuri.org/RepoEficiencia.xsd" xmlns="http://tempuri.org/RepoEficiencia.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RepoEficiencia" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTableReporteEficiencia">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Credito" msdata:Caption="Cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="Proceso1" msdata:Caption="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="fechaProceso1" msdata:Caption="Valor" type="xs:string" minOccurs="0" />
+              <xs:element name="Proceso2" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaProceso2" type="xs:string" minOccurs="0" />
+              <xs:element name="TiempoProcesos" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaSolicitud" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaDatacaredito" type="xs:string" minOccurs="0" />
+              <xs:element name="TiempoSolDatacre" type="xs:string" minOccurs="0" />
+              <xs:element name="fechaEntrega" type="xs:string" minOccurs="0" />
+              <xs:element name="Identificacion" type="xs:string" minOccurs="0" />
+              <xs:element name="Oficina" type="xs:string" minOccurs="0" />
+              <xs:element name="Asesor" type="xs:string" minOccurs="0" />
+              <xs:element name="MontoAprobado" type="xs:string" minOccurs="0" />
+              <xs:element name="Aprobador" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

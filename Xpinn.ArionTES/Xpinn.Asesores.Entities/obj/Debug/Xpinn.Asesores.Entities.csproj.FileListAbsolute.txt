@@ -1,0 +1,10 @@
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Asesores.Entities\bin\Debug\Xpinn.Asesores.Entities.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Asesores.Entities\bin\Debug\Xpinn.Asesores.Entities.pdb
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Asesores.Entities\bin\Debug\Xpinn.Asesores.Entities.Shared.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Asesores.Entities\bin\Debug\Xpinn.Comun.Entities.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Asesores.Entities\bin\Debug\Xpinn.Asesores.Entities.Shared.pdb
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Asesores.Entities\bin\Debug\Xpinn.Comun.Entities.pdb
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Asesores.Entities\obj\Debug\Xpinn.Asesores.Entities.csprojAssemblyReference.cache
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Asesores.Entities\obj\Debug\Xpinn.Asesores.Entities.csproj.CopyComplete
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Asesores.Entities\obj\Debug\Xpinn.Asesores.Entities.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Asesores.Entities\obj\Debug\Xpinn.Asesores.Entities.pdb

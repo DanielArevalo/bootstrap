@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtAprobacionGiros" targetNamespace="http://tempuri.org/dtAprobacionGiros.xsd" xmlns:mstns="http://tempuri.org/dtAprobacionGiros.xsd" xmlns="http://tempuri.org/dtAprobacionGiros.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtAprobacionGiros" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTAprobacion">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idGiro" type="xs:string" minOccurs="0" />
+              <xs:element name="fec_reg" type="xs:string" minOccurs="0" />
+              <xs:element name="cod_persona" type="xs:string" minOccurs="0" />
+              <xs:element name="identificacion" type="xs:string" minOccurs="0" />
+              <xs:element name="nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="cod_ope" type="xs:string" minOccurs="0" />
+              <xs:element name="num_comp" type="xs:string" minOccurs="0" />
+              <xs:element name="nom_tipo_comp" type="xs:string" minOccurs="0" />
+              <xs:element name="forma_pago" type="xs:string" minOccurs="0" />
+              <xs:element name="nom_banco" type="xs:string" minOccurs="0" />
+              <xs:element name="num_referencia" type="xs:string" minOccurs="0" />
+              <xs:element name="nom_banco_dest" type="xs:string" minOccurs="0" />
+              <xs:element name="num_cta_dest" type="xs:string" minOccurs="0" />
+              <xs:element name="valor" type="xs:string" minOccurs="0" />
+              <xs:element name="generado" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

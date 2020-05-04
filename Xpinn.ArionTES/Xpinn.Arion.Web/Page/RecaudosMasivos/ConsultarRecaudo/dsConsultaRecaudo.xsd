@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsConsultaRecaudo" targetNamespace="http://tempuri.org/dsConsultaRecaudo.xsd" xmlns:mstns="http://tempuri.org/dsConsultaRecaudo.xsd" xmlns="http://tempuri.org/dsConsultaRecaudo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsConsultaRecaudo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ListadoRecaudo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="cedula" type="xs:string" minOccurs="0" />
+              <xs:element name="nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="tipo_producto" type="xs:string" minOccurs="0" />
+              <xs:element name="num_producto" type="xs:string" minOccurs="0" />
+              <xs:element name="valor_aplicado" type="xs:string" minOccurs="0" />
+              <xs:element name="valor_novedad" type="xs:string" minOccurs="0" />
+              <xs:element name="diferencia" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Reporte">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="cedula" type="xs:string" minOccurs="0" />
+              <xs:element name="nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="tipo_producto" type="xs:string" minOccurs="0" />
+              <xs:element name="num_producto" type="xs:string" minOccurs="0" />
+              <xs:element name="tipo_aplicacion" type="xs:string" minOccurs="0" />
+              <xs:element name="nro_cuotas" type="xs:string" minOccurs="0" />
+              <xs:element name="valor" type="xs:string" minOccurs="0" />
+              <xs:element name="capital" type="xs:string" minOccurs="0" />
+              <xs:element name="int_cte" type="xs:string" minOccurs="0" />
+              <xs:element name="int_mora" type="xs:string" minOccurs="0" />
+              <xs:element name="seguro" type="xs:string" minOccurs="0" />
+              <xs:element name="ley_mypime" type="xs:string" minOccurs="0" />
+              <xs:element name="ivaley_mypime" type="xs:string" minOccurs="0" />
+              <xs:element name="devolucion" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ConsolidadoAplicaciones">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Producto" type="xs:string" minOccurs="0" />
+              <xs:element name="Concepto" type="xs:string" minOccurs="0" />
+              <xs:element name="NombreConc" type="xs:string" minOccurs="0" />
+              <xs:element name="Atributo" type="xs:string" minOccurs="0" />
+              <xs:element name="Oficina" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

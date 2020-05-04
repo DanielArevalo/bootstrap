@@ -1,0 +1,1873 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ListarCuentasAplicarPagos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pFiltro" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pClave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pIdentificacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarCuentasAplicarPagosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarCuentasAplicarPagosResult" type="tns:ArrayOfAhorroVista" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAhorroVista">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AhorroVista" nillable="true" type="tns:AhorroVista" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AhorroVista">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="numero_cuenta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cod_linea_ahorro" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_persona" nillable="true" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="identificacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombres" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="apellidos" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cod_nomina" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_oficina" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_destino" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="observaciones" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="modalidad" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="estado" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="estadopersona" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_apertura" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_cierre" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="saldo_total" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="saldo_canje" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="forma_tasa" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_historico" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="desviacion" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_tasa" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_tipo_tasa" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="tasa" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_interes" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="saldo_intereses" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="retencion" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_forma_pago" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_proximo_pago" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_ultimo_pago" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor_cuota_anterior" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor_cuota" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor_pagar" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_periodicidad" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="dias_liq" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_liq" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="saldo_base" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="interes" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="retencion_interes" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor_gmf" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor_base" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor_a_aplicar" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="descuento" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="dias" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="LstCuentaHabientes" type="tns:ArrayOfCuentaHabientes" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_linea" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_oficina" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_estado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_formapago" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_periodicidad" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="moneda" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor_acumulado" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor_total_acumu" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Num_Tarjeta" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="estados" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="motivos" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="codusuario" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="numero" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="V_Traslado" nillable="true" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipo_identificacion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_identifi" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="idgirorealizado" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="idgiro" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="fec_realiza" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="usu_realiza" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_ope" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="archivo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="saldo_inicial" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="saldo_final" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="deposito" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="retiro" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_operacion" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="numero_operacion" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="numero_transaccion" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_producto" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre_producto" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipo_transaccion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Mes" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Anio" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="saldo_promedio" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor_fondo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Fondo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="idfondoliq" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="pdias" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="estado_modificacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="estado_Linea" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cod_rbTipoArchivo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="codigo_inicial" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="codigo_final" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="identificacion_inicial" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="identificacion_final" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="empresa" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CiudadResidencia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="numero_cuenta_final" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tarjeta" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="idimagen" nillable="true" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="foto" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="exenta" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_exenta" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="fechaNoExcenta" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="volante" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="estadocierre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="lstBeneficiarios" type="tns:ArrayOfBeneficiario" />
+          <s:element minOccurs="1" maxOccurs="1" name="idbeneficiario" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="identificacion_ben" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_identificacion_ben" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="parentesco_ben" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombres_ben" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_nacimiento_ben" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="edad" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_asesor" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_empresa_reca" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipo_registro" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="direccion_oficina" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="telefono_oficina" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre_oficina" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="direccion_persona" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="forma_giro" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="aplicada" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_empieza_cambio" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="nuevo_valor_cuota" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="id_novedad_cambio" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_novedad_cambio" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="cuota" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="nuevo_valor_cuota1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cuota1" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="estado_modificacion1" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_banco" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_cuenta" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="id_solicitud" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_giro" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_banco" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_cuenta" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="plazo" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="num_cuotas" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="descripcion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="aprobador" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_consulta" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_envio" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCuentaHabientes">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CuentaHabientes" nillable="true" type="tns:CuentaHabientes" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CuentaHabientes">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="idcuenta_habiente" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="numero_cuenta" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_persona" nillable="true" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_firma" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_usuario_ahorro" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="principal" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="conjuncion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="identificacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombres" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="apellidos" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="codciudadresidencia" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="ciudad" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="direccion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="telefono" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_usuario_cdat" type="s:long" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfBeneficiario">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Beneficiario" nillable="true" type="tns:Beneficiario" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Beneficiario">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="idbeneficiario" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_persona" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="numero_cuenta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="numero_programado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="identificacion_ben" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_identificacion_ben" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre_ben" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_nacimiento_ben" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="parentesco" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="porcentaje_ben" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="codparentesco" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="descripcion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sexo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="edad" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListarTipoOpeTransacVent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pTipOpe" type="tns:TipoOperacion" />
+            <s:element minOccurs="0" maxOccurs="1" name="pClave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pIdentificacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TipoOperacion">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IdTipoOpe" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="cod_operacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_tipo_operacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_caja" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="conteo" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_movimiento" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="porc_imp" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_producto" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_tipo_producto" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_tran" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_tipo_tran" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="concepto" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_moneda" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nro_producto" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor_iva" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor_base" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="num_factura" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="descripcion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="saldo" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="referencia" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_operacion" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre_oficina" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre_caja" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre_cajero" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cod_persona" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="observaciones" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="num_comp" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipo_comp" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipo_comp_desc" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListarTipoOpeTransacVentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarTipoOpeTransacVentResult" type="tns:ArrayOfTipoOperacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTipoOperacion">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TipoOperacion" nillable="true" type="tns:TipoOperacion" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ConsultarTipOpeTranCaja">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pEntidad" type="tns:TipoOperacion" />
+            <s:element minOccurs="0" maxOccurs="1" name="pClave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pIdentificacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarTipOpeTranCajaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultarTipOpeTranCajaResult" type="tns:TipoOperacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarAhorrosProgramado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pFiltro" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pFechaApe" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pIdentificacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pClave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarAhorrosProgramadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarAhorrosProgramadoResult" type="tns:ArrayOfCuentasProgramado" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCuentasProgramado">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CuentasProgramado" nillable="true" type="tns:CuentasProgramado" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CuentasProgramado">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="saldo_total" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="saldo_canje" nillable="true" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombres" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="numero_cuenta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cod_linea_ahorro" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_linea" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="tasa" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_tasa" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="forma_tasa" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_forma_pago" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="saldo_intereses" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="retencion" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="observaciones" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="numero_programado" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_oficina" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="modalidad" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_destino" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_oficina" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cod_linea_programado" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_persona" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_apertura" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_primera_cuota" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_cierre" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor_cuota" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="plazo" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_periodicidad" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_ultimo_pago" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_proximo_pago" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="saldo" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="forma_pago" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_empresa" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cuotas_pagadas" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="calculo_tasa" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="tasa_interes" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_tipo_tasa" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_historico" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="desviacion" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_interes" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="total_interes" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="total_retencion" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_motivo_apertura" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="estado" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="codopcion" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="lstBeneficiarios" type="tns:ArrayOfBeneficiario" />
+          <s:element minOccurs="0" maxOccurs="1" name="lstcuotasExtras" type="tns:ArrayOfProgramadoCuotasExtras" />
+          <s:element minOccurs="0" maxOccurs="1" name="nomlinea" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nomoficina" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nommotivo_progra" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="identificacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cod_nomina" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nomforma_pago" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_estado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_periodicidad" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="V_Traslado" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor_gmf" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="codigo_inicial" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="codigo_final" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="identificacion_inicial" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="identificacion_final" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="empresa" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CiudadResidencia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="numero_cuenta_final" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="apellidos" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fec_realiza" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="numero_radicacion" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre_titular" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="monto" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cuota" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor_mora" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="posicion" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="valor" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="longitud" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="alinear" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="caracter_llenado" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_campo" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_producto" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="valornum" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="opcion" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_vencimiento" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="ciudad" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="direccion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="telefono" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="principal" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="pendiente" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_cuota" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor_total" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_asesor" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor_acumulado" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor_total_acumu" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_empieza_cambio" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor_cuota_anterior" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_operacion" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_pago" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor_pago" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="numero_dias" type="s:short" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_calendario" type="s:short" />
+          <s:element minOccurs="0" maxOccurs="1" name="estadocierre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_formapago" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="estado_modificacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="estado_Linea" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="nuevo_valor_cuota" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="id_novedad_cambio" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_novedad_cambio" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="nuevo_valor_cuota1" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cuota1" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="estado_modificacion1" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_tipo_producto" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfProgramadoCuotasExtras">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ProgramadoCuotasExtras" nillable="true" type="tns:ProgramadoCuotasExtras" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ProgramadoCuotasExtras">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="cod_cuota" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="numero_programado" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_pago" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor_capital" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="saldo_capital" nillable="true" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListarCdats">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="filtro" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaApe" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pIdentificacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pClave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarCdatsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarCdatsResult" type="tns:ArrayOfCdat" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCdat">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Cdat" nillable="true" type="tns:Cdat" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Cdat">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="codigo_gmf" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="monto" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="dias_liquidacion" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="codigo_cdat" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="numero_cdat" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="numero_fisico" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_oficina" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="cod_lineacdat" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_destinacion" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_apertura" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="modalidad" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="codforma_captacion" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="plazo" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_calendario" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_moneda" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_inicio" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_vencimiento" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_asesor_com" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipo_interes" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="tasa_interes" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="forma_tasa" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_historico" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="desviacion" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_tasa" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_tipo_tasa" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="tasa" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_tipo_tasa" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_periodicidad_int" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="modalidad_int" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="capitalizar_int" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="capitalizar_int_old" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor_capitalizar" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="cobra_retencion" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="tasa_nominal" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="tasa_efectiva" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="intereses_cap" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="retencion_cap" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_intereses" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="estado" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_estado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="estado_persona" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="moneda" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="desmaterializado" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="identificacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cod_nomina" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_persona" nillable="true" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="lstDetalle" type="tns:ArrayOfDetalle_CDAT" />
+          <s:element minOccurs="1" maxOccurs="1" name="origen" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="cdat_renovado" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="codusuario" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombres" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nomoficina" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="numdias" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="nommoneda" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="retencion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="opcion" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="observacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nomperiodicidad" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nomlinea" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="intereses" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="intereses_cau" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor_acumulado" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor_total_acumu" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="forma_pago" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="numero_cuenta" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor_parcial" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipo_identificacion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Digito_Verificacion" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Primer_Apellido" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Segundo_Apellido" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Primer_Nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Segundo_Nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Razon_Social" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Direccion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cod_Dep" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cod_Mun_Ciud" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Pais" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TipoTitulo" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TipoMovimiento" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="valorInversion" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_ope" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="numero_cuenta_ahorro_vista" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="DiasAviso" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="mensajenotifi" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_tipo_producto" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="estado_modificacion1" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="lstBenef" type="tns:ArrayOfBeneficiarios" />
+          <s:element minOccurs="0" maxOccurs="1" name="consignacion" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="declaracion" type="s:base64Binary" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDetalle_CDAT">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Detalle_CDAT" nillable="true" type="tns:Detalle_CDAT" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Detalle_CDAT">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="cod_usuario_cdat" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="codigo_cdat" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_persona" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="principal" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="conjuncion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="identificacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombres" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="apellidos" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="codciudadresidencia" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="ciudad" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="direccion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="telefono" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="numero_cuenta_ahorro_vista" nillable="true" type="s:long" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfBeneficiarios">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Beneficiarios" nillable="true" type="tns:Beneficiarios" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Beneficiarios">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="idbeneficiario" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="identificacion_ben" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_identificacion_ben" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre_ben" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_nacimiento_ben" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="parentesco" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="porcentaje_ben" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="codparentesco" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="descripcion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sexo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="edad" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListarFechaVencimiento">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Cdat" type="tns:Cdat" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarFechaVencimientoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarFechaVencimientoResult" type="tns:ArrayOfCdat" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Aplicar_Solicitud_Pago">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="lstSolicitud" type="tns:ArrayOfSolicitud_cruce_ahorro" />
+            <s:element minOccurs="0" maxOccurs="1" name="pIdentificacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pClave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSolicitud_cruce_ahorro">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Solicitud_cruce_ahorro" nillable="true" type="tns:Solicitud_cruce_ahorro" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Solicitud_cruce_ahorro">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="idcruceahorro" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_producto" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="num_producto" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_persona" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_pago" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor_pago" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_tran" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="codusuario" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="concepto" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="estado" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_ope" nillable="true" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="numero_cuenta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ip" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="identificacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_oficina" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_tipo_producto" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_tipo_tran" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_estado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mensaje_error" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="otro_atributo" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Aplicar_Solicitud_PagoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Aplicar_Solicitud_PagoResult" type="tns:RespuestaApp" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="RespuestaApp">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Mensaje" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="rpta" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="valorRpta" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SolicitarRenovacionCdat">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="lstRenovacion" type="tns:ArrayOfSolicitudRenovacion" />
+            <s:element minOccurs="0" maxOccurs="1" name="pIdentificacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pClave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSolicitudRenovacion">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SolicitudRenovacion" nillable="true" type="tns:SolicitudRenovacion" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SolicitudRenovacion">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="idrenovacion" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="codigo_cdat" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_vencimiento" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_solicitud" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="cod_lineacdat" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="plazo" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="observacion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="estado" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="mensaje_error" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SolicitarRenovacionCdatResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SolicitarRenovacionCdatResult" type="tns:RespuestaApp" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarAhorroVistaClubAhorrador">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pCod_persona" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="pFiltro" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pSinClubAhorrador" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pIdentificacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pClave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarAhorroVistaClubAhorradorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarAhorroVistaClubAhorradorResult" type="tns:ArrayOfAhorroVista" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AperturaAhorroVista">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pEntidad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pIdentificacionTitular" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCod_linea_ahorro" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pCod_destino" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pModalidad" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pCod_Oficina" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pForma_pago" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pCod_empresa" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pValor_cuota" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="pCod_periodicidad" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pEsExentaGMF" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pClave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pTipoUsuario" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AperturaAhorroVistaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AperturaAhorroVistaResult" type="tns:RespuestaApp" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AplicarOperacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pEntidad" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pFechaOperacion" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pIdentificacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pTipoOperacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pNumReferencia" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pModalidad" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pTipoTransaccion" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pValor" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="pValorEfectivo" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="pValorCheque" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="pValorOtros" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="pClave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pTipoUsuario" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AplicarOperacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AplicarOperacionResult" type="tns:RespuestaApp" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarSolicitud">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarSolicitudResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultarSolicitudResult" type="tns:SolicitudProductosWeb" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SolicitudProductosWeb">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IDSOLICITUD" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="TIPOAHORRO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="COD_LINEAAHORRO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="COD_PERSONA" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECHA" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="VALOR_CUOTA" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="PERIODICIDAD" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="ESTADO" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ESTADOS" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FORMA_PAGO" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MODALIDAD" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OFICINA" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nom_Linea" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Identificacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipo_identificacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_persona" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DESCRIPCION" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="COD_ASESOR" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PLAZO" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NUM_CUENTA" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECHA_CIERRE" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="SALDO_TOTAL" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="SALDO_CANJE" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="FORMA_TASA" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TIPO_TASA" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TASA" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="SALDO_INTERESES" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="RETENCION" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="COD_EMPRESA" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TASA_INTERES" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECHA_INTERES" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="TOTAL_RETENCION" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="COD_PERIODICIDAD_INT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="COD_MODALIDA" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CrearSolicitudProduAAC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pSolicitudProductoAAC" type="tns:SolicitudProductosWeb" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CrearSolicitudProduAACResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CrearSolicitudProduAACResult" type="tns:SolicitudProductosWeb" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarAprobacionesVista">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="fecha" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarAprobacionesVistaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarAprobacionesVistaResult" type="tns:ArrayOfAhorroVista" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarAprobacionesCuota">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarAprobacionesCuotaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarAprobacionesCuotaResult" type="tns:ArrayOfAhorroVista" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListaSolicitud">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Filtro" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListaSolicitudResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListaSolicitudResult" type="tns:ArrayOfSolicitudProductosWeb" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSolicitudProductosWeb">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SolicitudProductosWeb" nillable="true" type="tns:SolicitudProductosWeb" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListarAprobacionesProgramado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarAprobacionesProgramadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarAprobacionesProgramadoResult" type="tns:ArrayOfCuentasProgramado" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Listarsimulacion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vapertura" type="tns:Cdat" />
+            <s:element minOccurs="1" maxOccurs="1" name="FechaApe" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarsimulacionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarsimulacionResult" type="tns:ArrayOfCdat" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarLineaCDAT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarLineaCDATResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultarLineaCDATResult" type="tns:LineaCDAT" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="LineaCDAT">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="cod_lineacdat" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="descripcion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="calculo_tasa" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_calculo_tasa" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_tipo_tasa" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_tipo_tasa" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="tasa" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_historico" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_tipo_historico" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="desviacion" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="estado" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_moneda" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_moneda" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="lstRangos" type="tns:ArrayOfRangoCDAT" />
+          <s:element minOccurs="1" maxOccurs="1" name="interes_por_cuenta" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="interes_prroroga" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_calendario" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="retencion" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="interes_anticipado" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="calculo_tasa_ven" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_tipo_tasa_ven" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="tasa_ven" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_historico_ven" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="desviacion_ven" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="capitaliza_interes" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="numero_pre_impreso" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="tasa_simulacion" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="plazo_minimo" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="plazo_maximo" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfRangoCDAT">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RangoCDAT" nillable="true" type="tns:RangoCDAT" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RangoCDAT">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="cod_rango" nillable="true" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="cod_lineacdat" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_tope" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="minimo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="maximo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="descripcion" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListarTipoTasa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vTasa" type="tns:TipoTasa" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TipoTasa">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="cod_tipo_tasa" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="efectiva_nomina" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_periodicidad" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="modalidad" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_periodicidad_cap" type="s:long" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListarTipoTasaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarTipoTasaResult" type="tns:ArrayOfTipoTasa" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTipoTasa">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TipoTasa" nillable="true" type="tns:TipoTasa" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListarTipoTasaHist">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="vTasa" type="tns:TipoTasaHist" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TipoTasaHist">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_historico" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="descripcion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_tasa" type="s:long" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListarTipoTasaHistResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarTipoTasaHistResult" type="tns:ArrayOfTipoTasaHist" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTipoTasaHist">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TipoTasaHist" nillable="true" type="tns:TipoTasaHist" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CrearSolicitudRetiroAhorro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ahorro" type="tns:AhorroVista" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CrearSolicitudRetiroAhorroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CrearSolicitudRetiroAhorroResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarMovprogramado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pNumeroAporte" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pfechaInicial" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pfechaFinal" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarMovprogramadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarMovprogramadoResult" type="tns:ArrayOfReporteMovimiento" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfReporteMovimiento">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ReporteMovimiento" nillable="true" type="tns:ReporteMovimiento" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ReporteMovimiento">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="numero_cuenta" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_oper" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipo_ope" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipo_tran" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_ope" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="nomtipo_ope" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="num_comp" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_comp" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipo_mov" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="saldo" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="estado" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_linea_ahorro" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="descripcion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cod_oficina" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="soporte" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="total" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Abonos" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Contador_Abonos" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cargos" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Contador_Cargos" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Intereses" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Contador_Intereses" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Retencion" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="GMF" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Contador_GMF" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="SaldoInicio" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="SaldoFinal" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Contador_Retencion" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="SaldoInicioTrans" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListarMovVista">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pNumeroAporte" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="pfechaInicial" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="pfechaFinal" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarMovVistaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarMovVistaResult" type="tns:ArrayOfReporteMovimiento" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerDocCDAT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codigoCDAT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="apertura" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cierre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerDocCDATResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerDocCDATResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ListarCuentasAplicarPagosSoapIn">
+    <wsdl:part name="parameters" element="tns:ListarCuentasAplicarPagos" />
+  </wsdl:message>
+  <wsdl:message name="ListarCuentasAplicarPagosSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarCuentasAplicarPagosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListarTipoOpeTransacVentSoapIn">
+    <wsdl:part name="parameters" element="tns:ListarTipoOpeTransacVent" />
+  </wsdl:message>
+  <wsdl:message name="ListarTipoOpeTransacVentSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarTipoOpeTransacVentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarTipOpeTranCajaSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultarTipOpeTranCaja" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarTipOpeTranCajaSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultarTipOpeTranCajaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListarAhorrosProgramadoSoapIn">
+    <wsdl:part name="parameters" element="tns:ListarAhorrosProgramado" />
+  </wsdl:message>
+  <wsdl:message name="ListarAhorrosProgramadoSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarAhorrosProgramadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListarCdatsSoapIn">
+    <wsdl:part name="parameters" element="tns:ListarCdats" />
+  </wsdl:message>
+  <wsdl:message name="ListarCdatsSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarCdatsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListarFechaVencimientoSoapIn">
+    <wsdl:part name="parameters" element="tns:ListarFechaVencimiento" />
+  </wsdl:message>
+  <wsdl:message name="ListarFechaVencimientoSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarFechaVencimientoResponse" />
+  </wsdl:message>
+  <wsdl:message name="Aplicar_Solicitud_PagoSoapIn">
+    <wsdl:part name="parameters" element="tns:Aplicar_Solicitud_Pago" />
+  </wsdl:message>
+  <wsdl:message name="Aplicar_Solicitud_PagoSoapOut">
+    <wsdl:part name="parameters" element="tns:Aplicar_Solicitud_PagoResponse" />
+  </wsdl:message>
+  <wsdl:message name="SolicitarRenovacionCdatSoapIn">
+    <wsdl:part name="parameters" element="tns:SolicitarRenovacionCdat" />
+  </wsdl:message>
+  <wsdl:message name="SolicitarRenovacionCdatSoapOut">
+    <wsdl:part name="parameters" element="tns:SolicitarRenovacionCdatResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListarAhorroVistaClubAhorradorSoapIn">
+    <wsdl:part name="parameters" element="tns:ListarAhorroVistaClubAhorrador" />
+  </wsdl:message>
+  <wsdl:message name="ListarAhorroVistaClubAhorradorSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarAhorroVistaClubAhorradorResponse" />
+  </wsdl:message>
+  <wsdl:message name="AperturaAhorroVistaSoapIn">
+    <wsdl:part name="parameters" element="tns:AperturaAhorroVista" />
+  </wsdl:message>
+  <wsdl:message name="AperturaAhorroVistaSoapOut">
+    <wsdl:part name="parameters" element="tns:AperturaAhorroVistaResponse" />
+  </wsdl:message>
+  <wsdl:message name="AplicarOperacionSoapIn">
+    <wsdl:part name="parameters" element="tns:AplicarOperacion" />
+  </wsdl:message>
+  <wsdl:message name="AplicarOperacionSoapOut">
+    <wsdl:part name="parameters" element="tns:AplicarOperacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarSolicitudSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultarSolicitud" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarSolicitudSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultarSolicitudResponse" />
+  </wsdl:message>
+  <wsdl:message name="CrearSolicitudProduAACSoapIn">
+    <wsdl:part name="parameters" element="tns:CrearSolicitudProduAAC" />
+  </wsdl:message>
+  <wsdl:message name="CrearSolicitudProduAACSoapOut">
+    <wsdl:part name="parameters" element="tns:CrearSolicitudProduAACResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListarAprobacionesVistaSoapIn">
+    <wsdl:part name="parameters" element="tns:ListarAprobacionesVista" />
+  </wsdl:message>
+  <wsdl:message name="ListarAprobacionesVistaSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarAprobacionesVistaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListarAprobacionesCuotaSoapIn">
+    <wsdl:part name="parameters" element="tns:ListarAprobacionesCuota" />
+  </wsdl:message>
+  <wsdl:message name="ListarAprobacionesCuotaSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarAprobacionesCuotaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListaSolicitudSoapIn">
+    <wsdl:part name="parameters" element="tns:ListaSolicitud" />
+  </wsdl:message>
+  <wsdl:message name="ListaSolicitudSoapOut">
+    <wsdl:part name="parameters" element="tns:ListaSolicitudResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListarAprobacionesProgramadoSoapIn">
+    <wsdl:part name="parameters" element="tns:ListarAprobacionesProgramado" />
+  </wsdl:message>
+  <wsdl:message name="ListarAprobacionesProgramadoSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarAprobacionesProgramadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListarsimulacionSoapIn">
+    <wsdl:part name="parameters" element="tns:Listarsimulacion" />
+  </wsdl:message>
+  <wsdl:message name="ListarsimulacionSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarsimulacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarLineaCDATSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultarLineaCDAT" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarLineaCDATSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultarLineaCDATResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListarTipoTasaSoapIn">
+    <wsdl:part name="parameters" element="tns:ListarTipoTasa" />
+  </wsdl:message>
+  <wsdl:message name="ListarTipoTasaSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarTipoTasaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListarTipoTasaHistSoapIn">
+    <wsdl:part name="parameters" element="tns:ListarTipoTasaHist" />
+  </wsdl:message>
+  <wsdl:message name="ListarTipoTasaHistSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarTipoTasaHistResponse" />
+  </wsdl:message>
+  <wsdl:message name="CrearSolicitudRetiroAhorroSoapIn">
+    <wsdl:part name="parameters" element="tns:CrearSolicitudRetiroAhorro" />
+  </wsdl:message>
+  <wsdl:message name="CrearSolicitudRetiroAhorroSoapOut">
+    <wsdl:part name="parameters" element="tns:CrearSolicitudRetiroAhorroResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListarMovprogramadoSoapIn">
+    <wsdl:part name="parameters" element="tns:ListarMovprogramado" />
+  </wsdl:message>
+  <wsdl:message name="ListarMovprogramadoSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarMovprogramadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListarMovVistaSoapIn">
+    <wsdl:part name="parameters" element="tns:ListarMovVista" />
+  </wsdl:message>
+  <wsdl:message name="ListarMovVistaSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarMovVistaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerDocCDATSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerDocCDAT" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerDocCDATSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerDocCDATResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WSDepositoSoap">
+    <wsdl:operation name="ListarCuentasAplicarPagos">
+      <wsdl:input message="tns:ListarCuentasAplicarPagosSoapIn" />
+      <wsdl:output message="tns:ListarCuentasAplicarPagosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarTipoOpeTransacVent">
+      <wsdl:input message="tns:ListarTipoOpeTransacVentSoapIn" />
+      <wsdl:output message="tns:ListarTipoOpeTransacVentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarTipOpeTranCaja">
+      <wsdl:input message="tns:ConsultarTipOpeTranCajaSoapIn" />
+      <wsdl:output message="tns:ConsultarTipOpeTranCajaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarAhorrosProgramado">
+      <wsdl:input message="tns:ListarAhorrosProgramadoSoapIn" />
+      <wsdl:output message="tns:ListarAhorrosProgramadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarCdats">
+      <wsdl:input message="tns:ListarCdatsSoapIn" />
+      <wsdl:output message="tns:ListarCdatsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarFechaVencimiento">
+      <wsdl:input message="tns:ListarFechaVencimientoSoapIn" />
+      <wsdl:output message="tns:ListarFechaVencimientoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Aplicar_Solicitud_Pago">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">APLICACION DE CRUCE DE AHORRO A PRODUCTO POR ATENCION CLIENTE</wsdl:documentation>
+      <wsdl:input message="tns:Aplicar_Solicitud_PagoSoapIn" />
+      <wsdl:output message="tns:Aplicar_Solicitud_PagoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SolicitarRenovacionCdat">
+      <wsdl:input message="tns:SolicitarRenovacionCdatSoapIn" />
+      <wsdl:output message="tns:SolicitarRenovacionCdatSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarAhorroVistaClubAhorrador">
+      <wsdl:input message="tns:ListarAhorroVistaClubAhorradorSoapIn" />
+      <wsdl:output message="tns:ListarAhorroVistaClubAhorradorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AperturaAhorroVista">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Aperturación de una cuenta de Ahorros con datos básicos para algun asociado.</wsdl:documentation>
+      <wsdl:input message="tns:AperturaAhorroVistaSoapIn" />
+      <wsdl:output message="tns:AperturaAhorroVistaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AplicarOperacion">
+      <wsdl:input message="tns:AplicarOperacionSoapIn" />
+      <wsdl:output message="tns:AplicarOperacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarSolicitud">
+      <wsdl:input message="tns:ConsultarSolicitudSoapIn" />
+      <wsdl:output message="tns:ConsultarSolicitudSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearSolicitudProduAAC">
+      <wsdl:input message="tns:CrearSolicitudProduAACSoapIn" />
+      <wsdl:output message="tns:CrearSolicitudProduAACSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarAprobacionesVista">
+      <wsdl:input message="tns:ListarAprobacionesVistaSoapIn" />
+      <wsdl:output message="tns:ListarAprobacionesVistaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarAprobacionesCuota">
+      <wsdl:input message="tns:ListarAprobacionesCuotaSoapIn" />
+      <wsdl:output message="tns:ListarAprobacionesCuotaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaSolicitud">
+      <wsdl:input message="tns:ListaSolicitudSoapIn" />
+      <wsdl:output message="tns:ListaSolicitudSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarAprobacionesProgramado">
+      <wsdl:input message="tns:ListarAprobacionesProgramadoSoapIn" />
+      <wsdl:output message="tns:ListarAprobacionesProgramadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Listarsimulacion">
+      <wsdl:input message="tns:ListarsimulacionSoapIn" />
+      <wsdl:output message="tns:ListarsimulacionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarLineaCDAT">
+      <wsdl:input message="tns:ConsultarLineaCDATSoapIn" />
+      <wsdl:output message="tns:ConsultarLineaCDATSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarTipoTasa">
+      <wsdl:input message="tns:ListarTipoTasaSoapIn" />
+      <wsdl:output message="tns:ListarTipoTasaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarTipoTasaHist">
+      <wsdl:input message="tns:ListarTipoTasaHistSoapIn" />
+      <wsdl:output message="tns:ListarTipoTasaHistSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearSolicitudRetiroAhorro">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">CREA LA SOLICITUD PARA EL RETIRO DE AHORROS A LA VISTA</wsdl:documentation>
+      <wsdl:input message="tns:CrearSolicitudRetiroAhorroSoapIn" />
+      <wsdl:output message="tns:CrearSolicitudRetiroAhorroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarMovprogramado">
+      <wsdl:input message="tns:ListarMovprogramadoSoapIn" />
+      <wsdl:output message="tns:ListarMovprogramadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarMovVista">
+      <wsdl:input message="tns:ListarMovVistaSoapIn" />
+      <wsdl:output message="tns:ListarMovVistaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDocCDAT">
+      <wsdl:input message="tns:ObtenerDocCDATSoapIn" />
+      <wsdl:output message="tns:ObtenerDocCDATSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSDepositoSoap" type="tns:WSDepositoSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListarCuentasAplicarPagos">
+      <soap:operation soapAction="http://tempuri.org/ListarCuentasAplicarPagos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarTipoOpeTransacVent">
+      <soap:operation soapAction="http://tempuri.org/ListarTipoOpeTransacVent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarTipOpeTranCaja">
+      <soap:operation soapAction="http://tempuri.org/ConsultarTipOpeTranCaja" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarAhorrosProgramado">
+      <soap:operation soapAction="http://tempuri.org/ListarAhorrosProgramado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarCdats">
+      <soap:operation soapAction="http://tempuri.org/ListarCdats" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarFechaVencimiento">
+      <soap:operation soapAction="http://tempuri.org/ListarFechaVencimiento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Aplicar_Solicitud_Pago">
+      <soap:operation soapAction="http://tempuri.org/Aplicar_Solicitud_Pago" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SolicitarRenovacionCdat">
+      <soap:operation soapAction="http://tempuri.org/SolicitarRenovacionCdat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarAhorroVistaClubAhorrador">
+      <soap:operation soapAction="http://tempuri.org/ListarAhorroVistaClubAhorrador" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AperturaAhorroVista">
+      <soap:operation soapAction="http://tempuri.org/AperturaAhorroVista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AplicarOperacion">
+      <soap:operation soapAction="http://tempuri.org/AplicarOperacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarSolicitud">
+      <soap:operation soapAction="http://tempuri.org/ConsultarSolicitud" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearSolicitudProduAAC">
+      <soap:operation soapAction="http://tempuri.org/CrearSolicitudProduAAC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarAprobacionesVista">
+      <soap:operation soapAction="http://tempuri.org/ListarAprobacionesVista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarAprobacionesCuota">
+      <soap:operation soapAction="http://tempuri.org/ListarAprobacionesCuota" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaSolicitud">
+      <soap:operation soapAction="http://tempuri.org/ListaSolicitud" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarAprobacionesProgramado">
+      <soap:operation soapAction="http://tempuri.org/ListarAprobacionesProgramado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Listarsimulacion">
+      <soap:operation soapAction="http://tempuri.org/Listarsimulacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarLineaCDAT">
+      <soap:operation soapAction="http://tempuri.org/ConsultarLineaCDAT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarTipoTasa">
+      <soap:operation soapAction="http://tempuri.org/ListarTipoTasa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarTipoTasaHist">
+      <soap:operation soapAction="http://tempuri.org/ListarTipoTasaHist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearSolicitudRetiroAhorro">
+      <soap:operation soapAction="http://tempuri.org/CrearSolicitudRetiroAhorro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarMovprogramado">
+      <soap:operation soapAction="http://tempuri.org/ListarMovprogramado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarMovVista">
+      <soap:operation soapAction="http://tempuri.org/ListarMovVista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDocCDAT">
+      <soap:operation soapAction="http://tempuri.org/ObtenerDocCDAT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSDepositoSoap12" type="tns:WSDepositoSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListarCuentasAplicarPagos">
+      <soap12:operation soapAction="http://tempuri.org/ListarCuentasAplicarPagos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarTipoOpeTransacVent">
+      <soap12:operation soapAction="http://tempuri.org/ListarTipoOpeTransacVent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarTipOpeTranCaja">
+      <soap12:operation soapAction="http://tempuri.org/ConsultarTipOpeTranCaja" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarAhorrosProgramado">
+      <soap12:operation soapAction="http://tempuri.org/ListarAhorrosProgramado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarCdats">
+      <soap12:operation soapAction="http://tempuri.org/ListarCdats" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarFechaVencimiento">
+      <soap12:operation soapAction="http://tempuri.org/ListarFechaVencimiento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Aplicar_Solicitud_Pago">
+      <soap12:operation soapAction="http://tempuri.org/Aplicar_Solicitud_Pago" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SolicitarRenovacionCdat">
+      <soap12:operation soapAction="http://tempuri.org/SolicitarRenovacionCdat" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarAhorroVistaClubAhorrador">
+      <soap12:operation soapAction="http://tempuri.org/ListarAhorroVistaClubAhorrador" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AperturaAhorroVista">
+      <soap12:operation soapAction="http://tempuri.org/AperturaAhorroVista" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AplicarOperacion">
+      <soap12:operation soapAction="http://tempuri.org/AplicarOperacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarSolicitud">
+      <soap12:operation soapAction="http://tempuri.org/ConsultarSolicitud" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearSolicitudProduAAC">
+      <soap12:operation soapAction="http://tempuri.org/CrearSolicitudProduAAC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarAprobacionesVista">
+      <soap12:operation soapAction="http://tempuri.org/ListarAprobacionesVista" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarAprobacionesCuota">
+      <soap12:operation soapAction="http://tempuri.org/ListarAprobacionesCuota" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaSolicitud">
+      <soap12:operation soapAction="http://tempuri.org/ListaSolicitud" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarAprobacionesProgramado">
+      <soap12:operation soapAction="http://tempuri.org/ListarAprobacionesProgramado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Listarsimulacion">
+      <soap12:operation soapAction="http://tempuri.org/Listarsimulacion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarLineaCDAT">
+      <soap12:operation soapAction="http://tempuri.org/ConsultarLineaCDAT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarTipoTasa">
+      <soap12:operation soapAction="http://tempuri.org/ListarTipoTasa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarTipoTasaHist">
+      <soap12:operation soapAction="http://tempuri.org/ListarTipoTasaHist" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearSolicitudRetiroAhorro">
+      <soap12:operation soapAction="http://tempuri.org/CrearSolicitudRetiroAhorro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarMovprogramado">
+      <soap12:operation soapAction="http://tempuri.org/ListarMovprogramado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarMovVista">
+      <soap12:operation soapAction="http://tempuri.org/ListarMovVista" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDocCDAT">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerDocCDAT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSDeposito">
+    <wsdl:port name="WSDepositoSoap" binding="tns:WSDepositoSoap">
+      <soap:address location="http://localhost/WebServices/WSDeposito.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSDepositoSoap12" binding="tns:WSDepositoSoap12">
+      <soap12:address location="http://localhost/WebServices/WSDeposito.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

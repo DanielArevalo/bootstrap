@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1970A9BA-802A-4142-BC92-0E36FBAAF069}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Xpinn.Reporteador.Services</RootNamespace>
+    <AssemblyName>Xpinn.Reporteador.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AFIANCOLService.cs" />
+    <Compile Include="CosechasService.cs" />
+    <Compile Include="ExogenaReportService.cs" />
+    <Compile Include="ExtractoService.cs" />
+    <Compile Include="TransaccionEfectivoService.cs" />
+    <Compile Include="UIAFService.cs" />
+    <Compile Include="ReporteService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xpinn.Aportes.Business\Xpinn.Aportes.Business.csproj">
+      <Project>{9091945E-46A2-4DEA-8441-22B9FEEA3EB5}</Project>
+      <Name>Xpinn.Aportes.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Caja.Business\Xpinn.Caja.Business.csproj">
+      <Project>{8DD1C093-5C35-456C-A98B-810B2986FA27}</Project>
+      <Name>Xpinn.Caja.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.FabricaCreditos.Entities\Xpinn.FabricaCreditos.Entities.csproj">
+      <Project>{B89884F6-511B-466D-9338-51FC7A656792}</Project>
+      <Name>Xpinn.FabricaCreditos.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Reporteador.Business\Xpinn.Reporteador.Business.csproj">
+      <Project>{9F291EA6-52DF-4D23-BE7A-36254B06274E}</Project>
+      <Name>Xpinn.Reporteador.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Reporteador.Entities\Xpinn.Reporteador.Entities.csproj">
+      <Project>{A2D59EEE-5E18-41A1-8239-ACB9EB0BD1F1}</Project>
+      <Name>Xpinn.Reporteador.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Tesoreria.Entities\Xpinn.Tesoreria.Entities.csproj">
+      <Project>{2682acee-0325-4a67-84e4-801e2bb6aba7}</Project>
+      <Name>Xpinn.Tesoreria.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Util\Xpinn.Util.csproj">
+      <Project>{1DC267F2-1877-46D6-AF5E-F92EB286DFC4}</Project>
+      <Name>Xpinn.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

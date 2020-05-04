@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ConsultarScoring" targetNamespace="http://tempuri.org/ConsultarScoring.xsd" xmlns:mstns="http://tempuri.org/ConsultarScoring.xsd" xmlns="http://tempuri.org/ConsultarScoring.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ConsultarScoring" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="ConsultarScoring" msprop:Generator_UserDSName="ConsultarScoring">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Codeudores" msprop:Generator_TableClassName="CodeudoresDataTable" msprop:Generator_TableVarName="tableCodeudores" msprop:Generator_TablePropName="Codeudores" msprop:Generator_RowDeletingName="CodeudoresRowDeleting" msprop:Generator_RowChangingName="CodeudoresRowChanging" msprop:Generator_RowEvHandlerName="CodeudoresRowChangeEventHandler" msprop:Generator_RowDeletedName="CodeudoresRowDeleted" msprop:Generator_UserTableName="Codeudores" msprop:Generator_RowChangedName="CodeudoresRowChanged" msprop:Generator_RowEvArgName="CodeudoresRowChangeEvent" msprop:Generator_RowClassName="CodeudoresRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NumeroSolicitud" msprop:Generator_ColumnVarNameInTable="columnNumeroSolicitud" msprop:Generator_ColumnPropNameInRow="NumeroSolicitud" msprop:Generator_ColumnPropNameInTable="NumeroSolicitudColumn" msprop:Generator_UserColumnName="NumeroSolicitud" type="xs:string" minOccurs="0" />
+              <xs:element name="Identificacion" msprop:Generator_ColumnVarNameInTable="columnIdentificacion" msprop:Generator_ColumnPropNameInRow="Identificacion" msprop:Generator_ColumnPropNameInTable="IdentificacionColumn" msprop:Generator_UserColumnName="Identificacion" type="xs:string" minOccurs="0" />
+              <xs:element name="Nombres" msprop:Generator_ColumnVarNameInTable="columnNombres" msprop:Generator_ColumnPropNameInRow="Nombres" msprop:Generator_ColumnPropNameInTable="NombresColumn" msprop:Generator_UserColumnName="Nombres" type="xs:string" minOccurs="0" />
+              <xs:element name="Direccion" msprop:Generator_ColumnVarNameInTable="columnDireccion" msprop:Generator_ColumnPropNameInRow="Direccion" msprop:Generator_ColumnPropNameInTable="DireccionColumn" msprop:Generator_UserColumnName="Direccion" type="xs:string" minOccurs="0" />
+              <xs:element name="Telefono" msprop:Generator_ColumnVarNameInTable="columnTelefono" msprop:Generator_ColumnPropNameInRow="Telefono" msprop:Generator_ColumnPropNameInTable="TelefonoColumn" msprop:Generator_UserColumnName="Telefono" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SeguimientoScoring" msprop:Generator_TableClassName="SeguimientoScoringDataTable" msprop:Generator_TableVarName="tableSeguimientoScoring" msprop:Generator_TablePropName="SeguimientoScoring" msprop:Generator_RowDeletingName="SeguimientoScoringRowDeleting" msprop:Generator_RowChangingName="SeguimientoScoringRowChanging" msprop:Generator_RowEvHandlerName="SeguimientoScoringRowChangeEventHandler" msprop:Generator_RowDeletedName="SeguimientoScoringRowDeleted" msprop:Generator_UserTableName="SeguimientoScoring" msprop:Generator_RowChangedName="SeguimientoScoringRowChanged" msprop:Generator_RowEvArgName="SeguimientoScoringRowChangeEvent" msprop:Generator_RowClassName="SeguimientoScoringRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fecha" msdata:Caption="NumeroSolicitud" msprop:Generator_ColumnVarNameInTable="columnfecha" msprop:Generator_ColumnPropNameInRow="fecha" msprop:Generator_ColumnPropNameInTable="fechaColumn" msprop:Generator_UserColumnName="fecha" type="xs:string" minOccurs="0" />
+              <xs:element name="estado" msdata:Caption="Identificacion" msprop:Generator_ColumnVarNameInTable="columnestado" msprop:Generator_ColumnPropNameInRow="estado" msprop:Generator_ColumnPropNameInTable="estadoColumn" msprop:Generator_UserColumnName="estado" type="xs:string" minOccurs="0" />
+              <xs:element name="usuario" msdata:Caption="Nombres" msprop:Generator_ColumnVarNameInTable="columnusuario" msprop:Generator_ColumnPropNameInRow="usuario" msprop:Generator_ColumnPropNameInTable="usuarioColumn" msprop:Generator_UserColumnName="usuario" type="xs:string" minOccurs="0" />
+              <xs:element name="motivo" msdata:Caption="Direccion" msprop:Generator_ColumnVarNameInTable="columnmotivo" msprop:Generator_ColumnPropNameInRow="motivo" msprop:Generator_ColumnPropNameInTable="motivoColumn" msprop:Generator_UserColumnName="motivo" type="xs:string" minOccurs="0" />
+              <xs:element name="observaciones" msdata:Caption="Telefono" msprop:Generator_ColumnVarNameInTable="columnobservaciones" msprop:Generator_ColumnPropNameInRow="observaciones" msprop:Generator_ColumnPropNameInTable="observacionesColumn" msprop:Generator_UserColumnName="observaciones" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

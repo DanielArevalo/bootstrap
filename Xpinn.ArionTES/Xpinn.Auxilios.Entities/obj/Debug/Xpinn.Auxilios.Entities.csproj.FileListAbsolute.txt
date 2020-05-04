@@ -1,0 +1,5 @@
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Auxilios.Entities\bin\Debug\Xpinn.Auxilios.Entities.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Auxilios.Entities\bin\Debug\Xpinn.Auxilios.Entities.pdb
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Auxilios.Entities\obj\Debug\Xpinn.Auxilios.Entities.csprojAssemblyReference.cache
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Auxilios.Entities\obj\Debug\Xpinn.Auxilios.Entities.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Auxilios.Entities\obj\Debug\Xpinn.Auxilios.Entities.pdb

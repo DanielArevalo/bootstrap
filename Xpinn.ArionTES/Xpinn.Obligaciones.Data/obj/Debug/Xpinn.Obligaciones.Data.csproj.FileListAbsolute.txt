@@ -1,0 +1,16 @@
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Obligaciones.Data\bin\Debug\Xpinn.Obligaciones.Data.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Obligaciones.Data\bin\Debug\Xpinn.Obligaciones.Data.pdb
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Obligaciones.Data\bin\Debug\Xpinn.Obligaciones.Entities.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Obligaciones.Data\bin\Debug\Xpinn.Util.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Obligaciones.Data\bin\Debug\itextsharp.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Obligaciones.Data\bin\Debug\Microsoft.Web.Services3.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Obligaciones.Data\bin\Debug\Newtonsoft.Json.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Obligaciones.Data\bin\Debug\Xpinn.Obligaciones.Entities.pdb
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Obligaciones.Data\bin\Debug\Xpinn.Util.pdb
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Obligaciones.Data\bin\Debug\Xpinn.Util.dll.config
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Obligaciones.Data\bin\Debug\itextsharp.xml
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Obligaciones.Data\bin\Debug\Newtonsoft.Json.xml
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Obligaciones.Data\obj\Debug\Xpinn.Obligaciones.Data.csprojAssemblyReference.cache
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Obligaciones.Data\obj\Debug\Xpinn.Obligaciones.Data.csproj.CopyComplete
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Obligaciones.Data\obj\Debug\Xpinn.Obligaciones.Data.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Obligaciones.Data\obj\Debug\Xpinn.Obligaciones.Data.pdb

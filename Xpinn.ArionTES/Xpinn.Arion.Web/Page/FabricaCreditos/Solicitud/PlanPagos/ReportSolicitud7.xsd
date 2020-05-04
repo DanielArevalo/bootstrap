@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReportSolicitud7" targetNamespace="http://tempuri.org/ReportSolicitud7.xsd" xmlns:mstns="http://tempuri.org/ReportSolicitud7.xsd" xmlns="http://tempuri.org/ReportSolicitud7.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReportSolicitud7" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTableMargenVentas">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NombreProducto" msdata:Caption="nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="UnidadesVendidas" msdata:Caption="identificacion" type="xs:string" minOccurs="0" />
+              <xs:element name="CostoUnidadVendida" msdata:Caption="telefono" type="xs:string" minOccurs="0" />
+              <xs:element name="PrecioVentaUnidad" msdata:Caption="direccion" type="xs:string" minOccurs="0" />
+              <xs:element name="CostoDeVentas" msdata:Caption="nombrer" type="xs:string" minOccurs="0" />
+              <xs:element name="VentaTotal" msdata:Caption="fechanacimiento" type="xs:string" minOccurs="0" />
+              <xs:element name="Margen" type="xs:string" minOccurs="0" />
+              <xs:element name="Utilidad" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

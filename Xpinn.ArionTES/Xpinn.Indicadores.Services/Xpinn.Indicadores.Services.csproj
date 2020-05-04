@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{179F4047-19FF-448C-AB7D-AC0F2950DDC0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Xpinn.Indicadores.Services</RootNamespace>
+    <AssemblyName>Xpinn.Indicadores.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CarteraBrutaService.cs" />
+    <Compile Include="CarteraVencidaService.cs" />
+    <Compile Include="CarteraOficinasService.cs" />
+    <Compile Include="DistribucionCarteraOficinasService.cs" />
+    <Compile Include="EvolucionDesembolsoOficinaService.cs" />
+    <Compile Include="GestionRiesgoService.cs" />
+    <Compile Include="EvolucionDesembolsoService.cs" />
+    <Compile Include="GestionDiariaService.cs" />
+    <Compile Include="IndicadorCarteraOficinasService.cs" />
+    <Compile Include="IndicadorCarteraService.cs" />
+    <Compile Include="IndicadorCarteraXClasificacionService.cs" />
+    <Compile Include="IndicadoresAhorrosServices.cs" />
+    <Compile Include="IndicadoresLiquidezServices.cs" />
+    <Compile Include="IndicadoresAportesServices.cs" />
+    <Compile Include="PrestamoPromedioOficinasService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xpinn.Indicadores.Business\Xpinn.Indicadores.Business.csproj">
+      <Project>{E5A75639-6E7F-4079-868E-FB334C540CBA}</Project>
+      <Name>Xpinn.Indicadores.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Indicadores.Data\Xpinn.Indicadores.Data.csproj">
+      <Project>{34B8B0A1-7138-4347-A6C2-898CF9250AD1}</Project>
+      <Name>Xpinn.Indicadores.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Indicadores.Entities\Xpinn.Indicadores.Entities.csproj">
+      <Project>{1FDE42C8-6845-4740-9B96-AF50AE12E28D}</Project>
+      <Name>Xpinn.Indicadores.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Util\Xpinn.Util.csproj">
+      <Project>{1DC267F2-1877-46D6-AF5E-F92EB286DFC4}</Project>
+      <Name>Xpinn.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

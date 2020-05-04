@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsHistorialSegmentacion" targetNamespace="http://tempuri.org/dsHistorialSegmentacion.xsd" xmlns:mstns="http://tempuri.org/dsHistorialSegmentacion.xsd" xmlns="http://tempuri.org/dsHistorialSegmentacion.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsHistorialSegmentacion" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsHistorialSegmentacion" msprop:Generator_DataSetName="dsHistorialSegmentacion">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtHistorial" msprop:Generator_TableClassName="dtHistorialDataTable" msprop:Generator_TableVarName="tabledtHistorial" msprop:Generator_TablePropName="dtHistorial" msprop:Generator_RowDeletingName="dtHistorialRowDeleting" msprop:Generator_RowChangingName="dtHistorialRowChanging" msprop:Generator_RowEvHandlerName="dtHistorialRowChangeEventHandler" msprop:Generator_RowDeletedName="dtHistorialRowDeleted" msprop:Generator_UserTableName="dtHistorial" msprop:Generator_RowChangedName="dtHistorialRowChanged" msprop:Generator_RowEvArgName="dtHistorialRowChangeEvent" msprop:Generator_RowClassName="dtHistorialRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fecha_segmentacion" msprop:Generator_ColumnVarNameInTable="columnfecha_segmentacion" msprop:Generator_ColumnPropNameInRow="fecha_segmentacion" msprop:Generator_ColumnPropNameInTable="fecha_segmentacionColumn" msprop:Generator_UserColumnName="fecha_segmentacion" type="xs:string" minOccurs="0" />
+              <xs:element name="segmento_riesgo" msprop:Generator_ColumnVarNameInTable="columnsegmento_riesgo" msprop:Generator_ColumnPropNameInRow="segmento_riesgo" msprop:Generator_ColumnPropNameInTable="segmento_riesgoColumn" msprop:Generator_UserColumnName="segmento_riesgo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

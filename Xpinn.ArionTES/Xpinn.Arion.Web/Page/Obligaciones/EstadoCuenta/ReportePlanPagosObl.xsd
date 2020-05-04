@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReportePlanPagosObl" targetNamespace="http://tempuri.org/ReportePlanPagosObl.xsd" xmlns:mstns="http://tempuri.org/ReportePlanPagosObl.xsd" xmlns="http://tempuri.org/ReportePlanPagosObl.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReportePlanPagosObl" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtPlanPagosObl">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="numcuota" type="xs:int" minOccurs="0" />
+              <xs:element name="fechacuota" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="amort_cap" type="xs:decimal" minOccurs="0" />
+              <xs:element name="interes_corriente" type="xs:decimal" minOccurs="0" />
+              <xs:element name="interes_mora" type="xs:decimal" minOccurs="0" />
+              <xs:element name="seguro" type="xs:decimal" minOccurs="0" />
+              <xs:element name="total" type="xs:decimal" minOccurs="0" />
+              <xs:element name="saldo" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

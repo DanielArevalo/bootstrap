@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{05829843-7AB8-484A-B31A-83099F92A1A1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Xpinn.Tesoreria.Business</RootNamespace>
+    <AssemblyName>Xpinn.Tesoreria.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACHcampoBusiness.cs" />
+    <Compile Include="ACHplantillaBusiness.cs" />
+    <Compile Include="ACHregistroBusiness.cs" />
+    <Compile Include="ChequeraBusiness.cs" />
+    <Compile Include="ConciliacionBancariaBusiness.cs" />
+    <Compile Include="ArqueoPagosBusiness.cs" />
+    <Compile Include="CambioMonedaBusiness.cs" />
+    <Compile Include="AprobacionGirosBusiness.cs" />
+    <Compile Include="AprobacionCtasPorPagarBusiness.cs" />
+    <Compile Include="ConvenioRecaudoBusiness.cs" />
+    <Compile Include="FusionGirosBusiness.cs" />
+    <Compile Include="GiroDistribucionBusiness.cs" />
+    <Compile Include="InventariosBusiness.cs" />
+    <Compile Include="ParametrosFlujoCajaBusiness.cs" />
+    <Compile Include="PaymentACHBusiness.cs" />
+    <Compile Include="ProcesoTipoGiroBusiness.cs" />
+    <Compile Include="RealizacionGirosBusiness.cs" />
+    <Compile Include="EntregaChequesBusiness.cs" />
+    <Compile Include="ImpresionMasivaBusiness.cs" />
+    <Compile Include="ReporteArqueoCajBusiness.cs" />
+    <Compile Include="ReporteMovimientosBusiness.cs" />
+    <Compile Include="CuentasBancariasBusiness.cs" />
+    <Compile Include="CuentasPorPagarBusiness.cs" />
+    <Compile Include="OperacionBusiness.cs" />
+    <Compile Include="AreasCajBusiness.cs" />
+    <Compile Include="GiroBusiness.cs" />
+    <Compile Include="PagosVentanillaBusiness.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SoporteCajBusiness.cs" />
+    <Compile Include="ConceptoCtaBusiness.cs" />
+    <Compile Include="TipSopCajBusiness.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xpinn.Ahorros.Business\Xpinn.Ahorros.Business.csproj">
+      <Project>{ef480a75-99aa-4b61-a129-6735b272d019}</Project>
+      <Name>Xpinn.Ahorros.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Ahorros.Data\Xpinn.Ahorros.Data.csproj">
+      <Project>{db0bd775-17aa-4592-b2a6-38be4fd7fa0a}</Project>
+      <Name>Xpinn.Ahorros.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Ahorros.Entities\Xpinn.Ahorros.Entities.csproj">
+      <Project>{4e822517-4073-457f-9040-3340c7647c3f}</Project>
+      <Name>Xpinn.Ahorros.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Aportes.Data\Xpinn.Aportes.Data.csproj">
+      <Project>{69AD7BA9-9AFC-47A4-A90F-4C58D8D9E543}</Project>
+      <Name>Xpinn.Aportes.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Aportes.Entities\Xpinn.Aportes.Entities.csproj">
+      <Project>{3A1B9D8D-C018-4333-B436-8214C50E7E12}</Project>
+      <Name>Xpinn.Aportes.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Caja.Entities\Xpinn.Caja.Entities.csproj">
+      <Project>{32332397-2618-4B28-9853-1261619FA11C}</Project>
+      <Name>Xpinn.Caja.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Comun.Data\Xpinn.Comun.Data.csproj">
+      <Project>{35B70C1B-09D0-4408-8803-050D953999AE}</Project>
+      <Name>Xpinn.Comun.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Comun.Entities\Xpinn.Comun.Entities.csproj">
+      <Project>{955A6F00-17CF-4CB4-97F7-B8E98E9B3297}</Project>
+      <Name>Xpinn.Comun.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Contabilidad.Business\Xpinn.Contabilidad.Business.csproj">
+      <Project>{1C37228B-41B6-4309-B3D4-D8A05DD0DA18}</Project>
+      <Name>Xpinn.Contabilidad.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Contabilidad.Data\Xpinn.Contabilidad.Data.csproj">
+      <Project>{600D29E1-4CBD-4A63-B4AA-FE4E4DE436DE}</Project>
+      <Name>Xpinn.Contabilidad.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Contabilidad.Entities\Xpinn.Contabilidad.Entities.csproj">
+      <Project>{E784BD0B-D163-43A7-92F7-C65A3B1EC299}</Project>
+      <Name>Xpinn.Contabilidad.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Tesoreria.Data\Xpinn.Tesoreria.Data.csproj">
+      <Project>{0BCA84AC-F1E6-4DBC-8136-1BB3C9F42E30}</Project>
+      <Name>Xpinn.Tesoreria.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Tesoreria.Entities\Xpinn.Tesoreria.Entities.csproj">
+      <Project>{2682ACEE-0325-4A67-84E4-801E2BB6ABA7}</Project>
+      <Name>Xpinn.Tesoreria.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Util\Xpinn.Util.csproj">
+      <Project>{1DC267F2-1877-46D6-AF5E-F92EB286DFC4}</Project>
+      <Name>Xpinn.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

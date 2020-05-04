@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTableC">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NumeroRadicacion" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaPago" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoOperacion" type="xs:string" minOccurs="0" />
+              <xs:element name="num_comp" type="xs:string" minOccurs="0" />
+              <xs:element name="Transaccion" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoMovimiento" type="xs:string" minOccurs="0" />
+              <xs:element name="Capital" type="xs:string" minOccurs="0" />
+              <xs:element name="IntCte" type="xs:string" minOccurs="0" />
+              <xs:element name="IntMora" type="xs:string" minOccurs="0" />
+              <xs:element name="Seguros" type="xs:string" minOccurs="0" />
+              <xs:element name="LeyMiPyme" type="xs:string" minOccurs="0" />
+              <xs:element name="otros" type="xs:string" minOccurs="0" />
+              <xs:element name="Saldo" type="xs:string" minOccurs="0" />
+              <xs:element name="Calificacion" type="xs:string" minOccurs="0" />
+              <xs:element name="TIPO_COMP" type="xs:string" minOccurs="0" />
+              <xs:element name="ivaMiPyme" type="xs:string" minOccurs="0" />
+              <xs:element name="totalpago" type="xs:string" minOccurs="0" />
+              <xs:element name="Prejuridico" type="xs:string" minOccurs="0" />
+              <xs:element name="Poliza" type="xs:string" minOccurs="0" />
+              <xs:element name="LineaCredito" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaCuota" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTableA">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NumeroAporte" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaPago" type="xs:string" minOccurs="0" />
+              <xs:element name="CodOperacion" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoOperacion" type="xs:string" minOccurs="0" />
+              <xs:element name="num_comp" type="xs:string" minOccurs="0" />
+              <xs:element name="TIPO_COMP" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoMovimiento" type="xs:string" minOccurs="0" />
+              <xs:element name="Capital" type="xs:string" minOccurs="0" />
+              <xs:element name="Saldo" type="xs:string" minOccurs="0" />
+              <xs:element name="LineaAporte" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTableAV">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="numero_cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha" type="xs:string" minOccurs="0" />
+              <xs:element name="cod_ope" type="xs:string" minOccurs="0" />
+              <xs:element name="tipo_ope" type="xs:string" minOccurs="0" />
+              <xs:element name="num_comp" type="xs:string" minOccurs="0" />
+              <xs:element name="tipo_comp" type="xs:string" minOccurs="0" />
+              <xs:element name="tipo_mov" type="xs:string" minOccurs="0" />
+              <xs:element name="valor" type="xs:string" minOccurs="0" />
+              <xs:element name="saldo" type="xs:string" minOccurs="0" />
+              <xs:element name="LineaAhorro" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTableP">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="numero_cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha" type="xs:string" minOccurs="0" />
+              <xs:element name="cod_ope" type="xs:string" minOccurs="0" />
+              <xs:element name="tipo_ope" type="xs:string" minOccurs="0" />
+              <xs:element name="num_comp" type="xs:string" minOccurs="0" />
+              <xs:element name="tipo_comp" type="xs:string" minOccurs="0" />
+              <xs:element name="tipo_mov" type="xs:string" minOccurs="0" />
+              <xs:element name="valor" type="xs:string" minOccurs="0" />
+              <xs:element name="saldo" type="xs:string" minOccurs="0" />
+              <xs:element name="tipo_tran" type="xs:string" minOccurs="0" />
+              <xs:element name="LineaAhorro" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTableCD">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="numero_cdat" msdata:Caption="numero_cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha" type="xs:string" minOccurs="0" />
+              <xs:element name="cod_ope" type="xs:string" minOccurs="0" />
+              <xs:element name="tipo_ope" type="xs:string" minOccurs="0" />
+              <xs:element name="num_comp" type="xs:string" minOccurs="0" />
+              <xs:element name="tipo_comp" type="xs:string" minOccurs="0" />
+              <xs:element name="tipo_mov" type="xs:string" minOccurs="0" />
+              <xs:element name="valor" type="xs:string" minOccurs="0" />
+              <xs:element name="saldo" type="xs:string" minOccurs="0" />
+              <xs:element name="LineaCdat" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTableS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="numero_servicio" msdata:Caption="numero_cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="Fec_1Pago" msdata:Caption="fecha" type="xs:string" minOccurs="0" />
+              <xs:element name="cod_persona" msdata:Caption="cod_ope" type="xs:string" minOccurs="0" />
+              <xs:element name="descripcion" msdata:Caption="tipo_ope" type="xs:string" minOccurs="0" />
+              <xs:element name="numero_cuotas" msdata:Caption="num_comp" type="xs:string" minOccurs="0" />
+              <xs:element name="tipo_comp" type="xs:string" minOccurs="0" />
+              <xs:element name="tipo_mov" type="xs:string" minOccurs="0" />
+              <xs:element name="valor_total" msdata:Caption="valor" type="xs:string" minOccurs="0" />
+              <xs:element name="saldo" type="xs:string" minOccurs="0" />
+              <xs:element name="LineaServicio" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

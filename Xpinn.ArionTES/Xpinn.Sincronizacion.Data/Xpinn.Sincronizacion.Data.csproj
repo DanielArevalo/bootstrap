@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1A88DFA3-C81A-4738-B858-7C667F873B79}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Xpinn.Sincronizacion.Data</RootNamespace>
+    <AssemblyName>Xpinn.Sincronizacion.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SyncCajaData.cs" />
+    <Compile Include="SyncCajeroData.cs" />
+    <Compile Include="SyncConsignacionData.cs" />
+    <Compile Include="SyncOficinaData.cs" />
+    <Compile Include="SyncOperacionData.cs" />
+    <Compile Include="SyncPersonaData.cs" />
+    <Compile Include="SyncProductosData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SyncTrasladoCajaData.cs" />
+    <Compile Include="SyncUsuarioData.cs" />
+    <Compile Include="SyncTransaccionCajaData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xpinn.Caja.Entities\Xpinn.Caja.Entities.csproj">
+      <Project>{32332397-2618-4B28-9853-1261619FA11C}</Project>
+      <Name>Xpinn.Caja.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Comun.Data\Xpinn.Comun.Data.csproj">
+      <Project>{35b70c1b-09d0-4408-8803-050d953999ae}</Project>
+      <Name>Xpinn.Comun.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Comun.Entities\Xpinn.Comun.Entities.csproj">
+      <Project>{955A6F00-17CF-4CB4-97F7-B8E98E9B3297}</Project>
+      <Name>Xpinn.Comun.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Sincronizacion.Entities\Xpinn.Sincronizacion.Entities.csproj">
+      <Project>{51ce1b48-c141-4a9b-878c-ea7a6a398c74}</Project>
+      <Name>Xpinn.Sincronizacion.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Util\Xpinn.Util.csproj">
+      <Project>{1dc267f2-1877-46d6-af5e-f92eb286dfc4}</Project>
+      <Name>Xpinn.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

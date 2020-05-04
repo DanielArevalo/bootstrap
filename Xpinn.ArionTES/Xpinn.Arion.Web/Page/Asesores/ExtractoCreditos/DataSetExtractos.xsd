@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetExtractos" targetNamespace="http://tempuri.org/DataSetExtractos.xsd" xmlns:mstns="http://tempuri.org/DataSetExtractos.xsd" xmlns="http://tempuri.org/DataSetExtractos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetExtractos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CuentasBancarias">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="cod_banco" type="xs:long" minOccurs="0" />
+              <xs:element name="nombre_banco" type="xs:string" minOccurs="0" />
+              <xs:element name="cuenta_cte" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ResumenExtractos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NumeroRadicacion" type="xs:long" minOccurs="0" />
+              <xs:element name="CodPersona" type="xs:long" minOccurs="0" />
+              <xs:element name="Identificacion" type="xs:long" minOccurs="0" />
+              <xs:element name="Nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="Linea" type="xs:string" minOccurs="0" />
+              <xs:element name="SALDO_INICIAL" type="xs:double" minOccurs="0" />
+              <xs:element name="SALDO_FINAL" type="xs:double" minOccurs="0" />
+              <xs:element name="Oficina" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaInicial" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FechaFinal" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Direccion" type="xs:string" minOccurs="0" />
+              <xs:element name="Barrio" type="xs:string" minOccurs="0" />
+              <xs:element name="Ciudad" type="xs:string" minOccurs="0" />
+              <xs:element name="Asesor" type="xs:string" minOccurs="0" />
+              <xs:element name="numpagare" type="xs:string" minOccurs="0" />
+              <xs:element name="nomperiodicidad" type="xs:string" minOccurs="0" />
+              <xs:element name="estadocre" type="xs:string" minOccurs="0" />
+              <xs:element name="valorcuota" type="xs:decimal" minOccurs="0" />
+              <xs:element name="fec_proximo_pago" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Imagen_barras" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="cod_barras" type="xs:string" minOccurs="0" />
+              <xs:element name="plazo" type="xs:int" minOccurs="0" />
+              <xs:element name="vrcapital" type="xs:decimal" minOccurs="0" />
+              <xs:element name="intcorriente" type="xs:decimal" minOccurs="0" />
+              <xs:element name="seguro" type="xs:decimal" minOccurs="0" />
+              <xs:element name="intmora" type="xs:decimal" minOccurs="0" />
+              <xs:element name="tasa" type="xs:string" minOccurs="0" />
+              <xs:element name="total" type="xs:decimal" minOccurs="0" />
+              <xs:element name="bancos" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

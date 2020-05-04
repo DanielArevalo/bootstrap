@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DF1C5F00-EF61-49BA-ADD1-C5028030F2F5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Xpinn.Asesores.Entities</RootNamespace>
+    <AssemblyName>Xpinn.Asesores.Entities</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acodeudados.cs" />
+    <Compile Include="AgendaActividad.cs" />
+    <Compile Include="AgendaAlarma.cs" />
+    <Compile Include="AgendaHora.cs" />
+    <Compile Include="AgendaTipoActividad.cs" />
+    <Compile Include="Actividad.cs" />
+    <Compile Include="AseEntitiesCliente.cs" />
+    <Compile Include="AseEntitiesEjecutivo.cs" />
+    <Compile Include="AsEjecutivoMetas.cs" />
+    <Compile Include="Atributo.cs" />
+    <Compile Include="AudAfiliacion.cs" />
+    <Compile Include="AudModificacion.cs" />
+    <Compile Include="Barrios.cs" />
+    <Compile Include="Cargo.cs" />
+    <Compile Include="Ciudad.cs" />
+    <Compile Include="ClienteExtracto.cs" />
+    <Compile Include="ClientePotencial.cs" />
+    <Compile Include="CobrosCredito.cs" />
+    <Compile Include="Codeudor.cs" />
+    <Compile Include="Comentario.cs" />
+    <Compile Include="ComprobantePagoExtracto.cs" />
+    <Compile Include="Calendario.cs" />
+    <Compile Include="ConsultaAvance.cs" />
+    <Compile Include="CreacionMensaje.cs" />
+    <Compile Include="EntEmpresa.cs" />
+    <Compile Include="ErroresCarga.cs" />
+    <Compile Include="PersonaMora.cs" />
+    <Compile Include="ProductosMora.cs" />
+    <Compile Include="TiposDocCobranzas.cs" />
+    <Compile Include="Usuario_Link.cs" />
+    <Compile Include="Extracto.cs" />
+    <Compile Include="Creditos.cs" />
+    <Compile Include="DetallePago.cs" />
+    <Compile Include="DetalleProducto.cs" />
+    <Compile Include="DetalleTransaccionesExtracto.cs" />
+    <Compile Include="Diligencia.cs" />
+    <Compile Include="DocumentoProducto.cs" />
+    <Compile Include="Ejecutivo.cs" />
+    <Compile Include="Cliente.cs" />
+    <Compile Include="EnvioDeCorreoExtracto.cs" />
+    <Compile Include="Estado.cs" />
+    <Compile Include="EjecutivoMeta.cs" />
+    <Compile Include="EstadoCuenta.cs" />
+    <Compile Include="Garantia.cs" />
+    <Compile Include="InformacionFinanciera.cs" />
+    <Compile Include="Meta.cs" />
+    <Compile Include="MotivoAfiliacion.cs" />
+    <Compile Include="MotivoGeneracionExtracto.cs" />
+    <Compile Include="MotivoModificacion.cs" />
+    <Compile Include="MotivosCambio.cs" />
+    <Compile Include="MovGralCredito.cs" />
+    <Compile Include="MovimientoProducto.cs" />
+    <Compile Include="Negocio.cs" />
+    <Compile Include="Oficina.cs" />
+    <Compile Include="Persona.cs" />
+    <Compile Include="ProcesosCobro.cs" />
+    <Compile Include="Producto.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistroGeneraciónExtracto.cs" />
+    <Compile Include="Reporte.cs" />
+    <Compile Include="ResumenExtractos.cs" />
+    <Compile Include="TipoContacto.cs" />
+    <Compile Include="TipoContrato.cs" />
+    <Compile Include="TipoDiligencia.cs" />
+    <Compile Include="TiposDeFiltro.cs" />
+    <Compile Include="TrasladarClientes.cs" />
+    <Compile Include="UsuarioAse.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xpinn.Asesores.Entities.Shared\Xpinn.Asesores.Entities.Common.csproj">
+      <Project>{090DA451-1225-43E7-A10D-38AC60A73A4C}</Project>
+      <Name>Xpinn.Asesores.Entities.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Comun.Entities\Xpinn.Comun.Entities.csproj">
+      <Project>{955A6F00-17CF-4CB4-97F7-B8E98E9B3297}</Project>
+      <Name>Xpinn.Comun.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,31 @@
+<html>
+<head>
+   <style>
+    body{
+            margin: 0;
+			font-family: Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;
+        height:100%;
+        }
+    </style>
+</head>
+<body>
+<div style='margin:25px;'>
+<div style='padding:25px; background-color:#ffffff'>
+<br /><br />
+<center><img src="@_URLBASE_@" alt="JL" style='width: auto; height:90px;'></center>
+<center><h2>@_SUBTITLE_@</h2></center><br />
+Estimado(a) Se&ntilde;or(a)<br />
+@_USUARIO_@<br />
+<br />
+Le informamos que su c&oacute;digo de activaci&oacute;n es el siguiente.<br />
+<h4>C&Oacute;DIGO DE CONFIRMACI&Oacute;N :</h4> <b>@_CODIGO_ALEATORIO_@</b><br />
+<br />
+<p>
+S&iacute; tiene alguna duda, sugerencia o reclamaci&oacute;n por favor comun&iacute;quese con nuestra L&iacute;nea de Servicio Telef&oacute;nico o ingrese a nuestra p&aacute;gina de internet.
+</p>
+<br /><br /><br />
+Cordial Saludo.
+</div>
+</div>
+</body>
+</html>

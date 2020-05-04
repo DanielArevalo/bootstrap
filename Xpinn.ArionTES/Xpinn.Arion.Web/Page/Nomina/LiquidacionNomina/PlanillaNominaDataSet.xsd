@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PlanillaNominaDataSet" targetNamespace="http://tempuri.org/PlanillaNominaDataSet.xsd" xmlns:mstns="http://tempuri.org/PlanillaNominaDataSet.xsd" xmlns="http://tempuri.org/PlanillaNominaDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PlanillaNominaDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTablePlanilla">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodigoEmpleado" type="xs:string" minOccurs="0" />
+              <xs:element name="Identificacion" type="xs:string" minOccurs="0" />
+              <xs:element name="Nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="Dias" type="xs:string" minOccurs="0" />
+              <xs:element name="Sueldo" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalPagos" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalDescuentos" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalPagado" type="xs:string" minOccurs="0" />
+              <xs:element name="ValorColumnaUno" type="xs:string" minOccurs="0" />
+              <xs:element name="ValorColumnaDos" type="xs:string" minOccurs="0" />
+              <xs:element name="ValorColumnaTres" type="xs:string" minOccurs="0" />
+              <xs:element name="ValorColumnaCuatro" type="xs:string" minOccurs="0" />
+              <xs:element name="ValorColumnaCinco" type="xs:string" minOccurs="0" />
+              <xs:element name="ValorColumnaSeis" type="xs:string" minOccurs="0" />
+              <xs:element name="ValorColumnaSiete" type="xs:string" minOccurs="0" />
+              <xs:element name="ValorColumnaOcho" type="xs:string" minOccurs="0" />
+              <xs:element name="ValorColumnaNueve" type="xs:string" minOccurs="0" />
+              <xs:element name="ValorColumnaDiez" type="xs:string" minOccurs="0" />
+              <xs:element name="ValorColumnaOnce" type="xs:string" minOccurs="0" />
+              <xs:element name="Centro_Costo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTableVacaciones">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodigoEmpleado" type="xs:string" minOccurs="0" />
+              <xs:element name="Identificacion" type="xs:string" minOccurs="0" />
+              <xs:element name="Nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaInicio" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaTerminacion" type="xs:string" minOccurs="0" />
+              <xs:element name="Fecha_Regreso" type="xs:string" minOccurs="0" />
+              <xs:element name="Fecha_Inicio_Periodo" type="xs:string" minOccurs="0" />
+              <xs:element name="Fecha_Terminacion_periodo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="colmna" type="xs:string" minOccurs="0" />
+              <xs:element name="identificacion" type="xs:string" minOccurs="0" />
+              <xs:element name="codigo" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="linea" type="xs:string" minOccurs="0" />
+              <xs:element name="plazo" type="xs:string" minOccurs="0" />
+              <xs:element name="cuota" type="xs:string" minOccurs="0" />
+              <xs:element name="radicacion" type="xs:string" minOccurs="0" />
+              <xs:element name="numerocuota" type="xs:string" minOccurs="0" />
+              <xs:element name="fechacuota" type="xs:string" minOccurs="0" />
+              <xs:element name="valor" type="xs:string" minOccurs="0" />
+              <xs:element name="cliente" type="xs:string" minOccurs="0" />
+              <xs:element name="banco" type="xs:string" minOccurs="0" />
+              <xs:element name="efectivo" type="xs:string" minOccurs="0" />
+              <xs:element name="cheque" type="xs:string" minOccurs="0" />
+              <xs:element name="total" type="xs:string" minOccurs="0" />
+              <xs:element name="numche" type="xs:string" minOccurs="0" />
+              <xs:element name="codban" type="xs:string" minOccurs="0" />
+              <xs:element name="t1" type="xs:string" minOccurs="0" />
+              <xs:element name="t2" type="xs:string" minOccurs="0" />
+              <xs:element name="m1" type="xs:string" minOccurs="0" />
+              <xs:element name="m2" type="xs:string" minOccurs="0" />
+              <xs:element name="m3" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

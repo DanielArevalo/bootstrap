@@ -1,0 +1,10 @@
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Contabilidad.Entities\bin\Debug\Xpinn.Contabilidad.Entities.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Contabilidad.Entities\bin\Debug\Xpinn.Contabilidad.Entities.pdb
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Contabilidad.Entities\bin\Debug\DocumentFormat.OpenXml.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Contabilidad.Entities\bin\Debug\Xpinn.FabricaCreditos.Entities.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Contabilidad.Entities\bin\Debug\Xpinn.FabricaCreditos.Entities.pdb
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Contabilidad.Entities\bin\Debug\DocumentFormat.OpenXml.xml
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Contabilidad.Entities\obj\Debug\Xpinn.Contabilidad.Entities.csprojAssemblyReference.cache
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Contabilidad.Entities\obj\Debug\Xpinn.Contabilidad.Entities.csproj.CopyComplete
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Contabilidad.Entities\obj\Debug\Xpinn.Contabilidad.Entities.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Contabilidad.Entities\obj\Debug\Xpinn.Contabilidad.Entities.pdb

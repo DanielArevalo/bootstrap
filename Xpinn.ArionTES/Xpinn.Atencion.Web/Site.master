@@ -1,0 +1,654 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="Site" %>
+
+<%@ Register Src="Controles/Menu.ascx" TagName="menu" TagPrefix="uc3" %>
+<%@ Register Src="Controles/Contenido.ascx" TagName="contenido" TagPrefix="uc4" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Oficina Virtual</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <!--Carrousel-->
+    <!-- <link href="~/Css/half-slider.css" rel="stylesheet" type="text/css" />-->
+    <!--Aplication-->
+    <link href="~/Css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="~/Css/JaLoAdmin.min.css" rel="stylesheet" type="text/css" />
+    <!--Theme-->
+    <link href="~/Css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!--fav Icon-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!--Notificacion -->
+      <link href="~/Css/alertify.css" rel="stylesheet" type="text/css" />
+      <link href="~/Css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <style>
+        /*
+        #menu
+        {
+            background: 0 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 3;
+        }*/
+        .btn-menu {
+        border: none;
+        background: #468aac;
+        color: #f2f2f2;
+        padding: 8.5px;
+        font-size: 18px;
+        border-radius: 5px;
+        position: relative;
+        box-sizing: border-box;
+        transition: all 500ms ease;
+    }
+
+.btn-menu:before {
+        content:'';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 0px;
+        height: 42px;
+        background: rgba(255,255,255,0.3);
+        border-radius: 5px;
+        transition: all 1s ease;
+    }
+
+.btn-menu:hover:before {
+        width: 100%;
+        color:#fff;
+    }
+
+        .btn-cerrar {
+            text-align:center;
+            color:#fff;
+            border-radius:15px;
+            width:80%;
+            height:40px;
+            border:1px solid #fff;
+        }
+        
+        .btn-cerrar:hover {
+            text-align:center;
+            background-color:#2a7aac;
+            border-radius:15px;
+            height:40px;
+            border:1px solid #2a7aac;
+        }
+
+        .menu-fixed {
+            position: fixed;
+            z-index: 3;
+            top: 0; /*max-width:1000px;*/
+            left: 0;
+            width: 100%; /* representa efecto de sombrilla al Menu*/
+            box-shadow: 0px 4px 3px rgba(0,0,0,.5);
+            -webkit-transition: all ease .8s;
+            -o-transition: all ease .8s;
+            transition: all ease .8s;
+        }
+
+        .JaLoMinHeight {
+        min-height: 60%;
+        }
+
+        .panel {
+            width: 90%;
+            margin: 20px auto;
+            background-color: #fff;
+        }
+
+        .panel:hover {
+        }
+
+        .item-menu {
+            color:#fff;
+        }
+
+        .item-menu:hover{
+            color:#0099ff;
+        }
+
+        .panel-main{ 
+            text-align:center;
+            border-radius:100px;
+        }
+
+        .panel_a{
+            text-align:center;
+            color:#0099ff;
+            margin-bottom:15px;
+            font-size:20px;
+        }
+
+        .panel_a:hover{ 
+            color:#acacac;
+        }
+
+
+        .icon {
+            font-size:50px;
+            margin:25px auto;
+        }
+
+        .noEditable{
+            border: none;
+            background-color: none;
+        }
+    </style>
+    <style type="text/css">
+      
+        .noti-content{
+            position:fixed;
+            /*right:100px;*/
+            background:#e5e5e5;
+            border-radius:4px;
+            top:47px;
+            width:250px;
+            display:none;
+            border: 1px solid #9E988B;
+        }
+        ul#notiContent{
+            max-height:200px;
+            overflow:auto;
+            padding:0px;
+            margin:0px;
+            /*padding-left:20px;*/
+        }
+            ul#notiContent li {
+                margin:3px;
+                padding:6px;
+                background:#fff;
+            }
+            .noti-top-arrow{
+                border-color:transparent;
+                border-bottom-color:#468aac;
+                border-style:dashed dashed solid;
+                border-width: 0 8.5px 8.5px;
+                position:absolute;
+                right:32px;
+                top:-8px;
+            }
+            span.noti{
+                color:#468aac;                         
+            }
+            span.count{
+                position:relative;
+                top:-3px;
+            }
+
+            
+    </style>
+    <link href="~/Css/index.css" rel="stylesheet" type="text/css" />
+    <style>
+        .opt > li{
+                margin: 4px 15px;
+                padding: 7px; 
+                border-radius: 8px;
+                align-items: center;
+            }
+
+            .opt > li > a{
+                color: white;
+                margin: 0 auto;
+                padding-top: 0px;
+                padding-bottom: 0px;
+            }
+
+            .cerrar{
+                width: 150px;
+                margin: 10px auto;
+                background-color: red;
+                border-radius: 15px;
+            }
+
+            .cerrar > li > a{
+                background-color: gray;
+                padding-top: 2px;
+                padding-bottom: 2px
+            }
+
+            .decimalConSigno{
+            display: initial;
+        }
+    
+    </style>
+
+    <script type="text/javascript">
+        $(document).keydown(function (event) {
+            if (event.keyCode == 123) { // Prevent F12
+                return false;
+            } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I        
+                return false;
+            }
+        });
+    </script>
+
+<script type="text/javascript">  
+    function inhabilitar() {
+        return false
+    }
+    document.oncontextmenu = inhabilitar 
+</script>
+
+    <%-- UTIL --%>
+    <script>
+        function valorCambio(e) {
+            let caja = e.path[0];
+            let valor = caja.value;
+            valor = parseInt(valor.replace(/[.,$}]/g, "")).toString();
+            valor = valor.replace(/\D/g, "")
+                .replace(/\B(?=(\d{3})+(?!\d)\.?)/g, ".");
+            caja.value = '$' + valor;
+        }
+        
+        function ValidaNum(e) {
+            var arrspecialKeys = new Array();
+            arrspecialKeys.push(8); //Backspace
+            var keyCode = e.which ? e.which : e.keyCode
+            return ((keyCode >= 48 && keyCode <= 57) || arrspecialKeys.indexOf(keyCode) != -1);
+        }
+    </script>   
+</head>
+<body class="sidebar-mini">
+   
+    <div class="wrapper">
+    <form id="form1" runat="server">
+
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+            <Scripts>
+                <asp:ScriptReference Path="~/Scripts/JaLo/jQuery-2.1.4.min.js" />
+                <asp:ScriptReference Path="~/Scripts/bootstrap.js" />
+                <asp:ScriptReference Path="~/Scripts/JaLo/app.min.js" />
+                <asp:ScriptReference Path="~/Scripts/JaLoScript.js" />
+                <asp:ScriptReference Path="~/Scripts/alertify.js" />
+            </Scripts>
+        </asp:ScriptManager>
+
+<%--         <!--Reference the jQuery library. -->
+    <script src="/Scripts/jquery-3.2.1.min.js" ></script>
+    <!--Reference the SignalR library. -->
+   
+        <script src="Scripts/jquery.signalR-2.2.2.min.js"></script>
+    <!--Reference the autogenerated SignalR hub script. -->
+    <script src="/signalr/hubs"></script>--%>
+
+
+        <script type="text/javascript">
+            function ClearBadge() {
+                var phBadge = document.getElementById("spnBadge");
+                phBadge.innerHTML = "";                
+            }
+
+           
+            function Notifier(FelizCumpeaños) {             
+                    var notification = alertify.notify(FelizCumpeaños, 'success', 5, function () { console.log('dismissed'); });
+            }
+            function Edad(mensaje) {
+                var notification = alertify.notify(mensaje, 'error', 5, function () { console.log('dismissed'); });
+            }
+        </script>
+
+        <!-- HEADER-->
+        <div>        
+        <div id="menu" class="navbar" style="z-index:999; border:none; background-color:#212121;">
+            <header class="main-header left-start" style=" border:none;">
+                <div style="width:230px;">
+                        <asp:HyperLink runat="server" NavigateUrl="~/Index.aspx" CssClass="logo" style="margin:0px auto;">
+                            <span class="logo-lg" style="margin-left:0px">
+                                <asp:Image ID="Image2" ImageUrl="~/Imagenes/Empresa.png" runat="server" Style="height:40px; margin:5px auto;"></asp:Image>
+                            </span>
+                            <span class="logo-mini" style="margin-left:-10px"><asp:Image ID="Image3" ImageUrl="~/Imagenes/Empresa.png" runat="server" Style="height: 40px; width:auto;"></asp:Image></span>
+                        </asp:HyperLink>
+                </div>
+                <nav class="navbar navbar-static-top" role="navigation" style="background-color:#fff; border-bottom:1px solid #0099ff; top: 0px; left: 0px;">
+                    <!-- Sidebar toggle button data-toggle="offcanvas"  -->
+                    <%--<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+                    </a>--%>                    
+                    <%--<div class="navbar-custom-menu">--%>
+                    <div class="collapse navbar-collapse rigth-start">
+                        <uc3:menu ID="menu1" runat="server"/>                        
+                        <ul class="nav navbar-nav navbar-right">
+                            <!--Alerta de Ahorros proximos a vencer-->
+                        <%--  <li class="dropdow notifications-menu">
+                            <span class="noti glyphicon glyphicon-bell"><span class="count">&nbsp;</span></span>
+                                <div class="noti-content">
+                        <div class="noti-top-arrow"></div>
+                        <ul id="notiContent"></ul>
+
+                    </div>
+                          </li>
+                       --%>
+                            <li class="dropdown notifications-menu">                                                                
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" onclick="javascript:ClearBadge()" title="Alertas">
+                                    <i class="fa fa-bell"></i>
+                                    <asp:PlaceHolder ID="phBadgeAlerta" runat="server" ClientIDMode="Static"/>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <asp:PlaceHolder ID="phNotification" runat="server" />
+                                   <%-- <li class="header">You have 10 notifications</li>
+                                    <li class="text-primary text-bold text-center" style="padding-bottom:5px">Avisos</li>
+                                    <div class="col-xs-12 container">                                        
+                                        <br />Nada nuevo en este momento
+                                    </div>
+                                    <li>
+                                        <!-- inner menu: contains the actual data -->
+                                        <ul class="menu">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-users text-aqua"></i>5 new members joined today</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="footer"><a href="#">View all</a></li>  --%>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown user user-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <span class="hidden-xs"><i class="glyphicon glyphicon-user"></i></span>
+                                </a>
+                            </li>
+                            <!-- User Account: style can be found in dropdown.less -->
+                            <li class="dropdown user user-menu" style="min-height:100%;">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <%--<asp:Image ID="imgFoto1" runat="server" alt="User Image" CssClass="img-circle"
+                                    ImageUrl="Images\fotoUser.jpg" />--%>
+                                    <span class="hidden-xs">
+                                        <asp:Label ID="lblUsuario" runat="server" Text="" />
+                                    </span>&#160;<i class="fa fa-sort-desc"></i>
+                                </a>
+                                <ul class="dropdown-menu"  style="min-height:100%;">
+                                    <!-- User image -->
+                                    <li class="user-header">
+                                        <%--<img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />--%>
+                                        <%--<asp:Image ID="imgFoto2" runat="server" alt="User Image" CssClass="img-circle"
+                                            ImageUrl="Images\fotoUser.jpg" />--%>
+                                        <span class="fa fa-user-circle-o fa-5x text-primary"></span>
+                                        <p>
+                                            <strong>
+                                                <asp:Label ID="lblUser2" runat="server" CssClass="text-primary" Style="font-size: 16px" /></strong>
+                                            <small>
+                                                <asp:Label ID="lblRol" runat="server" CssClass="text-primary" /></small>
+                                        </p>
+                                    </li>
+                                    <!-- Menu Body -->
+                                    <li class="user-body" style="min-height:100%;">
+                                        <div class="col-xs-12">
+                                            <div class="col-xs-3 text-center">
+                                                <strong>Empresa: </strong>
+                                            </div>
+                                            <div class="col-xs-9 text-center">
+                                                <asp:Label ID="lblEmpresa" runat="server" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- Menu Footer-->
+                                    <li class="user-footer">
+                                        <%--<div class="pull-left">
+                                            <asp:LinkButton ID="hlkPerfil" runat="server" Text="Mi Perfil"
+                                                CssClass="btn btn-default btn-flat" />OnClick="hlkPerfil_Click"
+                                        </div>--%>
+                                        <div class="col-xs-12 text-center">
+                                            <asp:LinkButton ID="btnCambiarClave" runat="server" CssClass="btn btn-default btn-flat" Width="100%" ToolTip="Cambiar Clave"
+                                                Style="border-radius: 0px; padding-left: 5px; padding-right: 5px; padding-top: 7px; padding-bottom: 7px" OnClick="btnCambiarClave_Click">
+                                            <div class="pull-left text-primary" style="padding-left:10px">
+                                            <span class="fa fa-cogs"></span></div>Cambio de Clave
+                                            </asp:LinkButton>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <asp:LinkButton ID="hlkCerrar" runat="server" CssClass="btn btn-default btn-flat" Width="100%" ToolTip="Cerrar sesión"
+                                                Style="border-radius: 0px; padding-left: 5px; padding-right: 5px; padding-top: 7px; padding-bottom: 7px" OnClick="hlkCerrar_Click">
+                                            <div class="pull-left text-primary" style="padding-left:10px">
+                                            <span class="fa fa-sign-out"></span></div>Cerrar sesión
+                                            </asp:LinkButton>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </div>
+    </div>
+
+        <!-- Menu Vertical-->
+        <!-- Left side column. contains the logo and sidebar -->
+        <div class="Left-menu">                        
+                <aside class="main-sidebar" style="padding:0px; height:90%; position:fixed; margin-top:4%;">                    
+                    <!-- sidebar: style can be found in sidebar.less -->
+                    <section class="sidebar Left-menu-element">
+                        <!-- Sidebar user panel -->
+                        <ul class='sidebar-menu' style="visibility:hidden; display:none">
+                            <li class='header'>
+                                <div class="text-center" style="color: #fff">
+                                    <div class="text-center" style="padding: 0px">
+                                        <p>
+                                            <asp:Label ID="lblNombre" runat="server" Style="font-size: small; font-weight: bold" />
+                                        </p>
+                                        <asp:Label ID="lblFecha" runat="server" style="font-size: small;"></asp:Label>
+                                    </div>                                    
+                                </div>
+                            </li>
+                        </ul>
+                        <br />
+                        <!-- /.search form -->
+                        <!-- sidebar menu: : style can be found in sidebar.less -->
+                        <%-- MENU IZQUIERDO --%>
+                        <uc4:contenido ID="content" runat="server"/>
+
+                        <%--<ul class="sidebar-menu opt">
+                            <li class="opt1">
+                                <a href="#">
+                                    <i class="glyphicon glyphicon-list-alt"></i>
+                                    <span>Soluciones integrales</span>                                        
+                                </a>
+                            </li>            
+                            <li class="opt1">
+                                <asp:LinkButton ID="btnOpc2" runat="server" OnClick="btnOpc2_Click">
+                                    <i class="glyphicon glyphicon-list-alt"></i>
+                                    <span>Convenios</span>                                        
+                                </asp:LinkButton>
+                            </li>
+                            <li class="opt1">
+                                <asp:LinkButton ID="btnOpc3" runat="server" OnClick="btnOpc3_Click">
+                                    <i class="glyphicon glyphicon-list-alt"></i>
+                                    <span>Noticias</span>                                        
+                                </asp:LinkButton>
+                            </li>            
+                            <li class="opt1">
+                                <asp:LinkButton ID="btnOpc4" runat="server" OnClick="btnOpc4_Click">
+                                    <i class="glyphicon glyphicon-list-alt"></i>
+                                    <span>Clasificados</span>                                        
+                                </asp:LinkButton>
+                            </li>            
+                            <li class="opt1">
+                                <asp:LinkButton ID="btnOpc5" runat="server" OnClick="btnOpc5_Click">
+                                    <i class="glyphicon glyphicon-list-alt"></i>
+                                    <span>Nuestras ferias</span>                                        
+                                </asp:LinkButton>
+                            </li>            
+                            <li class="opt1">
+                                <asp:LinkButton ID="btnOpc6" runat="server" OnClick="btnOpc6_Click">
+                                    <i class="glyphicon glyphicon-list-alt"></i>
+                                    <span>Asesoras</span>                                        
+                                </asp:LinkButton>
+                            </li>            
+                            <li class="opt1">
+                                <asp:LinkButton ID="btnOpc7" runat="server" OnClick="btnOpc7_Click">
+                                    <i class="glyphicon glyphicon-list-alt"></i>
+                                    <span>Seguros</span>                                        
+                                </asp:LinkButton>
+                            </li>            
+                            <li class="opt1">
+                                <asp:LinkButton ID="btnOpc8" runat="server" OnClick="btnOpc8_Click">
+                                    <i class="glyphicon glyphicon-list-alt"></i>
+                                    <span>Nuestra empresa</span>                                        
+                                </asp:LinkButton>
+                            </li>            
+                            <li class="opt1">
+                                <asp:LinkButton ID="btnOpc9" runat="server" OnClick="btnOpc9_Click">
+                                    <i class="glyphicon glyphicon-list-alt"></i>
+                                    <span>Estatutos</span>                                        
+                                </asp:LinkButton>
+                            </li>            
+                            <li class="opt1">
+                                <asp:LinkButton ID="btnOpc10" runat="server" OnClick="btnOpc10_Click">
+                                    <i class="glyphicon glyphicon-list-alt"></i>
+                                    <span>Reglamentos</span>                                        
+                                </asp:LinkButton>
+                            </li>            
+                            <li class="opt1">
+                                <asp:LinkButton ID="btnOpc11" runat="server" OnClick="btnOpc11_Click">
+                                    <i class="glyphicon glyphicon-list-alt"></i>
+                                    <span>Tratamiento de datos</span>                                        
+                                </asp:LinkButton>
+                            </li>              
+                        </ul>          --%>                  
+                        <%-- Opciones añadidas al menú --%>
+                            <ul class="sidebar-menu cerrar">
+                                <li class="treeview">
+                                    <asp:LinkButton CssClass="treeview-title" ID="LinkButton1" runat="server" ToolTip="Cerrar sesión" OnClick="hlkCerrar_Click">
+                                        <i class="logo-lg fa fa-sign-out"></i>
+                                        <span>Cerrar sesión</span>                                        
+                                    </asp:LinkButton>
+                                </li>            
+                            </ul>
+                        <%-- FIN MENU IZQUIERDO --%>
+                        
+                                   
+                    </section>               
+
+                    <!-- /.sidebar -->
+                </aside>
+                
+                <div class="content-wrapper" style="text-align:center; background-color:#fff;"><%--style="padding: 0px;background-color: #F6F8FA;"--%>
+                    <div class="col-sm-12 text-right" style="padding: 0px; background-color: #fff; width:90%; margin-left:5%;">
+                        &nbsp;
+                        <asp:LinkButton ID="btnConsultar" runat="server" CssClass="btn-menu" Width="150px" ToolTip="Consult"
+                            Style="border-radius: 0px; padding-left: 5px; padding-right: 5px; padding-top: 7px; height:40px; border-radius:5px; padding-bottom: 7px; color:#fff;" OnClick="btnConsultar_Click">
+                            <span class="glyphicon glyphicon-list-alt" style="color:#fff; display:block; float:left; margin-left:10px; margin-right:0px;"></span><p style="display: block; float: left; margin-left:10px;">Consultar</p>
+                        </asp:LinkButton>
+                        <asp:LinkButton ID="btnContinuar" runat="server" CssClass="btn-menu" Width="120px" ToolTip="Continue"
+                            Style="border-radius: 0px; padding-left: 5px; padding-right: 5px; padding-top: 7px; height:40px; border-radius:5px; padding-bottom: 7px; color:#fff;" OnClick="btnContinuar_Click">
+                            <span class="glyphicon glyphicon-hand-right" style="color:#fff; display:block; float:left; margin-left:10px; margin-right:0px;"></span><p style="display: block; float: left; margin-left:10px;">Continuar</p>
+                        </asp:LinkButton>
+                        <asp:LinkButton ID="btnGuardar" runat="server" CssClass="btn-menu" Width="120px" ToolTip="Save"
+                            Style="border-radius: 0px; padding-left: 5px; padding-right: 5px; padding-top: 7px; height:40px; border-radius:5px; padding-bottom: 7px; color:#fff;" OnClick="btnGuardar_Click">
+                            <span class="glyphicon glyphicon-floppy-disk" style="color:#fff; display:block; float:left; margin-left:10px; margin-right:0px;"></span><p style="display: block; float: left; margin-left:10px;">Grabar</p>
+                        </asp:LinkButton>
+                        <asp:LinkButton ID="btnEliminar" runat="server" CssClass="btn-menu" Width="120px" ToolTip="Delete"
+                            Style="border-radius: 0px; padding-left: 5px; padding-right: 5px; padding-top: 7px; height:40px; border-radius:5px; padding-bottom: 7px; color:#fff;" OnClick="btnEliminar_Click">
+                            <span class="glyphicon glyphicon-remove" style="color:#fff; display:block; float:left; margin-left:10px; margin-right:0px;"></span><p style="display: block; float: left; margin-left:10px;">Eliminar</p>
+                        </asp:LinkButton>
+                        <asp:LinkButton ID="btnLimpiar" runat="server" CssClass="btn-menu" Width="120px" ToolTip="Clean"
+                            Style="border-radius: 0px; padding-left: 5px; padding-right: 5px; padding-top: 7px; height:40px; border-radius:5px; padding-bottom: 7px; color:#fff;" OnClick="btnLimpiar_Click">
+                            <span class="glyphicon glyphicon-trash" style="color:#fff; display:block; float:left; margin-left:10px; margin-right:0px;"></span><p style="display: block; float: left; margin-left:10px;">Limpiar</p>
+                        </asp:LinkButton>
+                        <asp:LinkButton ID="btnImprimir" runat="server" CssClass="btn-menu" Width="120px" ToolTip="Print"
+                            Style="border-radius: 0px; padding-left: 5px; padding-right: 5px; padding-top: 7px; height:40px; border-radius:5px; padding-bottom: 7px; color:#fff;" OnClick="btnImprimir_Click">
+                            <span class="glyphicon glyphicon-print" style="color:#fff; display:block; float:left; margin-left:10px; margin-right:0px;"></span><p style="display: block; float: left; margin-left:10px;">Imprimir</p>
+                        </asp:LinkButton>
+                        <asp:LinkButton ID="btnConsolidado" runat="server" CssClass="btn-menu" Width="150px" ToolTip="Print"
+                            Style="border-radius: 0px; padding-left: 5px; padding-right: 5px; padding-top: 7px; height:40px; border-radius:5px; padding-bottom: 7px; color:#fff; text-align:center;" OnClick="btnConsolidado_Click">
+                            <span class="glyphicon glyphicon-print" style="color:#fff; display:block; float:left; margin-left:10px; margin-right:0px;"></span><p style="display: block; float: left; margin-left:10px;">Consolidado</p>
+                        </asp:LinkButton>
+                        <asp:LinkButton ID="btnExportar" runat="server" CssClass="btn-menu" Width="120px" ToolTip="Export"
+                            Style="border-radius: 0px; padding-left: 5px; padding-right: 5px; padding-top: 7px; height:40px; border-radius:5px; padding-bottom: 7px; color:#fff;" OnClick="btnExportar_Click">
+                            <span class="glyphicon glyphicon-export" style="color:#fff; display:block; float:left; margin-left:10px; margin-right:0px;"></span><p style="display: block; float: left; margin-left:10px;">Exportar</p>
+                        </asp:LinkButton>
+                        <asp:LinkButton ID="btnImportar" runat="server" CssClass="btn-menu" Width="120px" ToolTip="Import"
+                            Style="border-radius: 0px; padding-left: 5px; padding-right: 5px; padding-top: 7px; height:40px; border-radius:5px; padding-bottom: 7px; color:#fff;" OnClick="btnImportar_Click">
+                            <span class="glyphicon glyphicon-upload" style="color:#fff; display:block; float:left; margin-left:10px; margin-right:0px;"></span><p style="display: block; float: left; margin-left:10px;">Importar</p>
+                        </asp:LinkButton>
+                        <asp:LinkButton ID="btnCancelar" runat="server" CssClass="btn-menu" Width="120px" ToolTip="Cancel"
+                            Style="border-radius: 0px; padding-left: 5px; padding-right: 5px; padding-top: 7px; height:40px; border-radius:5px; padding-bottom: 7px; color:#fff;" OnClick="btnCancelar_Click">
+                            <span class="glyphicon glyphicon-arrow-left" style="color:#fff; display:block; float:left; margin-left:10px; margin-right:0px;"></span><p style="display: block; float: left; margin-left:10px;">Cancelar</p>
+                        </asp:LinkButton>
+                        <asp:LinkButton ID="btnRegresar" runat="server" CssClass="btn-menu" Width="125px" ToolTip="To Return"
+                            Style="border-radius: 0px; padding-left: 0px; padding-right: 0px; padding-top: 7px; height:40px; border-radius:5px; padding-bottom: 0px; color:#fff;" OnClick="btnRegresar_Click">
+                            <span class="glyphicon glyphicon-hand-left" style="color:#fff; display:block; float:left; margin-left:10px; margin-right:0px;"></span><p style="display: block; float: left; margin-left:10px;">Regresar</p>
+                        </asp:LinkButton>
+                        <asp:LinkButton ID="btnNuevo" runat="server" CssClass="btn-menu" Width="120px" ToolTip="To New"
+                            Style="border-radius: 0px; padding-left: 5px; padding-right: 5px; padding-top: 7px; height:40px; border-radius:5px; padding-bottom: 7px; color:#fff;" OnClick="btnNuevo_Click">
+                            <span class="glyphicon " style="color:#fff; display:block; float:left; margin-left:10px; margin-right:0px;"></span><p style="display: block; float: left; margin-left:10px;">Nuevo</p>
+                        </asp:LinkButton>
+                    </div>
+                    <asp:Panel ID="panelOpcion" runat="server" style="width:90%; margin-left:5%;">
+                        <h1 style="margin: 0;">
+                            <legend style="padding-top: 15px">&nbsp;&nbsp;<asp:Label ID="lblOpcion" runat="server" CssClass="text-primary"
+                                Style="font-weight: 400" /></legend>
+                        </h1>
+                    </asp:Panel>
+
+                    <div class="col-sm-12 text-right" style="padding: 5px 0px; width:90%; margin-left:5%;">
+                        <asp:Panel ID="plError" runat="server" Visible="False" Style="padding-left: 20px; padding-top: 0px">
+                            <asp:Label ID="lblError" runat="server" Style="text-align: left" Visible="False"
+                                Width="100%" ForeColor="Red"></asp:Label>
+                        </asp:Panel>
+                    </div>
+                    <section class="content" style=" width:90%; margin-left:5%; border-radius:20px; margin-bottom:5%;"><%--style="background-color: #F6F8FA;"--%>
+                        <div class="row" style="color:#424242">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                            <asp:HiddenField ID="hfObj" runat="server" />
+                        </div>
+                    </section>
+                    <div style="padding: 15px; background: #e0e0e0; color:#212121; bottom:0;">
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <center>
+                                Desing by&nbsp;&nbsp;&nbsp;
+                                    <a href="http://www.expinn.com.co/home" target="_blank" title="Expinn Technology">
+                                    <asp:Image ID="Image5" ImageUrl="~/Imagenes/LogoInterna.png" runat="server" Style="height:30px">
+                                    </asp:Image>
+                                </a>&copy;&nbsp;&nbsp;&nbsp;
+                                <%= DateTime.Now.Year %>
+                                Expinn Technology
+                            </center>
+                            </div>
+                            <div class="text-center" style="background: #e0e0e0">
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+
+                </div>
+                <%--<section class="content-wrapper" style="padding:0px;background-color: #F6F8FA;min-height:150px;">
+                   <section class="header" style="min-height:50px">--%>
+                        <!-- Seccion de ToolBar-->
+                    
+                       <%--<section class="content" style="min-height:100px">
+                           <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                           </asp:ContentPlaceHolder>
+                           <asp:HiddenField ID="hfObj" runat="server" />
+                       </section>--%>
+                    <%--</section>
+                </section>--%>
+       
+            </form>
+            </div>
+
+         <!--<footer class="main-footer">
+            <div class="container">
+                <div class="col-xs-12">
+                    <br />
+                </div>
+
+                <h4><b>
+                    <asp:Label ID="lblNombreFooter" runat="server" Style="padding-top:25px" /></b></h4>
+                <br />
+            </div>
+        </footer>-->
+
+
+
+</body>
+</html>

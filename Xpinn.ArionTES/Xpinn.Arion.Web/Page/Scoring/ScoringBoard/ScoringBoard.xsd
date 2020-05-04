@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1_Customers" targetNamespace="http://tempuri.org/DataSet1_Customers.xsd" xmlns:mstns="http://tempuri.org/DataSet1_Customers.xsd" xmlns="http://tempuri.org/DataSet1_Customers.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1_Customers" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DataSet1_Customers" msprop:Generator_UserDSName="DataSet1_Customers">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Calificaciones" msprop:Generator_TableClassName="CalificacionesDataTable" msprop:Generator_RowEvArgName="CalificacionesRowChangeEvent" msprop:Generator_TableVarName="tableCalificaciones" msprop:Generator_TablePropName="Calificaciones" msprop:Generator_RowDeletingName="CalificacionesRowDeleting" msprop:Generator_RowChangingName="CalificacionesRowChanging" msprop:Generator_RowEvHandlerName="CalificacionesRowChangeEventHandler" msprop:Generator_RowDeletedName="CalificacionesRowDeleted" msprop:Generator_RowChangedName="CalificacionesRowChanged" msprop:Generator_UserTableName="Calificaciones" msprop:Generator_RowClassName="CalificacionesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="cal_maximo" msprop:Generator_ColumnVarNameInTable="columncal_maximo" msprop:Generator_ColumnPropNameInRow="cal_maximo" msprop:Generator_ColumnPropNameInTable="cal_maximoColumn" msprop:Generator_UserColumnName="cal_maximo" type="xs:string" minOccurs="0" />
+              <xs:element name="cal_minimo" msprop:Generator_ColumnVarNameInTable="columncal_minimo" msprop:Generator_ColumnPropNameInRow="cal_minimo" msprop:Generator_ColumnPropNameInTable="cal_minimoColumn" msprop:Generator_UserColumnName="cal_minimo" type="xs:string" minOccurs="0" />
+              <xs:element name="calificacion" msprop:Generator_ColumnVarNameInTable="columncalificacion" msprop:Generator_ColumnPropNameInRow="calificacion" msprop:Generator_ColumnPropNameInTable="calificacionColumn" msprop:Generator_UserColumnName="calificacion" type="xs:string" minOccurs="0" />
+              <xs:element name="idscore" msprop:Generator_ColumnVarNameInTable="columnidscore" msprop:Generator_ColumnPropNameInRow="idscore" msprop:Generator_ColumnPropNameInTable="idscoreColumn" msprop:Generator_UserColumnName="idscore" type="xs:string" minOccurs="0" />
+              <xs:element name="idscorecla" msprop:Generator_ColumnVarNameInTable="columnidscorecla" msprop:Generator_ColumnPropNameInRow="idscorecla" msprop:Generator_ColumnPropNameInTable="idscoreclaColumn" msprop:Generator_UserColumnName="idscorecla" type="xs:string" minOccurs="0" />
+              <xs:element name="observacion" msprop:Generator_ColumnVarNameInTable="columnobservacion" msprop:Generator_ColumnPropNameInRow="observacion" msprop:Generator_ColumnPropNameInTable="observacionColumn" msprop:Generator_UserColumnName="observacion" type="xs:string" minOccurs="0" />
+              <xs:element name="descripcionTipo" msprop:Generator_ColumnVarNameInTable="columndescripcionTipo" msprop:Generator_ColumnPropNameInRow="descripcionTipo" msprop:Generator_ColumnPropNameInTable="descripcionTipoColumn" msprop:Generator_UserColumnName="descripcionTipo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Variables" msprop:Generator_TableClassName="VariablesDataTable" msprop:Generator_TableVarName="tableVariables" msprop:Generator_RowChangedName="VariablesRowChanged" msprop:Generator_TablePropName="Variables" msprop:Generator_RowDeletingName="VariablesRowDeleting" msprop:Generator_RowChangingName="VariablesRowChanging" msprop:Generator_RowEvHandlerName="VariablesRowChangeEventHandler" msprop:Generator_RowDeletedName="VariablesRowDeleted" msprop:Generator_RowClassName="VariablesRow" msprop:Generator_UserTableName="Variables" msprop:Generator_RowEvArgName="VariablesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idscorevar" msprop:Generator_ColumnVarNameInTable="columnidscorevar" msprop:Generator_ColumnPropNameInRow="idscorevar" msprop:Generator_ColumnPropNameInTable="idscorevarColumn" msprop:Generator_UserColumnName="idscorevar" type="xs:string" minOccurs="0" />
+              <xs:element name="idscore" msprop:Generator_ColumnVarNameInTable="columnidscore" msprop:Generator_ColumnPropNameInRow="idscore" msprop:Generator_ColumnPropNameInTable="idscoreColumn" msprop:Generator_UserColumnName="idscore" type="xs:string" minOccurs="0" />
+              <xs:element name="idparametro" msprop:Generator_ColumnVarNameInTable="columnidparametro" msprop:Generator_ColumnPropNameInRow="idparametro" msprop:Generator_ColumnPropNameInTable="idparametroColumn" msprop:Generator_UserColumnName="idparametro" type="xs:string" minOccurs="0" />
+              <xs:element name="minimo" msprop:Generator_ColumnVarNameInTable="columnminimo" msprop:Generator_ColumnPropNameInRow="minimo" msprop:Generator_ColumnPropNameInTable="minimoColumn" msprop:Generator_UserColumnName="minimo" type="xs:string" minOccurs="0" />
+              <xs:element name="maximo" msprop:Generator_ColumnVarNameInTable="columnmaximo" msprop:Generator_ColumnPropNameInRow="maximo" msprop:Generator_ColumnPropNameInTable="maximoColumn" msprop:Generator_UserColumnName="maximo" type="xs:string" minOccurs="0" />
+              <xs:element name="valor" msprop:Generator_ColumnVarNameInTable="columnvalor" msprop:Generator_ColumnPropNameInRow="valor" msprop:Generator_ColumnPropNameInTable="valorColumn" msprop:Generator_UserColumnName="valor" type="xs:string" minOccurs="0" />
+              <xs:element name="beta" msprop:Generator_ColumnVarNameInTable="columnbeta" msprop:Generator_ColumnPropNameInRow="beta" msprop:Generator_ColumnPropNameInTable="betaColumn" msprop:Generator_UserColumnName="beta" type="xs:string" minOccurs="0" />
+              <xs:element name="descripcionParametro" msprop:Generator_ColumnVarNameInTable="columndescripcionParametro" msprop:Generator_ColumnPropNameInRow="descripcionParametro" msprop:Generator_ColumnPropNameInTable="descripcionParametroColumn" msprop:Generator_UserColumnName="descripcionParametro" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BFE711D0-7565-4B4A-89FF-DA85EE4EE448}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebServices</RootNamespace>
+    <AssemblyName>WebServices</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Use64BitIISExpress />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DeployIisAppPath>Default Web Site/WebServices</DeployIisAppPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Files\CorreoConfirmacion.txt" />
+    <Content Include="Files\Imagenes\AtencionWeb.png" />
+    <Content Include="Files\Imagenes\logoEmpresa.jpg" />
+    <Content Include="Files\SendEmailNotification.txt" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WSintegracion.asmx" />
+    <Content Include="WSAppFinancial.asmx" />
+    <Content Include="WSBiometria.asmx" />
+    <Content Include="WSCredito.asmx" />
+    <Content Include="WSDeposito.asmx" />
+    <Content Include="WSEstadoCuenta.asmx" />
+    <Content Include="WSIcetex.asmx" />
+    <Content Include="WSlogin.asmx" />
+    <Content Include="WSPayment.asmx" />
+    <Content Include="WSTarjeta.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\ConfigureNotification.cs" />
+    <Compile Include="NumeracionCuentas.cs" />
+    <Compile Include="SecuredToken.cs" />
+    <Compile Include="Conexion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WSintegracion.asmx.cs">
+      <DependentUpon>WSintegracion.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WSAppFinancial.asmx.cs">
+      <DependentUpon>WSAppFinancial.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WSBiometria.asmx.cs">
+      <DependentUpon>WSBiometria.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WSCredito.asmx.cs">
+      <DependentUpon>WSCredito.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WSDeposito.asmx.cs">
+      <DependentUpon>WSDeposito.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WSEstadoCuenta.asmx.cs">
+      <DependentUpon>WSEstadoCuenta.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WSIcetex.asmx.cs">
+      <DependentUpon>WSIcetex.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WSlogin.asmx.cs">
+      <DependentUpon>WSlogin.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WSPayment.asmx.cs">
+      <DependentUpon>WSPayment.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WSTarjeta.asmx.cs">
+      <DependentUpon>WSTarjeta.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xpinn.Ahorros.Entities\Xpinn.Ahorros.Entities.csproj">
+      <Project>{4e822517-4073-457f-9040-3340c7647c3f}</Project>
+      <Name>Xpinn.Ahorros.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Ahorros.Services\Xpinn.Ahorros.Services.csproj">
+      <Project>{a8bfc376-c9ef-486a-b17b-1b4558aed411}</Project>
+      <Name>Xpinn.Ahorros.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Aportes.Entities\Xpinn.Aportes.Entities.csproj">
+      <Project>{3a1b9d8d-c018-4333-b436-8214c50e7e12}</Project>
+      <Name>Xpinn.Aportes.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Aportes.Services\Xpinn.Aportes.Services.csproj">
+      <Project>{a4d12bc6-62be-4c85-a8dd-dbad10bf71d7}</Project>
+      <Name>Xpinn.Aportes.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Asesores.Entities.Shared\Xpinn.Asesores.Entities.Common.csproj">
+      <Project>{090da451-1225-43e7-a10d-38ac60a73a4c}</Project>
+      <Name>Xpinn.Asesores.Entities.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Asesores.Entities\Xpinn.Asesores.Entities.csproj">
+      <Project>{df1c5f00-ef61-49ba-add1-c5028030f2f5}</Project>
+      <Name>Xpinn.Asesores.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Asesores.Service\Xpinn.Asesores.Services.csproj">
+      <Project>{772e1bb6-6ae9-4c7a-875e-0780efe8c23e}</Project>
+      <Name>Xpinn.Asesores.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Caja.Entities\Xpinn.Caja.Entities.csproj">
+      <Project>{32332397-2618-4b28-9853-1261619fa11c}</Project>
+      <Name>Xpinn.Caja.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Caja.Service\Xpinn.Caja.Services.csproj">
+      <Project>{235dcfc4-8084-4eae-a9fb-e721c0e79dd0}</Project>
+      <Name>Xpinn.Caja.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Cartera.Entities\Xpinn.Cartera.Entities.csproj">
+      <Project>{d691a0e2-d950-41e3-9ac0-f788288480d8}</Project>
+      <Name>Xpinn.Cartera.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Cartera.Services\Xpinn.Cartera.Services.csproj">
+      <Project>{31ee8439-7e18-41c1-b15d-350019b044a7}</Project>
+      <Name>Xpinn.Cartera.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.CDATS.Entities\Xpinn.CDATS.Entities.csproj">
+      <Project>{d4d94212-bf5a-4e4e-bf90-bbd2b39c5e97}</Project>
+      <Name>Xpinn.CDATS.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.CDATS.Services\Xpinn.CDATS.Services.csproj">
+      <Project>{bd9e887c-d027-4771-b012-0aeb92708332}</Project>
+      <Name>Xpinn.CDATS.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Comun.Entities\Xpinn.Comun.Entities.csproj">
+      <Project>{955a6f00-17cf-4cb4-97f7-b8e98e9b3297}</Project>
+      <Name>Xpinn.Comun.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Comun.Services\Xpinn.Comun.Services.csproj">
+      <Project>{17881252-3182-46f3-b514-96f2bb2a9723}</Project>
+      <Name>Xpinn.Comun.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Contabilidad.Entities\Xpinn.Contabilidad.Entities.csproj">
+      <Project>{e784bd0b-d163-43a7-92f7-c65a3b1ec299}</Project>
+      <Name>Xpinn.Contabilidad.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Contabilidad.Services\Xpinn.Contabilidad.Services.csproj">
+      <Project>{4bba7329-9ab3-48b8-aa2e-9696bd60b2ef}</Project>
+      <Name>Xpinn.Contabilidad.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.FabricaCreditos.Entities\Xpinn.FabricaCreditos.Entities.csproj">
+      <Project>{b89884f6-511b-466d-9338-51fc7a656792}</Project>
+      <Name>Xpinn.FabricaCreditos.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.FabricaCreditos.Services\Xpinn.FabricaCreditos.Services.csproj">
+      <Project>{283fa80b-fcb4-4025-aef1-e552a4714a22}</Project>
+      <Name>Xpinn.FabricaCreditos.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Icetex.Entities\Xpinn.Icetex.Entities.csproj">
+      <Project>{eb783043-4b95-4fc0-90e3-dbac97df8085}</Project>
+      <Name>Xpinn.Icetex.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Icetex.Services\Xpinn.Icetex.Services.csproj">
+      <Project>{0ea9ab43-75af-44e6-99ed-ae93ddb44efc}</Project>
+      <Name>Xpinn.Icetex.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Integracion.Entities\Xpinn.Integracion.Entities.csproj">
+      <Project>{754d60c0-61c0-4f11-888a-110654efb0fc}</Project>
+      <Name>Xpinn.Integracion.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Integracion.Service\Xpinn.Integracion.Services.csproj">
+      <Project>{33e6547c-d8d6-4824-ae8e-15bdd88d2e5c}</Project>
+      <Name>Xpinn.Integracion.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Progamado.Services\Xpinn.Programado.Services.csproj">
+      <Project>{29107ea3-e9fa-4742-a417-bffe52dfb66b}</Project>
+      <Name>Xpinn.Programado.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Programado.Entities\Xpinn.Programado.Entities.csproj">
+      <Project>{9578ad06-d026-40ca-abc9-b8a31ec26366}</Project>
+      <Name>Xpinn.Programado.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.RecaudosMasivos.Entities\Xpinn.RecaudosMasivos.Entities.csproj">
+      <Project>{c120c5d1-323a-4da9-9e68-1daac8d2f099}</Project>
+      <Name>Xpinn.RecaudosMasivos.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.RecaudosMasivos.Services\Xpinn.RecaudosMasivos.Services.csproj">
+      <Project>{0afb85ef-dbfe-4d9b-86b6-e7e18a986668}</Project>
+      <Name>Xpinn.RecaudosMasivos.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Reporteador.Entities\Xpinn.Reporteador.Entities.csproj">
+      <Project>{a2d59eee-5e18-41a1-8239-acb9eb0bd1f1}</Project>
+      <Name>Xpinn.Reporteador.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Reporteador.Services\Xpinn.Reporteador.Services.csproj">
+      <Project>{1970a9ba-802a-4142-bc92-0e36fbaaf069}</Project>
+      <Name>Xpinn.Reporteador.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Scoring.Entities\Xpinn.Scoring.Entities.csproj">
+      <Project>{e39bf0fa-1738-4ee7-bd85-3d7a47c28bc0}</Project>
+      <Name>Xpinn.Scoring.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Scoring.Services\Xpinn.Scoring.Services.csproj">
+      <Project>{34e36add-6a9f-4dcf-a91c-71611cb662dc}</Project>
+      <Name>Xpinn.Scoring.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Seguridad.Entities\Xpinn.Seguridad.Entities.csproj">
+      <Project>{c4e2075d-d639-4808-96d4-e3b4a284ee5b}</Project>
+      <Name>Xpinn.Seguridad.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Seguridad.Services\Xpinn.Seguridad.Services.csproj">
+      <Project>{7302b19e-30ea-44de-9d12-0c7df10fb9a1}</Project>
+      <Name>Xpinn.Seguridad.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Servicios.Entities\Xpinn.Servicios.Entities.csproj">
+      <Project>{7e9142d1-4e78-47e8-a557-5566cdc57eeb}</Project>
+      <Name>Xpinn.Servicios.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Servicios.Services\Xpinn.Servicios.Services.csproj">
+      <Project>{c02b0504-4e2d-41e3-8042-bbb6236eaabc}</Project>
+      <Name>Xpinn.Servicios.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.TarjetaDebito.Entities\Xpinn.TarjetaDebito.Entities.csproj">
+      <Project>{188eb5c7-c377-4d89-a92e-006d2b137ef4}</Project>
+      <Name>Xpinn.TarjetaDebito.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.TarjetaDebito.Services\Xpinn.TarjetaDebito.Services.csproj">
+      <Project>{eb518ed4-fdcf-47af-88c2-349de550d76d}</Project>
+      <Name>Xpinn.TarjetaDebito.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Tesoreria.Entities\Xpinn.Tesoreria.Entities.csproj">
+      <Project>{2682acee-0325-4a67-84e4-801e2bb6aba7}</Project>
+      <Name>Xpinn.Tesoreria.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Tesoreria.Services\Xpinn.Tesoreria.Services.csproj">
+      <Project>{cd9afc5b-b438-4927-9e5c-f15bc7619c65}</Project>
+      <Name>Xpinn.Tesoreria.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Util\Xpinn.Util.csproj">
+      <Project>{1dc267f2-1877-46d6-af5e-f92eb286dfc4}</Project>
+      <Name>Xpinn.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>11083</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

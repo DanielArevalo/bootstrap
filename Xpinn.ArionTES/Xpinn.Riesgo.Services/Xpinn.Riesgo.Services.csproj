@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A594526B-7D3A-4D09-A544-E9AEF8D2E00E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Xpinn.Riesgo.Services</RootNamespace>
+    <AssemblyName>Xpinn.Riesgo.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActDatosServices.cs" />
+    <Compile Include="ActividadEcoServices.cs" />
+    <Compile Include="AlertasService.cs" />
+    <Compile Include="HistoricoSegmentacionService.cs" />
+    <Compile Include="HistoricoSegPerfilService.cs" />
+    <Compile Include="IdentificacionServices.cs" />
+    <Compile Include="JurisdiccionDepaServices.cs" />
+    <Compile Include="MatrizServices.cs" />
+    <Compile Include="TipoAsociadoServices.cs" />
+    <Compile Include="PerfilRiesgoServices.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RangoPerfilServices.cs" />
+    <Compile Include="ReporteProductoServices.cs" />
+    <Compile Include="SarlaftAlertaServices.cs" />
+    <Compile Include="SegmentacionPerfilService.cs" />
+    <Compile Include="SeguimientoServices.cs" />
+    <Compile Include="valoracion_controlService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xpinn.Comun.Entities\Xpinn.Comun.Entities.csproj">
+      <Project>{955a6f00-17cf-4cb4-97f7-b8e98e9b3297}</Project>
+      <Name>Xpinn.Comun.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Interfaces.Entities\Xpinn.Interfaces.Entities.csproj">
+      <Project>{94f1adb3-b44d-400c-b67f-8e9694c69e23}</Project>
+      <Name>Xpinn.Interfaces.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Riesgo.Business\Xpinn.Riesgo.Business.csproj">
+      <Project>{a7aeba44-743d-43df-bbb5-6252f9cfd3eb}</Project>
+      <Name>Xpinn.Riesgo.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Riesgo.Entities\Xpinn.Riesgo.Entities.csproj">
+      <Project>{02b1b7dc-1f67-464b-8005-0f2fc4f23edd}</Project>
+      <Name>Xpinn.Riesgo.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Util\Xpinn.Util.csproj">
+      <Project>{1dc267f2-1877-46d6-af5e-f92eb286dfc4}</Project>
+      <Name>Xpinn.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

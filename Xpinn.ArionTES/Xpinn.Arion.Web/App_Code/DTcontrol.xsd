@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DTcontrol" targetNamespace="http://tempuri.org/DTcontrol.xsd" xmlns:mstns="http://tempuri.org/DTcontrol.xsd" xmlns="http://tempuri.org/DTcontrol.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DTcontrol" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DTcontrol" msprop:Generator_UserDSName="DTcontrol">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTcontrol" msprop:Generator_TableClassName="DTcontrolDataTable" msprop:Generator_TableVarName="tableDTcontrol" msprop:Generator_TablePropName="_DTcontrol" msprop:Generator_RowDeletingName="DTcontrolRowDeleting" msprop:Generator_RowChangingName="DTcontrolRowChanging" msprop:Generator_RowEvHandlerName="DTcontrolRowChangeEventHandler" msprop:Generator_RowDeletedName="DTcontrolRowDeleted" msprop:Generator_UserTableName="DTcontrol" msprop:Generator_RowChangedName="DTcontrolRowChanged" msprop:Generator_RowEvArgName="DTcontrolRowChangeEvent" msprop:Generator_RowClassName="DTcontrolRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COD_CONTROL" msprop:Generator_ColumnVarNameInTable="columnCOD_CONTROL" msprop:Generator_ColumnPropNameInRow="COD_CONTROL" msprop:Generator_ColumnPropNameInTable="COD_CONTROLColumn" msprop:Generator_UserColumnName="COD_CONTROL" type="xs:string" minOccurs="0" />
+              <xs:element name="DESCRIPCION" msprop:Generator_ColumnVarNameInTable="columnDESCRIPCION" msprop:Generator_ColumnPropNameInRow="DESCRIPCION" msprop:Generator_ColumnPropNameInTable="DESCRIPCIONColumn" msprop:Generator_UserColumnName="DESCRIPCION" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

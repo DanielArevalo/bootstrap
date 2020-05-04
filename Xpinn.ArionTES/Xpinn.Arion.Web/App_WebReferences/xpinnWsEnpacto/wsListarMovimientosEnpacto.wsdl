@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ListadoMovimientos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="s_convenio" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="f_fecha" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="s_IpApplianceConvenioTarjeta" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="s_usuario_applicance" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="s_clave_appliance" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="s_respuesta" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="s_error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListadoMovimientosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListadoMovimientosResult" type="tns:ArrayOfArchivoSIC" />
+            <s:element minOccurs="0" maxOccurs="1" name="s_respuesta" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="s_error" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfArchivoSIC">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="archivoSIC" nillable="true" type="tns:archivoSIC" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="archivoSIC">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="fecha" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="hora" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="documento" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nrocuenta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tarjeta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipotransaccion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="descripcion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="monto" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="comision" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="lugar" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="operacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="red" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ListadoMovimientosSoapIn">
+    <wsdl:part name="parameters" element="tns:ListadoMovimientos" />
+  </wsdl:message>
+  <wsdl:message name="ListadoMovimientosSoapOut">
+    <wsdl:part name="parameters" element="tns:ListadoMovimientosResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsListarMovimientosEnpactoSoap">
+    <wsdl:operation name="ListadoMovimientos">
+      <wsdl:input message="tns:ListadoMovimientosSoapIn" />
+      <wsdl:output message="tns:ListadoMovimientosSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsListarMovimientosEnpactoSoap" type="tns:wsListarMovimientosEnpactoSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListadoMovimientos">
+      <soap:operation soapAction="http://tempuri.org/ListadoMovimientos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsListarMovimientosEnpactoSoap12" type="tns:wsListarMovimientosEnpactoSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListadoMovimientos">
+      <soap12:operation soapAction="http://tempuri.org/ListadoMovimientos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsListarMovimientosEnpacto">
+    <wsdl:port name="wsListarMovimientosEnpactoSoap" binding="tns:wsListarMovimientosEnpactoSoap">
+      <soap:address location="http://192.175.105.36/Cootregua/Page/TarjetaDebito/wsListarMovimientosEnpacto.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsListarMovimientosEnpactoSoap12" binding="tns:wsListarMovimientosEnpactoSoap12">
+      <soap12:address location="http://192.175.105.36/Cootregua/Page/TarjetaDebito/wsListarMovimientosEnpacto.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

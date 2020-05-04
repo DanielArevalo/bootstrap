@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DTEstadoCuenta" targetNamespace="http://tempuri.org/DTEstadoCuenta.xsd" xmlns:mstns="http://tempuri.org/DTEstadoCuenta.xsd" xmlns="http://tempuri.org/DTEstadoCuenta.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DTEstadoCuenta" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DT_Aportes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="numero_aporte" type="xs:string" minOccurs="0" />
+              <xs:element name="estado" type="xs:string" minOccurs="0" />
+              <xs:element name="linea" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_apertura" type="xs:string" minOccurs="0" />
+              <xs:element name="saldo_total" type="xs:string" minOccurs="0" />
+              <xs:element name="valor_cuota" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_prox_pago" type="xs:string" minOccurs="0" />
+              <xs:element name="valor_acumulado" type="xs:string" minOccurs="0" />
+              <xs:element name="valor_total_acumu" type="xs:string" minOccurs="0" />
+              <xs:element name="valor_a_pagar" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DT_Devoluciones">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="numero_devolu" type="xs:string" minOccurs="0" />
+              <xs:element name="estado" type="xs:string" minOccurs="0" />
+              <xs:element name="concepto" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_devolucion" type="xs:string" minOccurs="0" />
+              <xs:element name="valor" type="xs:string" minOccurs="0" />
+              <xs:element name="saldo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DT_AhorroProgra">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="numero_programado" msdata:Caption="numero_cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="estado" type="xs:string" minOccurs="0" />
+              <xs:element name="linea" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_apertura" type="xs:string" minOccurs="0" />
+              <xs:element name="saldo_total" type="xs:string" minOccurs="0" />
+              <xs:element name="nom_oficina" type="xs:string" minOccurs="0" />
+              <xs:element name="valor_cuota" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_proximo_pago" type="xs:string" minOccurs="0" />
+              <xs:element name="valor_acumulado" type="xs:string" minOccurs="0" />
+              <xs:element name="valor_total_acumu" type="xs:string" minOccurs="0" />
+              <xs:element name="plazo" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_ult_mov" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_vencimiento" type="xs:string" minOccurs="0" />
+              <xs:element name="periocidad" type="xs:string" minOccurs="0" />
+              <xs:element name="tasa_interes" type="xs:string" minOccurs="0" />
+              <xs:element name="cuotas_pagas" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DT_Ahorro">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="numero_cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="estado" type="xs:string" minOccurs="0" />
+              <xs:element name="linea" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_apertura" type="xs:string" minOccurs="0" />
+              <xs:element name="saldo_total" type="xs:string" minOccurs="0" />
+              <xs:element name="saldo_canje" type="xs:string" minOccurs="0" />
+              <xs:element name="nom_oficina" type="xs:string" minOccurs="0" />
+              <xs:element name="valor_cuota" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_proximo_pago" type="xs:string" minOccurs="0" />
+              <xs:element name="Nombres" type="xs:string" minOccurs="0" />
+              <xs:element name="Monto" type="xs:string" minOccurs="0" />
+              <xs:element name="Saldo" type="xs:string" minOccurs="0" />
+              <xs:element name="Cuota" type="xs:string" minOccurs="0" />
+              <xs:element name="valor_acumulado" type="xs:string" minOccurs="0" />
+              <xs:element name="valor_total_acumu" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DT_Acodeudados">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NumRadicacion" type="xs:string" minOccurs="0" />
+              <xs:element name="cod_persona" type="xs:string" minOccurs="0" />
+              <xs:element name="Estado" type="xs:string" minOccurs="0" />
+              <xs:element name="Linea" type="xs:string" minOccurs="0" />
+              <xs:element name="Montos" type="xs:string" minOccurs="0" />
+              <xs:element name="Saldos" type="xs:string" minOccurs="0" />
+              <xs:element name="Cuotas" type="xs:string" minOccurs="0" />
+              <xs:element name="Nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="ciudad" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor_apagar" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_prox_pago" type="xs:string" minOccurs="0" />
+              <xs:element name="Identificacion" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DT_Cdat">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="numero_cdat" type="xs:string" minOccurs="0" />
+              <xs:element name="estado" type="xs:string" minOccurs="0" />
+              <xs:element name="linea" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_apertura" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_inicio" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_vencimiento" type="xs:string" minOccurs="0" />
+              <xs:element name="nom_oficina" type="xs:string" minOccurs="0" />
+              <xs:element name="valor" type="xs:string" minOccurs="0" />
+              <xs:element name="plazo" type="xs:string" minOccurs="0" />
+              <xs:element name="tasa_interes" type="xs:string" minOccurs="0" />
+              <xs:element name="valor_acumulado" type="xs:string" minOccurs="0" />
+              <xs:element name="valor_total_acumu" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DT_Servicios">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="numero_servicio" type="xs:string" minOccurs="0" />
+              <xs:element name="estado" type="xs:string" minOccurs="0" />
+              <xs:element name="linea" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_solicitud" type="xs:string" minOccurs="0" />
+              <xs:element name="plan" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_inicio" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_final" type="xs:string" minOccurs="0" />
+              <xs:element name="valor_total" type="xs:string" minOccurs="0" />
+              <xs:element name="vr_cuota" type="xs:string" minOccurs="0" />
+              <xs:element name="saldo" type="xs:string" minOccurs="0" />
+              <xs:element name="saldo_inicial" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_desembolso" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_proximo_pago" type="xs:string" minOccurs="0" />
+              <xs:element name="forma_pago" type="xs:string" minOccurs="0" />
+              <xs:element name="plazo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Lineas_Tel">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="num_linea" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_act" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_ult_rep" type="xs:string" minOccurs="0" />
+              <xs:element name="valor_fijo" type="xs:string" minOccurs="0" />
+              <xs:element name="Costo_Factura" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_vencimiento" type="xs:string" minOccurs="0" />
+              <xs:element name="tipo_plan" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_inactivacion" type="xs:string" minOccurs="0" />
+              <xs:element name="cod_serv_fijo" type="xs:string" minOccurs="0" />
+              <xs:element name="cod_serv_adicional" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DT_CuotasExtras">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Numero_Radicacion" type="xs:string" minOccurs="0" />
+              <xs:element name="Fecha_Cuota" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor" type="xs:string" minOccurs="0" />
+              <xs:element name="Forma_Pago" type="xs:string" minOccurs="0" />
+              <xs:element name="Tipo_Cuota_Extra" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

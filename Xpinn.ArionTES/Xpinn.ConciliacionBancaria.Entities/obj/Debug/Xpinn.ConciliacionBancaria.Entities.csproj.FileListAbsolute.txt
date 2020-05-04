@@ -1,0 +1,4 @@
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.ConciliacionBancaria.Entities\bin\Debug\Xpinn.ConciliacionBancaria.Entities.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.ConciliacionBancaria.Entities\bin\Debug\Xpinn.ConciliacionBancaria.Entities.pdb
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.ConciliacionBancaria.Entities\obj\Debug\Xpinn.ConciliacionBancaria.Entities.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.ConciliacionBancaria.Entities\obj\Debug\Xpinn.ConciliacionBancaria.Entities.pdb

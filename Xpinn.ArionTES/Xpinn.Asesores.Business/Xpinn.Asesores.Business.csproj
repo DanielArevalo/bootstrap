@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{86E6AA4A-F797-45FD-B933-8E16B210D398}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Xpinn.Asesores.Business</RootNamespace>
+    <AssemblyName>Xpinn.Asesores.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Xpinn.Asesores.Business.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Xpinn.Asesores.Business.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcodeudadosBusiness.cs" />
+    <Compile Include="ActividadBusiness.cs" />
+    <Compile Include="AgendaActividadBusiness.cs" />
+    <Compile Include="AgendaAlarmaBusiness.cs" />
+    <Compile Include="AgendaHoraBusiness.cs" />
+    <Compile Include="AgendaTipoActividadBusiness.cs" />
+    <Compile Include="AtributoBusiness.cs" />
+    <Compile Include="CiudadBusiness.cs" />
+    <Compile Include="ClienteBusiness.cs" />
+    <Compile Include="ClienteExtractoBusiness.cs" />
+    <Compile Include="ClientePotencialBusiness.cs" />
+    <Compile Include="CobrosCreditoBusiness.cs" />
+    <Compile Include="CodeudorBusiness.cs" />
+    <Compile Include="ComentarioBusiness.cs" />
+    <Compile Include="ComprobantePagoExtractoBusiness.cs" />
+    <Compile Include="ConsultarAvanceData.cs" />
+    <Compile Include="CreacionMensajeBusiness.cs" />
+    <Compile Include="DiasNoHabilesBusiness.cs" />
+    <Compile Include="TiposDocCobranzasBusiness.cs" />
+    <Compile Include="Usuario_LinkBusiness.cs" />
+    <Compile Include="ExtractoBusiness.cs" />
+    <Compile Include="CreditosBusiness.cs" />
+    <Compile Include="DetallePagoBusiness.cs" />
+    <Compile Include="DetalleProductoBusiness.cs" />
+    <Compile Include="DetalleTransaccionesExtractoBusiness.cs" />
+    <Compile Include="DiligenciaBusiness.cs" />
+    <Compile Include="EjecutivoBusiness.cs" />
+    <Compile Include="EjecutivoMetaBusiness.cs" />
+    <Compile Include="EnvioDeCorreoExtractoBusiness.cs" />
+    <Compile Include="EstadoCuentaBusiness.cs" />
+    <Compile Include="GarantiasBusiness.cs" />
+    <Compile Include="InformacionFinancieraBusiness.cs" />
+    <Compile Include="MotivoGeneracionExtracto.cs" />
+    <Compile Include="MotivosCambioBusiness.cs" />
+    <Compile Include="MovGralCreditoBusiness.cs" />
+    <Compile Include="NegocioBusiness.cs" />
+    <Compile Include="ParametricasBusiness.cs" />
+    <Compile Include="PersonaBusiness.cs" />
+    <Compile Include="ProcesosCobroBusiness.cs" />
+    <Compile Include="ProductoBusiness.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistroGeneraciónExtractoBusiness.cs" />
+    <Compile Include="ReporteBusiness.cs" />
+    <Compile Include="ResumenExtractosBusiness.cs" />
+    <Compile Include="TipoDiligenciaBusiness.cs" />
+    <Compile Include="TiposDeFiltroBusiness.cs" />
+    <Compile Include="TrasladarClientesBusiness.cs" />
+    <Compile Include="UsuarioAseBusiness.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xpinn.ActivosFijos.Entities\Xpinn.ActivosFijos.Entities.csproj">
+      <Project>{056D6B80-CCD1-4194-86E8-467FBF1A48AA}</Project>
+      <Name>Xpinn.ActivosFijos.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Aportes.Data\Xpinn.Aportes.Data.csproj">
+      <Project>{69ad7ba9-9afc-47a4-a90f-4c58d8d9e543}</Project>
+      <Name>Xpinn.Aportes.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Aportes.Entities\Xpinn.Aportes.Entities.csproj">
+      <Project>{3a1b9d8d-c018-4333-b436-8214c50e7e12}</Project>
+      <Name>Xpinn.Aportes.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Asesores.Data\Xpinn.Asesores.Data.csproj">
+      <Project>{DF09B939-29A8-4A8A-8140-F5BAC001981A}</Project>
+      <Name>Xpinn.Asesores.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Asesores.Entities.Shared\Xpinn.Asesores.Entities.Common.csproj">
+      <Project>{090DA451-1225-43E7-A10D-38AC60A73A4C}</Project>
+      <Name>Xpinn.Asesores.Entities.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Asesores.Entities\Xpinn.Asesores.Entities.csproj">
+      <Project>{DF1C5F00-EF61-49BA-ADD1-C5028030F2F5}</Project>
+      <Name>Xpinn.Asesores.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Comun.Entities\Xpinn.Comun.Entities.csproj">
+      <Project>{955A6F00-17CF-4CB4-97F7-B8E98E9B3297}</Project>
+      <Name>Xpinn.Comun.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Contabilidad.Data\Xpinn.Contabilidad.Data.csproj">
+      <Project>{600d29e1-4cbd-4a63-b4aa-fe4e4de436de}</Project>
+      <Name>Xpinn.Contabilidad.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Contabilidad.Entities\Xpinn.Contabilidad.Entities.csproj">
+      <Project>{e784bd0b-d163-43a7-92f7-c65a3b1ec299}</Project>
+      <Name>Xpinn.Contabilidad.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.FabricaCreditos.Entities\Xpinn.FabricaCreditos.Entities.csproj">
+      <Project>{b89884f6-511b-466d-9338-51fc7a656792}</Project>
+      <Name>Xpinn.FabricaCreditos.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Riesgo.Business\Xpinn.Riesgo.Business.csproj">
+      <Project>{a7aeba44-743d-43df-bbb5-6252f9cfd3eb}</Project>
+      <Name>Xpinn.Riesgo.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Tesoreria.Data\Xpinn.Tesoreria.Data.csproj">
+      <Project>{0bca84ac-f1e6-4dbc-8136-1bb3c9f42e30}</Project>
+      <Name>Xpinn.Tesoreria.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Tesoreria.Entities\Xpinn.Tesoreria.Entities.csproj">
+      <Project>{2682acee-0325-4a67-84e4-801e2bb6aba7}</Project>
+      <Name>Xpinn.Tesoreria.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Util\Xpinn.Util.csproj">
+      <Project>{1DC267F2-1877-46D6-AF5E-F92EB286DFC4}</Project>
+      <Name>Xpinn.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

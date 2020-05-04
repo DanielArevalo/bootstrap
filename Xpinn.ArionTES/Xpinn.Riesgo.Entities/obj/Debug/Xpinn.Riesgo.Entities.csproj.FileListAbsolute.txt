@@ -1,0 +1,4 @@
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Riesgo.Entities\bin\Debug\Xpinn.Riesgo.Entities.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Riesgo.Entities\bin\Debug\Xpinn.Riesgo.Entities.pdb
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Riesgo.Entities\obj\Debug\Xpinn.Riesgo.Entities.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Riesgo.Entities\obj\Debug\Xpinn.Riesgo.Entities.pdb

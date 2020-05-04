@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Login">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pIdentificacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pClave" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LoginResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Logeo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pEntidad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pIdentificacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pClave" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pTipoUsuario" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LogeoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LogeoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginApp">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pIdentificacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pClave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pDireccionIp" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginAppResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginAppResult" type="tns:Persona1" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Persona1">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Lista_Producto" type="tns:ArrayOfProductos_Persona" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipo_identificacion_descripcion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="origen" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_persona" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="cod_nomina_empleado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipo_persona" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="identificacion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="digito_verificacion" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_identificacion" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="nomtipo_identificacion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fechaexpedicion" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="codciudadexpedicion" nillable="true" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="sexo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="primer_nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="segundo_nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="primer_apellido" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="segundo_apellido" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="template" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="razon_social" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fechanacimiento" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="fechanacimientoAPP" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="codciudadnacimiento" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Sueldo_Persona" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="cuota" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="codestadocivil" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="codescolaridad" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="codactividad" nillable="true" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="direccion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="telefono" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="codciudadresidencia" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="antiguedadlugar" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipovivienda" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="arrendador" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="telefonoarrendador" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValorArriendo" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="celular" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="empresa" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="telefonoempresa" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="direccionempresa" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="email_empresa" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="antiguedadlugarempresa" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="codcargo" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="codtipocontrato" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_asesor" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="residente" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_residencia" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_oficina" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="cod_nomina" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tratamiento" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="estado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nomestado" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fechacreacion" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="usuariocreacion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecultmod" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="usuultmod" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cod_negocio" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="barrioResidencia" nillable="true" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="dirCorrespondencia" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="barrioCorrespondencia" nillable="true" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="barrioCorresponden" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="telCorrespondencia" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ciuCorrespondencia" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="ActividadEconomicaEmpresa" nillable="true" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActividadEconomicaEmpresaStr" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ciudad" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="relacionEmpleadosEmprender" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CelularEmpresa" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Estrato" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PersonasAcargo" nillable="true" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="profecion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="idimagen" nillable="true" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="foto" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="ImgFirma" type="s:base64Binary" />
+          <s:element minOccurs="1" maxOccurs="1" name="idescalafon" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="sector" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="zona" nillable="true" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_zona" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="nacionalidad" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="ubicacion_correspondencia" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ubicacion_residencia" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="nit_empresa" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_empresa" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="act_ciiu_empresa" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ubicacion_empresa" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ListaId" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="ListaIdStr" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ListaDescripcion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="noTraerHuella" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="soloPersona" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="sinImagen" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="seleccionar" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="numeroRadicacion" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="numHijos" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="numPersonasaCargo" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="ocupacion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="salario" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="antiguedadLaboral" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombres" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="apellidos" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="oficina" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="NUMERO_OBLIGACION" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="parentesco" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="acargo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Observaciones" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="medio" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipo_identif" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ciudadexpedicion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipocontrato" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="lstBeneficiarios" type="tns:ArrayOfBeneficiario" />
+          <s:element minOccurs="0" maxOccurs="1" name="lstActividad" type="tns:ArrayOfActividades" />
+          <s:element minOccurs="0" maxOccurs="1" name="lstActEconomicasSecundarias" type="tns:ArrayOfActividades" />
+          <s:element minOccurs="0" maxOccurs="1" name="lstCuentasBan" type="tns:ArrayOfCuentasBancarias" />
+          <s:element minOccurs="0" maxOccurs="1" name="lstInformacion" type="tns:ArrayOfInformacionAdicional" />
+          <s:element minOccurs="0" maxOccurs="1" name="lstEmpresaRecaudo" type="tns:ArrayOfPersonaEmpresaRecaudo" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor_afiliacion" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_persona_cony" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="codactividadStr" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre_funcionario" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_ingresoempresa" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="empleado_entidad" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="mujer_familia" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="jornada_laboral" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ocupacionApo" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="parentesco_madminis" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="parentesco_mcontrol" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="parentesco_pep" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="clave" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="clavesinecriptar" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="rptaingreso" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre_app" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="apellidos_app" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="email_app" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nomciudad_resid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nomciudad_lab" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="fechacreacionAPP" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="codigo" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="descripcion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="valor" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SALDOaportes" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="saldocreditos" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="ipPersona" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="idcodeudor" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="idEmpresa" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="nit" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_afiliacion" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_retiro" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="InformacionGeneral" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="nom_ciudad" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre_ciudad" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="departamento" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="barCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="lstMonedaExt" type="tns:ArrayOfEstadosFinancieros" />
+          <s:element minOccurs="0" maxOccurs="1" name="lstProductosFinExt" type="tns:ArrayOfEstadosFinancieros" />
+          <s:element minOccurs="1" maxOccurs="1" name="idNotificaion" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="Texto" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DiasAviso" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TipoNot" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Edad" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NumeroPoducto" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="VencimientoProducto" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="url_droid_app" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="url_ios_app" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="version_app" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fec_ult_publicacion_app" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="orden" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="email_asesor" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_motivo" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="id_solicitud" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="pregunta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="respuesta" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="acceso_oficina" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfProductos_Persona">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Productos_Persona" nillable="true" type="tns:Productos_Persona" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Productos_Persona">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="cod_tipo_producto" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_tipo_producto" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="num_producto" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_linea" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_linea" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_empresa" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="saldo" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_oficina" nillable="true" type="s:long" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfBeneficiario">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Beneficiario" nillable="true" type="tns:Beneficiario" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Beneficiario">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="idbeneficiario" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_persona" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="numero_cuenta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="numero_programado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="identificacion_ben" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_identificacion_ben" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre_ben" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_nacimiento_ben" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="parentesco" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="porcentaje_ben" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="codparentesco" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="descripcion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sexo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="edad" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfActividades">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Actividades" nillable="true" type="tns:Actividades" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Actividades">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="idactividad" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_persona" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_realizacion" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_actividad" nillable="true" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="descripcion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="participante" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="calificacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="duracion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="codactividad" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCuentasBancarias">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CuentasBancarias" nillable="true" type="tns:CuentasBancarias" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CuentasBancarias">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="idcuentabancaria" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_persona" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_cuenta" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="numero_cuenta" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_banco" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="sucursal" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_apertura" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="principal" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre_banco" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfInformacionAdicional">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="InformacionAdicional" nillable="true" type="tns:InformacionAdicional" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="InformacionAdicional">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="idinfadicional" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_persona" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_infadicional" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="valor" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="identificacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="lstInfor" type="tns:ArrayOfInformacionAdicional" />
+          <s:element minOccurs="0" maxOccurs="1" name="descripcion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="items_lista" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipo_persona" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfPersonaEmpresaRecaudo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="PersonaEmpresaRecaudo" nillable="true" type="tns:PersonaEmpresaRecaudo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PersonaEmpresaRecaudo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="idempresarecaudo" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_persona" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_empresa" nillable="true" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="descripcion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="seleccionar" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="idempexcluyente" nillable="true" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="identificacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_empresa" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="porcentaje" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfEstadosFinancieros">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="EstadosFinancieros" nillable="true" type="tns:EstadosFinancieros" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="EstadosFinancieros">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="cod_persona" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_balance" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_inffin" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_cuenta" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="descripcion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipoInformacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodVenTot" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="VenTot" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodVenCon" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="VenCon" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodVenCre" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="VenCre" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodCosVen" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CosVen" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodUtiBru" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="UtiBru" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodGasPer" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="GasPer" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodSerPub" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="SerPub" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodArr" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Arr" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodTra" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Tra" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodOtrGas" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="OtrGas" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodTotGas" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotGas" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodUtiOpe" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="UtiOpe" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodCuoPre" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CuoPre" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodCad" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cad" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodPres" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Pres" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodOtrGasFin" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="OtrGasFin" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodTotGasFin" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotGasFin" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodUtiNet" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="UtiNet" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodEfeBan" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="EfeBan" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodCueCob" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CueCob" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodMerc" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Merc" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodProdProc" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProdProc" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodProTer" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProTer" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodTotActCor" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotActCor" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodTerrEdi" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="TerrEdi" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodMaqEqu" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="MaqEqu" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodVehi" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Vehi" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodOtr" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Otr" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodTotActFij" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotActFij" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodTotAct" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotAct" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodPro" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Pro" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodOblFin" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="OblFin" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodOtrObl" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="OtrObl" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodTotPasCor" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotPasCor" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodPasLar" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="PasLar" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodOtrOblLar" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="OtrOblLar" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodTotPas" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotPas" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodTotPat" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotPat" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CodTotPasPat" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotPasPat" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_personaconyuge" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="sueldo" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="sueldoconyuge" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="honorarios" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="honorariosconyuge" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="arrendamientos" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="arrendamientosconyuge" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="otrosingresos" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="otrosingresosconyuge" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="conceptootros" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="conceptootrosconyuge" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="totalingreso" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="totalingresoconyuge" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="hipoteca" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="hipotecaconyuge" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="targeta_credito" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="targeta_creditoconyuge" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="otrosprestamos" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="otrosprestamosconyuge" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="gastofamiliar" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="gastofamiliarconyuge" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="decunomina" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="decunominaconyuge" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="totalegresos" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="totalegresosconyuge" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ingresomensual" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="egresomensual" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="porCostoVenta" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="cuotasPrestamos" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="filtro" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor_arriendo" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_moneda_ext" nillable="true" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="num_cuenta_ext" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="banco_ext" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="pais" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ciudad" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="moneda" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="desc_operacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipo_producto" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotPatConyuge" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotPasConyuge" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotActConyuge" type="s:long" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ModificarUsuarioIngreso">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pCod_ingreso" nillable="true" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModificarUsuarioIngresoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ModificarUsuarioIngresoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarAccesoAAC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pIdModulo" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="pIdentificacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pClave" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarAccesoAACResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarAccesoAACResult" type="tns:ArrayOfAcceso" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAcceso">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Acceso" nillable="true" type="tns:Acceso" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Acceso">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="codacceso" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="codigoperfil" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_proceso" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_opcion" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="ruta" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="insertar" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="modificar" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="borrar" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="consultar" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="generalog" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="accion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombreperfil" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombreopcion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombreproceso" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_modulo" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_modulo" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListarContenido">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pContenido" type="tns:Contenido" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Contenido">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="cod_opcion" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="html" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="mostrarOficina" type="s:long" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListarContenidoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarContenidoResult" type="tns:ArrayOfContenido" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfContenido">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Contenido" nillable="true" type="tns:Contenido" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="testService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="testServiceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="consultarPerfil">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="consultarPerfilResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="consultarPerfilResult" type="tns:Perfil" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Perfil">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="codperfil" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombreperfil" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_periodicidad" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="es_administrador" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="lstAccesos" type="tns:ArrayOfAcceso" />
+          <s:element minOccurs="1" maxOccurs="1" name="caracter" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="longitud" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="numero" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="mayuscula" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="numero_dias" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListarAccesosApp">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarAccesosAppResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarAccesosAppResult" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="LoginSoapIn">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="LoginSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="LogeoSoapIn">
+    <wsdl:part name="parameters" element="tns:Logeo" />
+  </wsdl:message>
+  <wsdl:message name="LogeoSoapOut">
+    <wsdl:part name="parameters" element="tns:LogeoResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoginAppSoapIn">
+    <wsdl:part name="parameters" element="tns:LoginApp" />
+  </wsdl:message>
+  <wsdl:message name="LoginAppSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginAppResponse" />
+  </wsdl:message>
+  <wsdl:message name="ModificarUsuarioIngresoSoapIn">
+    <wsdl:part name="parameters" element="tns:ModificarUsuarioIngreso" />
+  </wsdl:message>
+  <wsdl:message name="ModificarUsuarioIngresoSoapOut">
+    <wsdl:part name="parameters" element="tns:ModificarUsuarioIngresoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListarAccesoAACSoapIn">
+    <wsdl:part name="parameters" element="tns:ListarAccesoAAC" />
+  </wsdl:message>
+  <wsdl:message name="ListarAccesoAACSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarAccesoAACResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListarContenidoSoapIn">
+    <wsdl:part name="parameters" element="tns:ListarContenido" />
+  </wsdl:message>
+  <wsdl:message name="ListarContenidoSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarContenidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="testServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:testService" />
+  </wsdl:message>
+  <wsdl:message name="testServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:testServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultarPerfilSoapIn">
+    <wsdl:part name="parameters" element="tns:consultarPerfil" />
+  </wsdl:message>
+  <wsdl:message name="consultarPerfilSoapOut">
+    <wsdl:part name="parameters" element="tns:consultarPerfilResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListarAccesosAppSoapIn">
+    <wsdl:part name="parameters" element="tns:ListarAccesosApp" />
+  </wsdl:message>
+  <wsdl:message name="ListarAccesosAppSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarAccesosAppResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WSloginSoap">
+    <wsdl:operation name="Login">
+      <wsdl:input message="tns:LoginSoapIn" />
+      <wsdl:output message="tns:LoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Logeo">
+      <wsdl:input message="tns:LogeoSoapIn" />
+      <wsdl:output message="tns:LogeoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginApp">
+      <wsdl:input message="tns:LoginAppSoapIn" />
+      <wsdl:output message="tns:LoginAppSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificarUsuarioIngreso">
+      <wsdl:input message="tns:ModificarUsuarioIngresoSoapIn" />
+      <wsdl:output message="tns:ModificarUsuarioIngresoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarAccesoAAC">
+      <wsdl:input message="tns:ListarAccesoAACSoapIn" />
+      <wsdl:output message="tns:ListarAccesoAACSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarContenido">
+      <wsdl:input message="tns:ListarContenidoSoapIn" />
+      <wsdl:output message="tns:ListarContenidoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="testService">
+      <wsdl:input message="tns:testServiceSoapIn" />
+      <wsdl:output message="tns:testServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarPerfil">
+      <wsdl:input message="tns:consultarPerfilSoapIn" />
+      <wsdl:output message="tns:consultarPerfilSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarAccesosApp">
+      <wsdl:input message="tns:ListarAccesosAppSoapIn" />
+      <wsdl:output message="tns:ListarAccesosAppSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSloginSoap" type="tns:WSloginSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Logeo">
+      <soap:operation soapAction="http://tempuri.org/Logeo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginApp">
+      <soap:operation soapAction="http://tempuri.org/LoginApp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarUsuarioIngreso">
+      <soap:operation soapAction="http://tempuri.org/ModificarUsuarioIngreso" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarAccesoAAC">
+      <soap:operation soapAction="http://tempuri.org/ListarAccesoAAC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarContenido">
+      <soap:operation soapAction="http://tempuri.org/ListarContenido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testService">
+      <soap:operation soapAction="http://tempuri.org/testService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarPerfil">
+      <soap:operation soapAction="http://tempuri.org/consultarPerfil" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarAccesosApp">
+      <soap:operation soapAction="http://tempuri.org/ListarAccesosApp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSloginSoap12" type="tns:WSloginSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://tempuri.org/Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Logeo">
+      <soap12:operation soapAction="http://tempuri.org/Logeo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginApp">
+      <soap12:operation soapAction="http://tempuri.org/LoginApp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarUsuarioIngreso">
+      <soap12:operation soapAction="http://tempuri.org/ModificarUsuarioIngreso" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarAccesoAAC">
+      <soap12:operation soapAction="http://tempuri.org/ListarAccesoAAC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarContenido">
+      <soap12:operation soapAction="http://tempuri.org/ListarContenido" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testService">
+      <soap12:operation soapAction="http://tempuri.org/testService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarPerfil">
+      <soap12:operation soapAction="http://tempuri.org/consultarPerfil" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarAccesosApp">
+      <soap12:operation soapAction="http://tempuri.org/ListarAccesosApp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSlogin">
+    <wsdl:port name="WSloginSoap" binding="tns:WSloginSoap">
+      <soap:address location="http://localhost/WebServices/WSlogin.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSloginSoap12" binding="tns:WSloginSoap12">
+      <soap12:address location="http://localhost/WebServices/WSlogin.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

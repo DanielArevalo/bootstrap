@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C3286EB8-9CA3-4892-AB91-4216BACD4B9D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Xpinn.FabricaCreditos.Data</RootNamespace>
+    <AssemblyName>Xpinn.FabricaCreditos.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>%24/Financial/Xpinn.ArionTES/Xpinn.FabricaCreditos.Data</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccAuxPath>https://expinntechnology.visualstudio.com</SccAuxPath>
+    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Xpinn.FabricaCreditos.Data.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Xpinn.FabricaCreditos.Data.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActaData.cs" />
+    <Compile Include="ActividadesData.cs" />
+    <Compile Include="AmortizaCreData.cs" />
+    <Compile Include="AnalisisCapacidadPagoData.cs" />
+    <Compile Include="AnalisisCreditoData.cs" />
+    <Compile Include="AnexoCreditoData.cs" />
+    <Compile Include="AprobadorData.cs" />
+    <Compile Include="BalanceFamiliaData.cs" />
+    <Compile Include="BeneficiarioData.cs" />
+    <Compile Include="BeneficiariosData.cs" />
+    <Compile Include="BienesRaicesData.cs" />
+    <Compile Include="CalificacionReferenciasData.cs" />
+    <Compile Include="codeudoresData.cs" />
+    <Compile Include="ComposicionPasivoData.cs" />
+    <Compile Include="consultasdatacreditoData.cs" />
+    <Compile Include="ControlCreditosData.cs" />
+    <Compile Include="ControlTiemposData.cs" />
+    <Compile Include="ConyugeData.cs" />
+    <Compile Include="AvanceData.cs" />
+    <Compile Include="Credito_GiroData.cs" />
+    <Compile Include="CreditoGerencialData.cs" />
+    <Compile Include="DestinacionData.cs" />
+    <Compile Include="DocumentosRequeridosData.cs" />
+    <Compile Include="InformacionAdicionalData.cs" />
+    <Compile Include="OpcionesCreditoData.cs" />
+    <Compile Include="PagoOrdenesData.cs" />
+    <Compile Include="Persona1Data.cs" />
+    <Compile Include="ModalidadTasaData.cs" />
+    <Compile Include="PersonaBiometriaData.cs" />
+    <Compile Include="PersonaEmpresaRecaudoData.cs" />
+    <Compile Include="ProcesosData.cs" />
+    <Compile Include="CuentaPorCobrarCreData.cs" />
+    <Compile Include="GarantiasComunitariasData.cs" />
+    <Compile Include="HistoricoTasaData.cs" />
+    <Compile Include="CosteoProductosData.cs" />
+    <Compile Include="CreditoData.cs" />
+    <Compile Include="CreditoPlanData.cs" />
+    <Compile Include="CreditoRecogerData.cs" />
+    <Compile Include="CreditoSolicitadoData.cs" />
+    <Compile Include="CuotasExtrasData.cs" />
+    <Compile Include="DatosAprobadorData.cs" />
+    <Compile Include="DatosClienteData.cs" />
+    <Compile Include="DatosDeDocumentoData.cs" />
+    <Compile Include="DatosPlanPagosData.cs" />
+    <Compile Include="DatosSolicitudData.cs" />
+    <Compile Include="DocumentoData.cs" />
+    <Compile Include="DocumentosAnexosData.cs" />
+    <Compile Include="EgresosFamiliaData.cs" />
+    <Compile Include="EstacionalidadMensualData.cs" />
+    <Compile Include="EstadosFinancierosData.cs" />
+    <Compile Include="FacturaData.cs" />
+    <Compile Include="FamiliaresData.cs" />
+    <Compile Include="FamiliaresPolizasData.cs" />
+    <Compile Include="GarantiasRealesData.cs" />
+    <Compile Include="InformacionFinancieraData.cs" />
+    <Compile Include="GeoreferenciaData.cs" />
+    <Compile Include="InformacionNegocioData.cs" />
+    <Compile Include="IngresosFamiliaData.cs" />
+    <Compile Include="InventarioActivoFijoData.cs" />
+    <Compile Include="InventarioMateriaPrimaData.cs" />
+    <Compile Include="LineasCreditoData.cs" />
+    <Compile Include="MargenVentasData.cs" />
+    <Compile Include="MotivoData.cs" />
+    <Compile Include="OficinaData.cs" />
+    <Compile Include="ParentescoData.cs" />
+    <Compile Include="PeriodicidadData.cs" />
+    <Compile Include="PersonaData.cs" />
+    <Compile Include="PlanCuentasData.cs" />
+    <Compile Include="PlanesSegurosAmparosData.cs" />
+    <Compile Include="PlanesSegurosData.cs" />
+    <Compile Include="PolizasSegurosData.cs" />
+    <Compile Include="PreAnalisisData.cs" />
+    <Compile Include="PresupuestoEmpresarialData.cs" />
+    <Compile Include="PresupuestoFamiliarData.cs" />
+    <Compile Include="ProductoConsumoData.cs" />
+    <Compile Include="ProductosProcesoData.cs" />
+    <Compile Include="ProductosTerminadosData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReferenciaData.cs" />
+    <Compile Include="RefernciasData.cs" />
+    <Compile Include="ScoringData.cs" />
+    <Compile Include="SimulacionData.cs" />
+    <Compile Include="SolicitudCreditosRecogidosData.cs" />
+    <Compile Include="TipoCupoData.cs" />
+    <Compile Include="TipoGarantiaData.cs" />
+    <Compile Include="TipoLiquidacionData.cs" />
+    <Compile Include="TiposDocumentoData.cs" />
+    <Compile Include="TipoTasaData.cs" />
+    <Compile Include="TipoTasaHistData.cs" />
+    <Compile Include="TomadorPolizaData.cs" />
+    <Compile Include="UsuarioAtribucionesData.cs" />
+    <Compile Include="VehiculosData.cs" />
+    <Compile Include="VentasSemanalesData.cs" />
+    <Compile Include="ViabilidadFinancieraData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xpinn.Asesores.Entities.Shared\Xpinn.Asesores.Entities.Common.csproj">
+      <Project>{090da451-1225-43e7-a10d-38ac60a73a4c}</Project>
+      <Name>Xpinn.Asesores.Entities.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Asesores.Entities\Xpinn.Asesores.Entities.csproj">
+      <Project>{df1c5f00-ef61-49ba-add1-c5028030f2f5}</Project>
+      <Name>Xpinn.Asesores.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Comun.Entities\Xpinn.Comun.Entities.csproj">
+      <Project>{955A6F00-17CF-4CB4-97F7-B8E98E9B3297}</Project>
+      <Name>Xpinn.Comun.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.FabricaCreditos.Entities\Xpinn.FabricaCreditos.Entities.csproj">
+      <Project>{B89884F6-511B-466D-9338-51FC7A656792}</Project>
+      <Name>Xpinn.FabricaCreditos.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Imagenes.Data\Xpinn.Imagenes.Data.csproj">
+      <Project>{7f83db28-7385-4046-91fa-40a12bd33d1a}</Project>
+      <Name>Xpinn.Imagenes.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Util\Xpinn.Util.csproj">
+      <Project>{1DC267F2-1877-46D6-AF5E-F92EB286DFC4}</Project>
+      <Name>Xpinn.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

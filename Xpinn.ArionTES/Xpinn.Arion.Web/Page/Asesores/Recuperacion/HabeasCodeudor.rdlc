@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
+  <Body>
+    <ReportItems>
+      <Textbox Name="Textbox18">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Bogotá D.C, </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Segoe UI</FontFamily>
+                  <FontSize>0.14583in</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <Format>MM/dd/yyyy</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <Format>MM/dd/yyyy</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <Format>MM/dd/yyyy</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Señor: </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Segoe UI</FontFamily>
+                  <FontSize>0.14583in</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Parameters!pCodeudor.Value</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Segoe UI</FontFamily>
+                  <FontSize>0.14583in</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Dirección: </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Segoe UI</FontFamily>
+                  <FontSize>0.14583in</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Teléfono:</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Segoe UI</FontFamily>
+                  <FontSize>0.14583in</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>=Parameters!Pidentificacion.Value</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Segoe UI</FontFamily>
+                  <FontSize>0.14583in</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>ASUNTO:  </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Segoe UI</FontFamily>
+                  <FontSize>0.14583in</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>REPORTE CENTRALES DE RIESGO</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Segoe UI</FontFamily>
+                  <FontSize>0.14583in</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Referencia: </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Segoe UI</FontFamily>
+                  <FontSize>0.14583in</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Respetado (a) Señor(a):</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Segoe UI</FontFamily>
+                  <FontSize>0.14583in</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Segoe UI</FontFamily>
+                  <FontSize>0.14583in</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Segoe UI</FontFamily>
+                  <FontSize>0.14583in</FontSize>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Nos permitimos  informarle  que   la obligación  de la referencia  y de  la cual  </Value>
+                <MarkupType>HTML</MarkupType>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>í </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#ffffff</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>usted  </Value>
+                <MarkupType>HTML</MarkupType>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>í </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#ffffff</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>es ,  se   encuentra  en mora de </Value>
+                <MarkupType>HTML</MarkupType>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve">  </Value>
+                <MarkupType>HTML</MarkupType>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>dí</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>White</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve"> </Value>
+                <MarkupType>HTML</MarkupType>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>White</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> días.</Value>
+                <MarkupType>HTML</MarkupType>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Dando aplicación a la </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>Ley  HABEAS  DATA</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value> Nro. 12  del    31  de  diciembre  de  2008,    articulo 12, si  vencido  el   término  de   que   trata  el    parágrafo  dos  del  artículo  12  de   dicha   ley,  usted no  ha   efectuado  el pago de  la  obligación  y  en   consecuencia persiste  la    mora,  se  efectuará el reporte respectivo  de  su comportamiento a las  centrales de riesgo (Datacrédito y Cifin).</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Recuerde que el pago oportuno de su cuota es el día </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value xml:space="preserve"> </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>de cada mes.</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Para normalizar su obligación debe cancelar:</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>               - El valor de capital                     - Seguro de vida </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>               - Intereses corrientes                  - Intereses moratorios.
+               - Honorarios a que hubiera lugar, si es el caso.</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>El  pago lo  puede  realizar  mediante consignación  en la  cuenta   corriente  Nro.  </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>012-06583-5 </Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>del Banco de  Bogotá,  cuyo  titular   es   Fundación   Emprender   Microcrédito  en   un  formato  del  Sistema Nacional de Recaudo, no olvide indicar claramente nombres, apellidos y   número de identificación del titular (es). Igualmente lo puede realizar en nuestras instalaciones.</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Para   efectos de  liquidar  el valor actual de la  obligación  debe   usted   ponerse   en   contacto previamente al pago en mención, con la suscrita al  6214800  ext.109, a  la dirección  de  correo electrónico    noroli@emprender.com.co,  nov89@hotmail.com, ó con Jorge Londoño  6214800 ext. 126, correo electrónico  jorge.londono@emprender.com.co.</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Comprendemos  que   las   dificultades   siempre   pueden existir, razón por   la cual si llegaré a necesitar  nuestra   colaboración  o    mayor    información   puede   contactarnos en  la  Carrera 49 Nro. 91 – 50, Barrio  la Castellana, teléfono 6214800, ext. 115, 121.</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Atentamente</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Director(a)</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily />
+                  <FontWeight>Normal</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                  <Color>#404142</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Left>0.7186cm</Left>
+        <Height>23.20838cm</Height>
+        <Width>15.07279cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>1pt</PaddingTop>
+          <PaddingBottom>1pt</PaddingBottom>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>9.18924in</Height>
+    <Style />
+  </Body>
+  <ReportParameters>
+    <ReportParameter Name="pCodeudor">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Pidentificacion">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Width>6.5in</Width>
+  <Page>
+    <PageHeader>
+      <Height>1.37583cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Image Name="Image2">
+          <Source>Embedded</Source>
+          <Value>logoEmprender</Value>
+          <Sizing>FitProportional</Sizing>
+          <Height>1.34938cm</Height>
+          <Width>2.46062cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Image>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageHeader>
+    <PageFooter>
+      <Height>0.29104cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageFooter>
+    <PageHeight>27.94cm</PageHeight>
+    <PageWidth>21.59cm</PageWidth>
+    <LeftMargin>2cm</LeftMargin>
+    <RightMargin>2cm</RightMargin>
+    <TopMargin>1cm</TopMargin>
+    <BottomMargin>1cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <EmbeddedImages>
+    <EmbeddedImage Name="logoEmprender">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportID>864b655a-b3e3-4b01-9d88-fb9c6c989f53</rd:ReportID>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+</Report>

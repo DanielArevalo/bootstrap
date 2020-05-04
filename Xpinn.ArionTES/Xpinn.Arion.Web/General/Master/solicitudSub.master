@@ -1,0 +1,128 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="solicitudSub.master.cs"
+    Inherits="Site2" %>
+
+<%--<%@ Register src="../Controles/header.ascx" tagname="header" tagprefix="uc1" %>--%>
+<%@ Register Src="../Controles/ctlauditoria.ascx" TagName="auditoria" TagPrefix="uc2" %>
+<%--<%@ Register src="../Controles/menu.ascx" tagname="menu" tagprefix="uc3" %>--%>
+<!DOCTYPE HTML>
+<html>
+<head id="Head1" runat="server">
+    <title>Xpinn</title>
+    <link href="~/Styles/Styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="masterSub">
+    <script src="<%=ResolveUrl("~/Scripts/JScript.js")%>"></script>
+    <script src="<%=ResolveUrl("~/Scripts/jquery-1.8.3.min.js")%>"></script>
+    <script src="<%=ResolveUrl("~/Scripts/jquery-ui-1.9.2.min.js")%>"></script>
+    <script src="<%=ResolveUrl("~/Scripts/jquery.numeric.js")%>"></script>
+    <script src="<%=ResolveUrl("~/Scripts/PCLBryan.js")%>"></script>
+
+    <script type="text/javascript">
+        //        function LoadingList() {
+        //            var imgLoading = document.getElementById("imgLoading");
+        //            imgLoading.style.visibility = "visible";
+        //        }
+        //
+        //        }
+
+        function EvitarClickeoLocos() {
+            if (contadorClickGuardar == 0) {
+                contadorClickGuardar += 1;
+                return true;
+            }
+            return false;
+        }
+
+        function EvitarClickeoLocosConsulta() {
+            if (contadorClickConsulta == 0) {
+                contadorClickConsulta += 1;
+                return true;
+            }
+            return false;
+        }
+
+        function EvitarClickeoLocosEliminar() {
+            if (contadorClickEliminar == 0) {
+                contadorClickEliminar += 1;
+                return true;
+            }
+            return false;
+        }
+
+        var contadorClickGuardar = 0;
+        var contadorClickConsulta = 0;
+        var contadorClickEliminar = 0;
+        $(document).ready(function () {
+
+            // Algo global para evitar el trolleo de que clickeen al boton de guardar 100 veces y 100 veces guarde,
+            // Ya me han pedido mucho esto asi que lo globalizo
+            // Cuando el servidor responda el 'contadorClickGuardar' volvera a estar en 0 asi se podra clickear el boton solo luego que el servidor responda :D
+            $("#btnGuardar").click(EvitarClickeoLocos);
+            $("#btnConsultar").click(EvitarClickeoLocosConsulta);
+            $("#btnEliminar").click(EvitarClickeoLocosEliminar);
+
+            // Abre una ventana en blanco cuando es clickeado el click derecho abrir nueva ventana
+            // Esperando luz verde porque no me gusta y se ve muy incomodo poner esto
+            //for (var els = document.getElementsByTagName('a'), i = els.length; i--;) {
+            //    var href = els[i].href;
+            //    els[i].href = 'javascript:void(0);';
+            //    els[i].onclick = (function (el, href) {
+            //        return function () {
+            //            window.location.href = href;
+            //        };
+            //    })(els[i], href);
+            //}
+        });
+    </script>
+    <form runat="server">
+    <%-- <uc1:header ID="header1" runat="server" Visible="False" />--%>
+    <div class="container">
+        <%--<div class="style1">
+        <uc3:menu ID="menu1" runat="server" Visible="False" />
+    </div>--%>
+        <div class="colDer fl-lt">
+            <div class="breadcrumb" style="visibility: hidden">
+                <span>
+                    <asp:HyperLink runat="server" ID="home" NavigateUrl="~/General/Global/modulos.aspx"
+                        Text="Inicio" Visible="False" /></span>
+                <asp:Label ID="lblModulo" runat="server" Text="Fabrica de Creditos" Visible="False" />
+            </div>
+            <h2>
+                <asp:Label ID="lblOpcion" runat="server" /></h2>
+            <div class="herramientas">
+                <asp:DropDownList ID="ddlAcciones" runat="server" OnSelectedIndexChanged="ddlAcciones_SelectedIndexChanged" />
+                <asp:ImageButton runat="server" ID="btnGuardar" ImageUrl="~/Images/btnGuardar.jpg"
+                    ValidationGroup="vgGuardar" OnClick="btnGuardar_Click" />
+                <asp:ImageButton runat="server" ID="btnNuevo" ImageUrl="~/Images/btnNuevo.jpg" OnClick="btnNuevo_Click" />
+                <asp:ImageButton runat="server" ID="btnEditar" ImageUrl="~/Images/btnEditar.jpg"
+                    OnClick="btnEditar_Click" />
+                <asp:ImageButton runat="server" ID="btnEliminar" ImageUrl="~/Images/btnEliminar.jpg"
+                    OnClick="btnEliminar_Click" />
+                <asp:ImageButton runat="server" ID="btnConsultar" ImageUrl="~/Images/btnConsultar.jpg"
+                    OnClick="btnConsultar_Click" />
+                <asp:ImageButton runat="server" ID="btnCancelar" ImageUrl="~/Images/btnCancelar.jpg"
+                    OnClick="btnCancelar_Click" />
+                <asp:ImageButton runat="server" ID="btnLimpiar" ImageUrl="~/Images/btnLimpiar.jpg"
+                    OnClick="btnLimpiar_Click" />
+            </div>
+            <div>
+                <asp:Panel ID="plError" runat="server" Visible="False" BorderColor="Red" BorderStyle="Solid"
+                    BorderWidth="1px">
+                    <asp:Label ID="lblError" runat="server" Style="text-align: center" Visible="False"
+                        Width="100%" ForeColor="Red"></asp:Label>
+                </asp:Panel>
+            </div>
+            <div class="clear">
+                <img src="../../Images/btnDatosDelNegocio.jpg" name="imgLoading" id="imgLoading"
+                    class="loading">
+            </div>
+            <asp:ContentPlaceHolder ID="cphMain" runat="server">
+                <p>
+                    &nbsp;</p>
+            </asp:ContentPlaceHolder>
+            <asp:HiddenField ID="hfObj" runat="server" />
+        </div>
+    </div>
+    </form>
+</body>
+</html>

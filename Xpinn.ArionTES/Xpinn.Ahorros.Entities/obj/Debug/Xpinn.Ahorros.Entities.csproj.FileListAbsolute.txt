@@ -1,0 +1,8 @@
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Ahorros.Entities\bin\Debug\Xpinn.Ahorros.Entities.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Ahorros.Entities\bin\Debug\Xpinn.Ahorros.Entities.pdb
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Ahorros.Entities\bin\Debug\Xpinn.FabricaCreditos.Entities.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Ahorros.Entities\bin\Debug\Xpinn.FabricaCreditos.Entities.pdb
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Ahorros.Entities\obj\Debug\Xpinn.Ahorros.Entities.csprojAssemblyReference.cache
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Ahorros.Entities\obj\Debug\Xpinn.Ahorros.Entities.csproj.CopyComplete
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Ahorros.Entities\obj\Debug\Xpinn.Ahorros.Entities.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Ahorros.Entities\obj\Debug\Xpinn.Ahorros.Entities.pdb

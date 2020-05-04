@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetLibroMayor" targetNamespace="http://tempuri.org/DataSetLibroMayor.xsd" xmlns:mstns="http://tempuri.org/DataSetLibroMayor.xsd" xmlns="http://tempuri.org/DataSetLibroMayor.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetLibroMayor" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LibroMayor">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="cod_cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="nombre_cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="cod_tercero" type="xs:long" minOccurs="0" />
+              <xs:element name="iden_tercero" type="xs:string" minOccurs="0" />
+              <xs:element name="nom_tercero" type="xs:string" minOccurs="0" />
+              <xs:element name="saldo_inicial_debito" type="xs:double" minOccurs="0" />
+              <xs:element name="saldo_inicial_credito" type="xs:double" minOccurs="0" />
+              <xs:element name="debito" type="xs:double" minOccurs="0" />
+              <xs:element name="credito" type="xs:double" minOccurs="0" />
+              <xs:element name="saldo_final_debito" type="xs:double" minOccurs="0" />
+              <xs:element name="saldo_final_credito" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

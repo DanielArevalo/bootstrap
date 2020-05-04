@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetDetalle" targetNamespace="http://tempuri.org/DataSetDetalle.xsd" xmlns:mstns="http://tempuri.org/DataSetDetalle.xsd" xmlns="http://tempuri.org/DataSetDetalle.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetDetalle" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdCliente" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoDocumento" type="xs:string" minOccurs="0" />
+              <xs:element name="NumeroDocumento" type="xs:string" minOccurs="0" />
+              <xs:element name="PrimerNombre" type="xs:string" minOccurs="0" />
+              <xs:element name="SegundoNombre" type="xs:string" minOccurs="0" />
+              <xs:element name="PrimerApellido" type="xs:string" minOccurs="0" />
+              <xs:element name="SegundoApellido" type="xs:string" minOccurs="0" />
+              <xs:element name="Direccion" type="xs:string" minOccurs="0" />
+              <xs:element name="Telefono" type="xs:string" minOccurs="0" />
+              <xs:element name="Email" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTable2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="codigo_diligencia" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_diligencia" type="xs:string" minOccurs="0" />
+              <xs:element name="tipo_diligencia" type="xs:string" minOccurs="0" />
+              <xs:element name="atendio" type="xs:string" minOccurs="0" />
+              <xs:element name="respuesta" type="xs:string" minOccurs="0" />
+              <xs:element name="acuerdo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

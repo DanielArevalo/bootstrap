@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtConvIcetex" targetNamespace="http://tempuri.org/dtConvIcetex.xsd" xmlns:mstns="http://tempuri.org/dtConvIcetex.xsd" xmlns="http://tempuri.org/dtConvIcetex.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtConvIcetex" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbConvenio">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fecha" type="xs:string" minOccurs="0" />
+              <xs:element name="monto" type="xs:string" minOccurs="0" />
+              <xs:element name="identificacion" type="xs:string" minOccurs="0" />
+              <xs:element name="codigo" type="xs:string" minOccurs="0" />
+              <xs:element name="nom_asociado" type="xs:string" minOccurs="0" />
+              <xs:element name="nom_beneficiario" type="xs:string" minOccurs="0" />
+              <xs:element name="programa" type="xs:string" minOccurs="0" />
+              <xs:element name="tipo_beneficiario" type="xs:string" minOccurs="0" />
+              <xs:element name="institucion_univ" type="xs:string" minOccurs="0" />
+              <xs:element name="semestre" type="xs:string" minOccurs="0" />
+              <xs:element name="estrato" type="xs:string" minOccurs="0" />
+              <xs:element name="observacion" type="xs:string" minOccurs="0" />
+              <xs:element name="numero_credito" type="xs:string" minOccurs="0" />
+              <xs:element name="esconforme" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

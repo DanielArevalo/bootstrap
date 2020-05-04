@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="testService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="testServiceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DatosClientes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ptipo_convenio" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rutayarchivo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DatosClientesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DatosClientesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ArchivoClientes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ptipo_convenio" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rutayarchivo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="perror" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ArchivoClientesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ArchivoClientesResult" type="tns:StreamReader" />
+            <s:element minOccurs="0" maxOccurs="1" name="perror" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="StreamReader">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:TextReader" />
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="TextReader" abstract="true">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:MarshalByRefObject" />
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="MarshalByRefObject" abstract="true" />
+      <s:element name="CargarMovimientos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ptipo_convenio" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="data" type="tns:ArrayOfString" />
+            <s:element minOccurs="1" maxOccurs="1" name="fecha" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="perror" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CargarMovimientosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CargarMovimientosResult" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="perror" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="testServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:testService" />
+  </wsdl:message>
+  <wsdl:message name="testServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:testServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="DatosClientesSoapIn">
+    <wsdl:part name="parameters" element="tns:DatosClientes" />
+  </wsdl:message>
+  <wsdl:message name="DatosClientesSoapOut">
+    <wsdl:part name="parameters" element="tns:DatosClientesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArchivoClientesSoapIn">
+    <wsdl:part name="parameters" element="tns:ArchivoClientes" />
+  </wsdl:message>
+  <wsdl:message name="ArchivoClientesSoapOut">
+    <wsdl:part name="parameters" element="tns:ArchivoClientesResponse" />
+  </wsdl:message>
+  <wsdl:message name="CargarMovimientosSoapIn">
+    <wsdl:part name="parameters" element="tns:CargarMovimientos" />
+  </wsdl:message>
+  <wsdl:message name="CargarMovimientosSoapOut">
+    <wsdl:part name="parameters" element="tns:CargarMovimientosResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WSTarjetaSoap">
+    <wsdl:operation name="testService">
+      <wsdl:input message="tns:testServiceSoapIn" />
+      <wsdl:output message="tns:testServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DatosClientes">
+      <wsdl:input message="tns:DatosClientesSoapIn" />
+      <wsdl:output message="tns:DatosClientesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ArchivoClientes">
+      <wsdl:input message="tns:ArchivoClientesSoapIn" />
+      <wsdl:output message="tns:ArchivoClientesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CargarMovimientos">
+      <wsdl:input message="tns:CargarMovimientosSoapIn" />
+      <wsdl:output message="tns:CargarMovimientosSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSTarjetaSoap" type="tns:WSTarjetaSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="testService">
+      <soap:operation soapAction="http://tempuri.org/testService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DatosClientes">
+      <soap:operation soapAction="http://tempuri.org/DatosClientes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ArchivoClientes">
+      <soap:operation soapAction="http://tempuri.org/ArchivoClientes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CargarMovimientos">
+      <soap:operation soapAction="http://tempuri.org/CargarMovimientos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSTarjetaSoap12" type="tns:WSTarjetaSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="testService">
+      <soap12:operation soapAction="http://tempuri.org/testService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DatosClientes">
+      <soap12:operation soapAction="http://tempuri.org/DatosClientes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ArchivoClientes">
+      <soap12:operation soapAction="http://tempuri.org/ArchivoClientes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CargarMovimientos">
+      <soap12:operation soapAction="http://tempuri.org/CargarMovimientos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSTarjeta">
+    <wsdl:port name="WSTarjetaSoap" binding="tns:WSTarjetaSoap">
+      <soap:address location="http://localhost/WebServices/WSTarjeta.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSTarjetaSoap12" binding="tns:WSTarjetaSoap12">
+      <soap12:address location="http://localhost/WebServices/WSTarjeta.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

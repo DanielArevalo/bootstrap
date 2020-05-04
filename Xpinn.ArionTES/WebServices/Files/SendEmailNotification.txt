@@ -1,0 +1,73 @@
+<html>
+ <head>
+  <style>
+    html{
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+    body {
+      /*font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+      /*font-family: sans-serif;*/
+      font-family: Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;
+      margin: 0;
+    }
+    .contentJaLo{
+     padding: 30px 30px;
+    }
+    .col-sm-12, .col-sm-6, .col-sm-3{
+     position: relative;
+     min-height: 1px;
+     padding-right: 15px;
+     padding-left: 15px;
+    }
+    .col-sm-12{
+      width: 100%;
+    }
+    .col-sm-6{
+      width: 50%;
+    }
+    .col-sm-3 {
+      width: 25%;
+    }
+    h2{
+      color: #66757f;
+    }
+    h4{
+      color: #66757f;
+    }
+    h3{
+      color: #66757f;
+    }
+  </style>
+ </head>
+ <body>
+     <div class='col-sm-12' style='padding: 15px 15px;'>
+         <table class='col-sm-12' style='padding:15px 15px; background-color: #eee;'>
+             <tr>
+                 <td colspan="3" class='col-sm-12' style='padding-bottom: 15px;'>
+                     <center><img src='@_URL_IMAGE_@' style='width: auto; height:90px;' /></center>
+                 </td>
+             </tr>
+             <tr>
+                 <td class='col-sm-3'>
+                     &nbsp;
+                 </td>
+                 <td class='col-sm-6 contentJaLo' style='background-color: #fff; padding-left: 20px; min-width: 220px; max-width: 650px;'>
+                     <p style="color:#3b5998; font-size:19px; font-weight:500">Tienes nuevas solicitudes generadas.</p>
+                     <hr />
+                     <h4>PROCESO GENERADO : </h4>
+                     <h3>@_PROCESO_GENERADO_@</h3>
+                     <br />
+                     Proceso realizado por el asociado  @_NOMBRE_@ , identificado con @_TIPO_CEDULA_@  #   @_IDENTIFICACION_@
+                     <br /><br /><br />
+                     <span style="font-size:14px; color:#3b5998;">Fecha generada:  </span><span style="color: #66757f; font-size:16px">@_FECHA_GENERACION_@</span>
+                     <br /><br />
+                 </td>
+                 <td class='col-sm-3'>
+                     &nbsp;
+                 </td>
+             </tr>
+         </table>
+     </div>
+ </body>
+</html>

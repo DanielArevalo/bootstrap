@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="GestionDiaria" targetNamespace="http://tempuri.org/GestionDiaria.xsd" xmlns:mstns="http://tempuri.org/GestionDiaria.xsd" xmlns="http://tempuri.org/GestionDiaria.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="GestionDiaria" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OFICINA" type="xs:long" minOccurs="0" />
+              <xs:element name="COD_ASESOR_COM" type="xs:long" minOccurs="0" />
+              <xs:element name="NOMBRE" type="xs:string" minOccurs="0" />
+              <xs:element name="NUM_CRED_CIERRE" type="xs:string" minOccurs="0" />
+              <xs:element name="SALDO_CAPITAL_CIERRE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NUM_CRED_ACTUAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SALDO_CAPITAL_ACTUAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NO_COLOCACION_CIERRE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MONTO_COLOCACION_CIERRE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NO_COLOCACION_ACTUAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MONTO_COLOCACION_ACTUAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="META_COLOCACIONES" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CUMPLIMIENTO_COLOCACIONES" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NUM_CREDMORA_CIERRE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SALDO_MORA_CIERRE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NUM_CREDMORA_ACTUAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SALDO_MORA_ACTUAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SALDO_GCOMUNITARIA_CIERRE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SALDO_GCOMUNITARIA_ACTUAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NUM_CREDMORAMAYOR30_ACTUAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SALDO_MORAMAYOR30_ACTUAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="META_MORAMENOR30" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CUMPLIMIENTO_MORAMENOR30" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NUM_CREDMORAMAYOR60_ACTUAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SALDO_MORAMAYOR60_ACTUAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NUM_CREDMORAMENOR30_ACTUAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SALDO_MORAMENOR30_ACTUAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="META_MORAMAYOR30" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CUMPLIMIENTO_MORAMAYOR30" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FECHA_HISTORICO" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

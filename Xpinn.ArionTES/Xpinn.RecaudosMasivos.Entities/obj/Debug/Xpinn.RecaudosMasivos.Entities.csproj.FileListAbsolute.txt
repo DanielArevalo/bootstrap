@@ -1,0 +1,8 @@
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.RecaudosMasivos.Entities\bin\Debug\Xpinn.RecaudosMasivos.Entities.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.RecaudosMasivos.Entities\bin\Debug\Xpinn.RecaudosMasivos.Entities.pdb
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.RecaudosMasivos.Entities\bin\Debug\Xpinn.FabricaCreditos.Entities.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.RecaudosMasivos.Entities\bin\Debug\Xpinn.FabricaCreditos.Entities.pdb
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.RecaudosMasivos.Entities\obj\Debug\Xpinn.RecaudosMasivos.Entities.csprojAssemblyReference.cache
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.RecaudosMasivos.Entities\obj\Debug\Xpinn.RecaudosMasivos.Entities.csproj.CopyComplete
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.RecaudosMasivos.Entities\obj\Debug\Xpinn.RecaudosMasivos.Entities.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.RecaudosMasivos.Entities\obj\Debug\Xpinn.RecaudosMasivos.Entities.pdb

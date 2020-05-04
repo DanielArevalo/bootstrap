@@ -1,0 +1,435 @@
+﻿/*COLORES A EDITAR*/
+:root {
+    /*BARRA SUPERIOR COLORES*/
+    /*Encabezado de menú izquierdo*/
+    --header-bar-left: white;
+    /*Encabezado de menú derecho*/
+    --header-bar-rigth: white;
+    /*Letra Encabezado de menú derecho*/
+    --char-header: rgb(52,73,94);
+    /*Letra Encabezado de menú derecho con mouse encima*/
+    --char-header-selected: #940136;
+    /*Opcion de menú seleccionada*/
+    --header-option-selected: rgba(52,73,94,.7);
+    /*MENU IZQUIERDO COLORES*/
+    /*Fondo de menu izquierdo*/
+    --left-menu-backgraund: rgba(149, 165, 166,.4);
+    ;
+    /*color letra menu izquierdo*/
+    --left-menu-char: white;
+    /*Color al pasar el mouse sobre un titulo*/
+    --left-menu-backgraund-hover: rgb(87,87,87);
+    /*COLORES DE OPCIONES*/
+    --card1: rgb(52,73,94);
+    --card2: rgb(52,73,94);
+    --card3: rgb(52,73,94);
+    --card4: rgb(52,73,94);
+    --card5: rgb(52,73,94);
+    --card6: rgb(52,73,94);
+    --card7: rgb(52,73,94);
+    --card8: rgb(52,73,94);
+    --card9: rgb(52,73,94);
+    /*COLORES DE LOS ICONOS DE LAS OPCIONES*/
+    --card1-icon: rgba(22, 160, 133,1.0);
+    --card2-icon: rgba(243, 156, 18,1.0);
+    --card3-icon: rgba(39, 174, 96,1.0);
+    --card4-icon: rgba(211, 84, 0,1.0);
+    --card5-icon: rgba(41, 128, 185,1.0);
+    --card6-icon: rgba(192, 57, 43,1.0);
+    --card7-icon: rgba(142, 68, 173,1.0);
+    --card8-icon: rgba(127, 140, 141,1.0);
+    --card9-icon: rgba(44, 62, 80,1.0);
+}
+
+
+
+
+/*ESTILOS USADOS PARA OFICINA VIRTUAL*/
+
+/*BARRA SUPERIOR*/
+.left-start {
+    background-color: var(--header-bar-left);
+    color: var(--char-header);
+}
+
+.rigth-start {
+    background-color: var(--header-bar-rigth);
+    color: var(--char-header);
+}
+
+.treeview a, .dropdown a {
+    color: var(--char-header);
+}
+
+a:hover, a:active, a:focus {
+    outline: none;
+    text-decoration: none;
+    color: var(--header-bar-left);
+}
+
+.nav > li > a:hover, .nav > li > a:active, .nav > li > a:focus {
+    color: var(--char-header-selected);
+    background: var(--header-bar-left);
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: var(--header-option-selected);
+}
+
+.sidebar-toggle {
+    color: var(--char-header);
+}
+
+/*MENÚ IZQUIERDO*/
+.Left-menu {
+    padding: 0px;
+    background-color: var(--left-menu-backgraund);
+    color: var(--left-menu-char);
+    height: 100%;
+    text-align: center;
+}
+
+.Left-menu-element {
+    margin-top: 0%;
+    text-align: left;
+    height: auto;
+}
+
+.treeview-menu {
+    background-color: var(--left-menu-backgraund);
+}
+
+.treeview-title {
+    background-color: var(--left-menu-backgraund);
+    margin: 0;
+}
+
+    .treeview-title:hover {
+        background-color: var(--left-menu-backgraund-hover);
+        color: var(--left-menu-char);
+    }
+
+.treeview-menu > li > a:hover {
+    background-color: var(--left-menu-backgraund-hover);
+    color: var(--left-menu-char);
+}
+
+.opt0 {
+    background-color: var(--card1);
+    color: white
+}
+
+.opt1 {
+    background-color: var(--card2);
+    color: white
+}
+
+.opt2 {
+    background-color: var(--card3);
+    color: white
+}
+
+.opt3 {
+    background-color: var(--card4);
+    color: white
+}
+
+.opt4 {
+    background-color: var(--card5);
+    color: white
+}
+
+.opt5 {
+    background-color: var(--card6);
+    color: white
+}
+
+.opt6 {
+    background-color: var(--card7);
+    color: white
+}
+
+.opt7 {
+    background-color: var(--card8);
+    color: white
+}
+
+.opt8 {
+    background-color: var(--card9);
+    color: white
+}
+
+.opt9 {
+    background-color: var(--card1);
+    color: white
+}
+
+.opt10 {
+    background-color: var(--card2);
+    color: white
+}
+
+.opt11 {
+    background-color: var(--card3);
+    color: white
+}
+
+.opt12 {
+    background-color: var(--card4);
+    color: white
+}
+
+.opt13 {
+    background-color: var(--card5);
+    color: white
+}
+
+.opt14 {
+    background-color: var(--card6);
+    color: white
+}
+
+.opt15 {
+    background-color: var(--card7);
+    color: white
+}
+
+.opt16 {
+    background-color: var(--card8);
+    color: white
+}
+
+.opt17 {
+    background-color: var(--card9);
+    color: white
+}
+
+.opt18 {
+    background-color: var(--card1);
+    color: white
+}
+
+.opt19 {
+    background-color: var(--card2);
+    color: white
+}
+
+.opt20 {
+    background-color: var(--card3);
+    color: white
+}
+
+.opt21 {
+    background-color: var(--card4);
+    color: white
+}
+
+.opt22 {
+    background-color: var(--card5);
+    color: white
+}
+
+.opt23 {
+    background-color: var(--card6);
+    color: white
+}
+
+.opt24 {
+    background-color: var(--card7);
+    color: white
+}
+
+.opt25 {
+    background-color: var(--card8);
+    color: white
+}
+
+.opt26 {
+    background-color: var(--card9);
+    color: white
+}
+
+/*ESTILOS USADOS PARA OPCIONES DEL MENÚ PRINCIPAL*/
+/*Siempre deben ser pares, se crea una con estilo vacio en caso de que no lo sean*/
+.div1 {
+    flex: 1 1 auto;
+    width: 50%;
+    min-width: 100px;
+    padding: 5px;
+    color: var(--char-header);
+}
+
+.card0 {
+    grid-area: card0;
+}
+
+.card1 {
+    grid-area: card1;
+    background-color: var(--card1);
+    color: white;
+}
+
+.card2 {
+    grid-area: card2;
+    background-color: var(--card2);
+    color: white;
+}
+
+.card3 {
+    grid-area: card3;
+    background-color: var(--card3);
+    color: white;
+}
+
+.card4 {
+    grid-area: card4;
+    background-color: var(--card4);
+    color: white;
+}
+
+.card5 {
+    grid-area: card5;
+    background-color: var(--card5);
+    color: white;
+}
+
+.card6 {
+    grid-area: card6;
+    background-color: var(--card6);
+    color: white;
+}
+
+.card7 {
+    grid-area: card7;
+    background-color: var(--card7);
+    color: white;
+}
+
+.card8 {
+    grid-area: card8;
+    background-color: var(--card8);
+    color: white;
+}
+
+.card9 {
+    grid-area: card9;
+    background-color: var(--card9);
+    color: white;
+}
+
+.cardEmpty {
+    grid-area: cardEmpty;
+    background-color: transparent;
+    color: white;
+}
+
+.card1-icon {
+    color: rgba(22, 160, 133,1.0)
+}
+
+.card2-icon {
+    color: rgba(243, 156, 18,1.0)
+}
+
+.card3-icon {
+    color: rgba(39, 174, 96,1.0)
+}
+
+.card4-icon {
+    color: rgba(211, 84, 0,1.0)
+}
+
+.card5-icon {
+    color: rgba(41, 128, 185,1.0)
+}
+
+.card6-icon {
+    color: rgba(192, 57, 43,1.0)
+}
+
+.card7-icon {
+    color: rgba(142, 68, 173,1.0)
+}
+
+.card8-icon {
+    color: rgba(127, 140, 141,1.0)
+}
+
+.card9-icon {
+    color: rgba(44, 62, 80,1.0)
+}
+
+.card10-icon {
+    color: transparent;
+}
+
+/*.grid-container {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+       grid-template-areas:
+         'card0         card0       card1       card2'
+         'card0         card0       card3       card4'
+         'card0         card0       card5       card6'
+         'card0         card0       card7       card8'
+         'cardEmpty     cardEmpty   cardEmpty   cardEmpty';
+       grid-gap: 10px;
+       padding: 10px;       
+     }*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'card0         card0       card0' 'card0         card0       card0' 'card0         card0       card0' 'card0         card0       card0' 'cardEmpty     cardEmpty   cardEmpty';
+    grid-gap: 10px;
+    grid-column-align: center;
+    grid-row-align: center;
+    padding: 10px;
+}
+
+    .grid-container > div {
+        text-align: center;
+        padding: 0px 0;
+        font-size: 30px;
+        border-radius: 10px;
+    }
+
+.option {
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    cursor: pointer;
+}
+
+.index-image {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 10px;
+    min-width: 400px;
+}
+
+
+/*BOTONES*/
+.btn-success-1 {
+    padding: 10px;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 10px;
+}
+
+.btn-success-2 {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+/*PANELES*/
+.panelseccion {
+    background-color: rgba(100,100,100,.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.inSeccion {
+    background-color: white !important;
+}

@@ -1,0 +1,1445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="getOperators">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getOperatorsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getOperatorsResult" type="tns:ArrayOfOperators" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfOperators">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Operators" nillable="true" type="tns:Operators" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Operators">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="operator_id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="operator_name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="is_package" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getPackages">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id_operator" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getPackagesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getPackagesResult" type="tns:ArrayOfPackage" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPackage">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Package" nillable="true" type="tns:Package" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Package">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="package_id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="operator_name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="total" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="createFullMovilTransaction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="transact" type="tns:Fullmovil" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Fullmovil">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="agreement_ref_id" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="agreement_id" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="subtotal" nillable="true" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="taxes" type="tns:ArrayOfTaxes" />
+          <s:element minOccurs="1" maxOccurs="1" name="tip" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="total" nillable="true" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="currency" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="payer_local_id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="transaction_type" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="expiration_date" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="store_id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ref_id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="top_up_status" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="phone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="operador" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="package_id" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="id_transaccion" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_persona" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="descripcion_plan" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_tran" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfTaxes">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Taxes" nillable="true" type="tns:Taxes" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Taxes">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="based_on" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="percentage" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="value" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="createFullMovilTransactionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="createFullMovilTransactionResult" type="tns:Fullmovil" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListFullMovilTransaction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cod_persona" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListFullMovilTransactionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListFullMovilTransactionResult" type="tns:ArrayOfFullmovil" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfFullmovil">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Fullmovil" nillable="true" type="tns:Fullmovil" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="crearMonedero">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cod_persona" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="crearMonederoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="crearMonederoResult" type="tns:Monedero" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Monedero">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id_monedero" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_persona" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="saldo" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="estado" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_apertura" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="consultarMonedero">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cod_persona" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="consultarMonederoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="consultarMonederoResult" type="tns:Monedero" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="consultarPersonaMonedero">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="identificacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="consultarPersonaMonederoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="consultarPersonaMonederoResult" type="tns:PersonaMonedero" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="PersonaMonedero">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="cod_persona" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="identificacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="celular" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="id_monedero" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="estado" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="consultarOperaciones">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="consultarOperacionesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="consultarOperacionesResult" type="tns:ArrayOfOperaciones" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfOperaciones">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Operaciones" nillable="true" type="tns:Operaciones" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Operaciones">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id_operacion" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="estado" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="consultarProductosOrigen">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cod_persona" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="consultarProductosOrigenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="consultarProductosOrigenResult" type="tns:ArrayOfProductoOrigen" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProductoOrigen">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ProductoOrigen" nillable="true" type="tns:ProductoOrigen" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ProductoOrigen">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_producto" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="referencia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="saldo" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="guardarTransaccionMonedero">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="transac" type="tns:TranMonedero" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TranMonedero">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="num_tran" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_persona" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="id_monedero" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_tran" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="estado" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="descripcion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="id_operacion" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_credito" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_tipo_producto" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="referencia" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="guardarTransaccionMonederoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="guardarTransaccionMonederoResult" type="tns:TranMonedero" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="listarTranMonederoPersona">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cod_persona" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="listarTranMonederoPersonaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="listarTranMonederoPersonaResult" type="tns:ArrayOfTranMonedero" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTranMonedero">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TranMonedero" nillable="true" type="tns:TranMonedero" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="consultarConvenioIntegracion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="consultarConvenioIntegracionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="consultarConvenioIntegracionResult" type="tns:Integracion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Integracion">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="entidad" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="descripcion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="estado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="datos" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CreatePaymentTransaction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pPaymentRequest" type="tns:ACHPayment" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ACHPayment">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Type" type="tns:PaymentTypeEnum" />
+          <s:element minOccurs="1" maxOccurs="1" name="Amount" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="VATAmount" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="PaymentID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PaymentDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ServiceCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReferenceNumber1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReferenceNumber2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReferenceNumber3" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Entity_url" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="tns:PaymentStatusEnum" />
+          <s:element minOccurs="1" maxOccurs="1" name="ConfirmedGET" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="BankCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BankName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TypeProduct" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NumberProduct" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TrazabilityCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionCycle" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SolicitedDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Identifier" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Fields" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cod_persona" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cod_ope" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Fecha_Creacion" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Success" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMessage" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="PaymentTypeEnum">
+        <s:restriction base="s:string">
+          <s:enumeration value="normal" />
+          <s:enumeration value="multicredit" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="PaymentStatusEnum">
+        <s:restriction base="s:string">
+          <s:enumeration value="created" />
+          <s:enumeration value="pending" />
+          <s:enumeration value="approved" />
+          <s:enumeration value="rejected" />
+          <s:enumeration value="failed" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="CreatePaymentTransactionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreatePaymentTransactionResult" type="tns:ACHPayment" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePaymentsACH">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cod_persona" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePaymentsACHResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdatePaymentsACHResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultPaymentTransaction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pPaymentFilter" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultPaymentTransactionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultPaymentTransactionResult" type="tns:ACHPayment" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListPaymentTransaction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pPaymentFilter" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListPaymentTransactionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListPaymentTransactionResult" type="tns:PaymentACHResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="PaymentACHResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="PaymentObj" type="tns:ACHPayment" />
+          <s:element minOccurs="0" maxOccurs="1" name="PaymentList" type="tns:ArrayOfACHPayment" />
+          <s:element minOccurs="1" maxOccurs="1" name="Success" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMessage" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfACHPayment">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ACHPayment" nillable="true" type="tns:ACHPayment" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="crearPQR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="peticion" type="tns:PQR" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="PQR">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_persona" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_pqr" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="descripcion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="estado" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="lstRespuestas" type="tns:ArrayOfPQR_Respuesta" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="asesor" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="adjunto" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_estado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_tipo" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfPQR_Respuesta">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="PQR_Respuesta" nillable="true" type="tns:PQR_Respuesta" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PQR_Respuesta">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="id_pqr" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="observacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_persona" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_respuesta" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="crearPQRResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="crearPQRResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="actualizarPQR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="peticion" type="tns:PQR" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="actualizarPQRResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="actualizarPQRResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerPQR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id_pqr" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="obtenerPQRResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obtenerPQRResult" type="tns:PQR" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="listarPQR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="filtro" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="listarPQRResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="listarPQRResult" type="tns:ArrayOfPQR" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPQR">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="PQR" nillable="true" type="tns:PQR" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="enviarClaveDinamica">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="noti" type="tns:Notificacion" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Notificacion">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="descripcion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_persona" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="enviar_mensaje" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="enviar_email" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="celular" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="correo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="correo_texto" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mensaje_texto" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="correo_parametros" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mensaje_parametros" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="client" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="enviador_email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="enviador_clave" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_mensaje" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_email" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="clave_dinamica" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="enviarClaveDinamicaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="enviarClaveDinamicaResult" type="tns:Notificacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="enviarNotificaciones">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="noti" type="tns:Notificacion" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="enviarNotificacionesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="enviarNotificacionesResult" type="tns:Notificacion" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="listarProductosPorPagar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cod_persona" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="filtro" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="listarProductosPorPagarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="listarProductosPorPagarResult" type="tns:ArrayOfProductoPorPagar" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProductoPorPagar">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ProductoPorPagar" nillable="true" type="tns:ProductoPorPagar" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ProductoPorPagar">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="cod_persona" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_producto" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="descr_tipo_producto" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="id_linea" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="descr_linea" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="id_producto" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_prox_pago" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor_a_pagar" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="listarProductoOrigenPago">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cod_persona" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="filtro" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="listarProductoOrigenPagoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="listarProductoOrigenPagoResult" type="tns:ArrayOfProductoOrigenPago" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProductoOrigenPago">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ProductoOrigenPago" nillable="true" type="tns:ProductoOrigenPago" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ProductoOrigenPago">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="cod_persona" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_producto" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="descr_tipo_producto" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="id_linea" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="descr_linea" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="id_producto" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="disponible" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="procesarPagoInterno">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pago" type="tns:PagoInterno" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="PagoInterno">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="cod_persona" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="origen_tipo_producto" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="origen_id_producto" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="destino_tipo_producto" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="destino_id_producto" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombres" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="identificacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="asesor" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_tipo_origen" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_tipo_destino" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_linea_origen" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_linea_destino" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_ope" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="procesarPagoInternoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="procesarPagoInternoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="getOperatorsSoapIn">
+    <wsdl:part name="parameters" element="tns:getOperators" />
+  </wsdl:message>
+  <wsdl:message name="getOperatorsSoapOut">
+    <wsdl:part name="parameters" element="tns:getOperatorsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getPackagesSoapIn">
+    <wsdl:part name="parameters" element="tns:getPackages" />
+  </wsdl:message>
+  <wsdl:message name="getPackagesSoapOut">
+    <wsdl:part name="parameters" element="tns:getPackagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="createFullMovilTransactionSoapIn">
+    <wsdl:part name="parameters" element="tns:createFullMovilTransaction" />
+  </wsdl:message>
+  <wsdl:message name="createFullMovilTransactionSoapOut">
+    <wsdl:part name="parameters" element="tns:createFullMovilTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListFullMovilTransactionSoapIn">
+    <wsdl:part name="parameters" element="tns:ListFullMovilTransaction" />
+  </wsdl:message>
+  <wsdl:message name="ListFullMovilTransactionSoapOut">
+    <wsdl:part name="parameters" element="tns:ListFullMovilTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="crearMonederoSoapIn">
+    <wsdl:part name="parameters" element="tns:crearMonedero" />
+  </wsdl:message>
+  <wsdl:message name="crearMonederoSoapOut">
+    <wsdl:part name="parameters" element="tns:crearMonederoResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultarMonederoSoapIn">
+    <wsdl:part name="parameters" element="tns:consultarMonedero" />
+  </wsdl:message>
+  <wsdl:message name="consultarMonederoSoapOut">
+    <wsdl:part name="parameters" element="tns:consultarMonederoResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultarPersonaMonederoSoapIn">
+    <wsdl:part name="parameters" element="tns:consultarPersonaMonedero" />
+  </wsdl:message>
+  <wsdl:message name="consultarPersonaMonederoSoapOut">
+    <wsdl:part name="parameters" element="tns:consultarPersonaMonederoResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultarOperacionesSoapIn">
+    <wsdl:part name="parameters" element="tns:consultarOperaciones" />
+  </wsdl:message>
+  <wsdl:message name="consultarOperacionesSoapOut">
+    <wsdl:part name="parameters" element="tns:consultarOperacionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultarProductosOrigenSoapIn">
+    <wsdl:part name="parameters" element="tns:consultarProductosOrigen" />
+  </wsdl:message>
+  <wsdl:message name="consultarProductosOrigenSoapOut">
+    <wsdl:part name="parameters" element="tns:consultarProductosOrigenResponse" />
+  </wsdl:message>
+  <wsdl:message name="guardarTransaccionMonederoSoapIn">
+    <wsdl:part name="parameters" element="tns:guardarTransaccionMonedero" />
+  </wsdl:message>
+  <wsdl:message name="guardarTransaccionMonederoSoapOut">
+    <wsdl:part name="parameters" element="tns:guardarTransaccionMonederoResponse" />
+  </wsdl:message>
+  <wsdl:message name="listarTranMonederoPersonaSoapIn">
+    <wsdl:part name="parameters" element="tns:listarTranMonederoPersona" />
+  </wsdl:message>
+  <wsdl:message name="listarTranMonederoPersonaSoapOut">
+    <wsdl:part name="parameters" element="tns:listarTranMonederoPersonaResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultarConvenioIntegracionSoapIn">
+    <wsdl:part name="parameters" element="tns:consultarConvenioIntegracion" />
+  </wsdl:message>
+  <wsdl:message name="consultarConvenioIntegracionSoapOut">
+    <wsdl:part name="parameters" element="tns:consultarConvenioIntegracionResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreatePaymentTransactionSoapIn">
+    <wsdl:part name="parameters" element="tns:CreatePaymentTransaction" />
+  </wsdl:message>
+  <wsdl:message name="CreatePaymentTransactionSoapOut">
+    <wsdl:part name="parameters" element="tns:CreatePaymentTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePaymentsACHSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdatePaymentsACH" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePaymentsACHSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdatePaymentsACHResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultPaymentTransactionSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultPaymentTransaction" />
+  </wsdl:message>
+  <wsdl:message name="ConsultPaymentTransactionSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultPaymentTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListPaymentTransactionSoapIn">
+    <wsdl:part name="parameters" element="tns:ListPaymentTransaction" />
+  </wsdl:message>
+  <wsdl:message name="ListPaymentTransactionSoapOut">
+    <wsdl:part name="parameters" element="tns:ListPaymentTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="crearPQRSoapIn">
+    <wsdl:part name="parameters" element="tns:crearPQR" />
+  </wsdl:message>
+  <wsdl:message name="crearPQRSoapOut">
+    <wsdl:part name="parameters" element="tns:crearPQRResponse" />
+  </wsdl:message>
+  <wsdl:message name="actualizarPQRSoapIn">
+    <wsdl:part name="parameters" element="tns:actualizarPQR" />
+  </wsdl:message>
+  <wsdl:message name="actualizarPQRSoapOut">
+    <wsdl:part name="parameters" element="tns:actualizarPQRResponse" />
+  </wsdl:message>
+  <wsdl:message name="obtenerPQRSoapIn">
+    <wsdl:part name="parameters" element="tns:obtenerPQR" />
+  </wsdl:message>
+  <wsdl:message name="obtenerPQRSoapOut">
+    <wsdl:part name="parameters" element="tns:obtenerPQRResponse" />
+  </wsdl:message>
+  <wsdl:message name="listarPQRSoapIn">
+    <wsdl:part name="parameters" element="tns:listarPQR" />
+  </wsdl:message>
+  <wsdl:message name="listarPQRSoapOut">
+    <wsdl:part name="parameters" element="tns:listarPQRResponse" />
+  </wsdl:message>
+  <wsdl:message name="enviarClaveDinamicaSoapIn">
+    <wsdl:part name="parameters" element="tns:enviarClaveDinamica" />
+  </wsdl:message>
+  <wsdl:message name="enviarClaveDinamicaSoapOut">
+    <wsdl:part name="parameters" element="tns:enviarClaveDinamicaResponse" />
+  </wsdl:message>
+  <wsdl:message name="enviarNotificacionesSoapIn">
+    <wsdl:part name="parameters" element="tns:enviarNotificaciones" />
+  </wsdl:message>
+  <wsdl:message name="enviarNotificacionesSoapOut">
+    <wsdl:part name="parameters" element="tns:enviarNotificacionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="listarProductosPorPagarSoapIn">
+    <wsdl:part name="parameters" element="tns:listarProductosPorPagar" />
+  </wsdl:message>
+  <wsdl:message name="listarProductosPorPagarSoapOut">
+    <wsdl:part name="parameters" element="tns:listarProductosPorPagarResponse" />
+  </wsdl:message>
+  <wsdl:message name="listarProductoOrigenPagoSoapIn">
+    <wsdl:part name="parameters" element="tns:listarProductoOrigenPago" />
+  </wsdl:message>
+  <wsdl:message name="listarProductoOrigenPagoSoapOut">
+    <wsdl:part name="parameters" element="tns:listarProductoOrigenPagoResponse" />
+  </wsdl:message>
+  <wsdl:message name="procesarPagoInternoSoapIn">
+    <wsdl:part name="parameters" element="tns:procesarPagoInterno" />
+  </wsdl:message>
+  <wsdl:message name="procesarPagoInternoSoapOut">
+    <wsdl:part name="parameters" element="tns:procesarPagoInternoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WSintegracionSoap">
+    <wsdl:operation name="getOperators">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtiene la lista de operadores disponibles</wsdl:documentation>
+      <wsdl:input message="tns:getOperatorsSoapIn" />
+      <wsdl:output message="tns:getOperatorsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getPackages">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtiene la lista de paquetes de un operador</wsdl:documentation>
+      <wsdl:input message="tns:getPackagesSoapIn" />
+      <wsdl:output message="tns:getPackagesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="createFullMovilTransaction">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Solicita la creación de una transacción de recarga</wsdl:documentation>
+      <wsdl:input message="tns:createFullMovilTransactionSoapIn" />
+      <wsdl:output message="tns:createFullMovilTransactionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListFullMovilTransaction">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Lista las transacciones de una persona</wsdl:documentation>
+      <wsdl:input message="tns:ListFullMovilTransactionSoapIn" />
+      <wsdl:output message="tns:ListFullMovilTransactionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="crearMonedero">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">crea o activa el monedero para la persona</wsdl:documentation>
+      <wsdl:input message="tns:crearMonederoSoapIn" />
+      <wsdl:output message="tns:crearMonederoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarMonedero">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">crea o activa el monedero para la persona</wsdl:documentation>
+      <wsdl:input message="tns:consultarMonederoSoapIn" />
+      <wsdl:output message="tns:consultarMonederoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarPersonaMonedero">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">consulta monedero de destino</wsdl:documentation>
+      <wsdl:input message="tns:consultarPersonaMonederoSoapIn" />
+      <wsdl:output message="tns:consultarPersonaMonederoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarOperaciones">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Lista operaciones disponibles</wsdl:documentation>
+      <wsdl:input message="tns:consultarOperacionesSoapIn" />
+      <wsdl:output message="tns:consultarOperacionesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarProductosOrigen">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Lista productos de origen para recargar monedero</wsdl:documentation>
+      <wsdl:input message="tns:consultarProductosOrigenSoapIn" />
+      <wsdl:output message="tns:consultarProductosOrigenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="guardarTransaccionMonedero">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Lista productos de origen para recargar monedero</wsdl:documentation>
+      <wsdl:input message="tns:guardarTransaccionMonederoSoapIn" />
+      <wsdl:output message="tns:guardarTransaccionMonederoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="listarTranMonederoPersona">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Lista productos de origen para recargar monedero</wsdl:documentation>
+      <wsdl:input message="tns:listarTranMonederoPersonaSoapIn" />
+      <wsdl:output message="tns:listarTranMonederoPersonaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarConvenioIntegracion">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Consulta convenio</wsdl:documentation>
+      <wsdl:input message="tns:consultarConvenioIntegracionSoapIn" />
+      <wsdl:output message="tns:consultarConvenioIntegracionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePaymentTransaction">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Creación de Transacción Pago ACH.</wsdl:documentation>
+      <wsdl:input message="tns:CreatePaymentTransactionSoapIn" />
+      <wsdl:output message="tns:CreatePaymentTransactionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePaymentsACH">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Actualiza transacciones de Pagos ACH.</wsdl:documentation>
+      <wsdl:input message="tns:UpdatePaymentsACHSoapIn" />
+      <wsdl:output message="tns:UpdatePaymentsACHSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultPaymentTransaction">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Consulta Transacción de Pago ACH.</wsdl:documentation>
+      <wsdl:input message="tns:ConsultPaymentTransactionSoapIn" />
+      <wsdl:output message="tns:ConsultPaymentTransactionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListPaymentTransaction">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Lista de Transacciones Pagos ACH.</wsdl:documentation>
+      <wsdl:input message="tns:ListPaymentTransactionSoapIn" />
+      <wsdl:output message="tns:ListPaymentTransactionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="crearPQR">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Crea petición queja o reclamo.</wsdl:documentation>
+      <wsdl:input message="tns:crearPQRSoapIn" />
+      <wsdl:output message="tns:crearPQRSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="actualizarPQR">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Actualiza petición queja o reclamo.</wsdl:documentation>
+      <wsdl:input message="tns:actualizarPQRSoapIn" />
+      <wsdl:output message="tns:actualizarPQRSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerPQR">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Obtiene datos de un pqr con seguimiento.</wsdl:documentation>
+      <wsdl:input message="tns:obtenerPQRSoapIn" />
+      <wsdl:output message="tns:obtenerPQRSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="listarPQR">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Lista PQR según filtro</wsdl:documentation>
+      <wsdl:input message="tns:listarPQRSoapIn" />
+      <wsdl:output message="tns:listarPQRSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="enviarClaveDinamica">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Envía clave dinamica y retorna su valor.</wsdl:documentation>
+      <wsdl:input message="tns:enviarClaveDinamicaSoapIn" />
+      <wsdl:output message="tns:enviarClaveDinamicaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="enviarNotificaciones">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Envía notificaciones por sms y email.</wsdl:documentation>
+      <wsdl:input message="tns:enviarNotificacionesSoapIn" />
+      <wsdl:output message="tns:enviarNotificacionesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="listarProductosPorPagar">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Lista productos por pagar con valor y fecha</wsdl:documentation>
+      <wsdl:input message="tns:listarProductosPorPagarSoapIn" />
+      <wsdl:output message="tns:listarProductosPorPagarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="listarProductoOrigenPago">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Lista productos por pagar con valor y fecha</wsdl:documentation>
+      <wsdl:input message="tns:listarProductoOrigenPagoSoapIn" />
+      <wsdl:output message="tns:listarProductoOrigenPagoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="procesarPagoInterno">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">procesar Transaccion</wsdl:documentation>
+      <wsdl:input message="tns:procesarPagoInternoSoapIn" />
+      <wsdl:output message="tns:procesarPagoInternoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSintegracionSoap" type="tns:WSintegracionSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getOperators">
+      <soap:operation soapAction="http://tempuri.org/getOperators" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPackages">
+      <soap:operation soapAction="http://tempuri.org/getPackages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createFullMovilTransaction">
+      <soap:operation soapAction="http://tempuri.org/createFullMovilTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListFullMovilTransaction">
+      <soap:operation soapAction="http://tempuri.org/ListFullMovilTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="crearMonedero">
+      <soap:operation soapAction="http://tempuri.org/crearMonedero" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarMonedero">
+      <soap:operation soapAction="http://tempuri.org/consultarMonedero" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarPersonaMonedero">
+      <soap:operation soapAction="http://tempuri.org/consultarPersonaMonedero" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarOperaciones">
+      <soap:operation soapAction="http://tempuri.org/consultarOperaciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarProductosOrigen">
+      <soap:operation soapAction="http://tempuri.org/consultarProductosOrigen" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="guardarTransaccionMonedero">
+      <soap:operation soapAction="http://tempuri.org/guardarTransaccionMonedero" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listarTranMonederoPersona">
+      <soap:operation soapAction="http://tempuri.org/listarTranMonederoPersona" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarConvenioIntegracion">
+      <soap:operation soapAction="http://tempuri.org/consultarConvenioIntegracion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePaymentTransaction">
+      <soap:operation soapAction="http://tempuri.org/CreatePaymentTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePaymentsACH">
+      <soap:operation soapAction="http://tempuri.org/UpdatePaymentsACH" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultPaymentTransaction">
+      <soap:operation soapAction="http://tempuri.org/ConsultPaymentTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListPaymentTransaction">
+      <soap:operation soapAction="http://tempuri.org/ListPaymentTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="crearPQR">
+      <soap:operation soapAction="http://tempuri.org/crearPQR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizarPQR">
+      <soap:operation soapAction="http://tempuri.org/actualizarPQR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerPQR">
+      <soap:operation soapAction="http://tempuri.org/obtenerPQR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listarPQR">
+      <soap:operation soapAction="http://tempuri.org/listarPQR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enviarClaveDinamica">
+      <soap:operation soapAction="http://tempuri.org/enviarClaveDinamica" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enviarNotificaciones">
+      <soap:operation soapAction="http://tempuri.org/enviarNotificaciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listarProductosPorPagar">
+      <soap:operation soapAction="http://tempuri.org/listarProductosPorPagar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listarProductoOrigenPago">
+      <soap:operation soapAction="http://tempuri.org/listarProductoOrigenPago" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="procesarPagoInterno">
+      <soap:operation soapAction="http://tempuri.org/procesarPagoInterno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSintegracionSoap12" type="tns:WSintegracionSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getOperators">
+      <soap12:operation soapAction="http://tempuri.org/getOperators" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPackages">
+      <soap12:operation soapAction="http://tempuri.org/getPackages" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createFullMovilTransaction">
+      <soap12:operation soapAction="http://tempuri.org/createFullMovilTransaction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListFullMovilTransaction">
+      <soap12:operation soapAction="http://tempuri.org/ListFullMovilTransaction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="crearMonedero">
+      <soap12:operation soapAction="http://tempuri.org/crearMonedero" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarMonedero">
+      <soap12:operation soapAction="http://tempuri.org/consultarMonedero" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarPersonaMonedero">
+      <soap12:operation soapAction="http://tempuri.org/consultarPersonaMonedero" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarOperaciones">
+      <soap12:operation soapAction="http://tempuri.org/consultarOperaciones" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarProductosOrigen">
+      <soap12:operation soapAction="http://tempuri.org/consultarProductosOrigen" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="guardarTransaccionMonedero">
+      <soap12:operation soapAction="http://tempuri.org/guardarTransaccionMonedero" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listarTranMonederoPersona">
+      <soap12:operation soapAction="http://tempuri.org/listarTranMonederoPersona" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarConvenioIntegracion">
+      <soap12:operation soapAction="http://tempuri.org/consultarConvenioIntegracion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePaymentTransaction">
+      <soap12:operation soapAction="http://tempuri.org/CreatePaymentTransaction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePaymentsACH">
+      <soap12:operation soapAction="http://tempuri.org/UpdatePaymentsACH" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultPaymentTransaction">
+      <soap12:operation soapAction="http://tempuri.org/ConsultPaymentTransaction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListPaymentTransaction">
+      <soap12:operation soapAction="http://tempuri.org/ListPaymentTransaction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="crearPQR">
+      <soap12:operation soapAction="http://tempuri.org/crearPQR" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizarPQR">
+      <soap12:operation soapAction="http://tempuri.org/actualizarPQR" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerPQR">
+      <soap12:operation soapAction="http://tempuri.org/obtenerPQR" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listarPQR">
+      <soap12:operation soapAction="http://tempuri.org/listarPQR" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enviarClaveDinamica">
+      <soap12:operation soapAction="http://tempuri.org/enviarClaveDinamica" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enviarNotificaciones">
+      <soap12:operation soapAction="http://tempuri.org/enviarNotificaciones" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listarProductosPorPagar">
+      <soap12:operation soapAction="http://tempuri.org/listarProductosPorPagar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listarProductoOrigenPago">
+      <soap12:operation soapAction="http://tempuri.org/listarProductoOrigenPago" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="procesarPagoInterno">
+      <soap12:operation soapAction="http://tempuri.org/procesarPagoInterno" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSintegracion">
+    <wsdl:port name="WSintegracionSoap" binding="tns:WSintegracionSoap">
+      <soap:address location="http://localhost/WebServices/WSintegracion.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSintegracionSoap12" binding="tns:WSintegracionSoap12">
+      <soap12:address location="http://localhost/WebServices/WSintegracion.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

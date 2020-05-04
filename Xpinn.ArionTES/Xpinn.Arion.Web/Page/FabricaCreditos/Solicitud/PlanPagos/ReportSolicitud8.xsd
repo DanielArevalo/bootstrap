@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ReportSolicitud8" targetNamespace="http://tempuri.org/ReportSolicitud8.xsd" xmlns:mstns="http://tempuri.org/ReportSolicitud8.xsd" xmlns="http://tempuri.org/ReportSolicitud8.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ReportSolicitud8" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTableRepoInfFinanNegoc">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTableRepoInffamiliar">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTableRepoInffamiliaregre">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTableActivos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTablepasivos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTablefamactivos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTablefampasivos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTablecomposicionpasivo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Acreedor" msdata:Caption="Cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="MontoOtorgado" msdata:Caption="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="ValorCuota" msdata:Caption="Valor" type="xs:string" minOccurs="0" />
+              <xs:element name="Frecuencia" type="xs:string" minOccurs="0" />
+              <xs:element name="CuotaActual" type="xs:string" minOccurs="0" />
+              <xs:element name="Plazo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTableInvenActFijo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Descripcion" msdata:Caption="Cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor" msdata:Caption="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="Marca" msdata:Caption="Valor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTableInvMaterPrima">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Descripcion" msdata:Caption="Cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor" msdata:Caption="Descripcion" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTableProduProceso">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cantidad" msdata:Caption="Cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="Producto" msdata:Caption="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="Porcentaje" msdata:Caption="Valor" type="xs:string" minOccurs="0" />
+              <xs:element name="ValorUnitario" msdata:Caption="Frecuencia" type="xs:string" minOccurs="0" />
+              <xs:element name="Total" msdata:Caption="CuotaActual" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTableProduTerminados">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cantidad" msdata:Caption="Cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="Producto" msdata:Caption="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="ValorUnitario" msdata:Caption="Frecuencia" type="xs:string" minOccurs="0" />
+              <xs:element name="Total" msdata:Caption="CuotaActual" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTableRelacionDocumentos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Documentos" msdata:Caption="Cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="Solicitante" msdata:Caption="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="Codeudor" msdata:Caption="Valor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTableRelacionDocDesembolso">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Documentos" msdata:Caption="Cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="Solicitante" msdata:Caption="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="Codeudor" msdata:Caption="Valor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTableRelacionDocControlTiempo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Documentos" msdata:Caption="Cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="Dia" msdata:Caption="Descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="Mes" msdata:Caption="Valor" type="xs:string" minOccurs="0" />
+              <xs:element name="Ao" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTableBienesraicode">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Tipo" type="xs:string" minOccurs="0" />
+              <xs:element name="MatriculaInmobiliaria" type="xs:string" minOccurs="0" />
+              <xs:element name="ValorComercial" type="xs:string" minOccurs="0" />
+              <xs:element name="ValorHipoteca" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTableVehiculosCode">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Marca" msdata:Caption="Tipo" type="xs:string" minOccurs="0" />
+              <xs:element name="Placa" msdata:Caption="MatriculaInmobiliaria" type="xs:string" minOccurs="0" />
+              <xs:element name="Modelo" type="xs:string" minOccurs="0" />
+              <xs:element name="ValorComercial" msdata:Caption="ValorHipoteca" type="xs:string" minOccurs="0" />
+              <xs:element name="ValorPrenda" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTablePresupfamCode">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ActividadPrincipal" msdata:Caption="Tipo" type="xs:string" minOccurs="0" />
+              <xs:element name="Conyuge" type="xs:string" minOccurs="0" />
+              <xs:element name="OtrosIngresos" type="xs:string" minOccurs="0" />
+              <xs:element name="ConsumoFamiliar" type="xs:string" minOccurs="0" />
+              <xs:element name="ObligacionesOCuotas" type="xs:string" minOccurs="0" />
+              <xs:element name="Excedente" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTablePresupEmpreCode">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TotalActivo" msdata:Caption="Tipo" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalPasivo" msdata:Caption="MatriculaInmobiliaria" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalPatrimonio" msdata:Caption="Modelo" type="xs:string" minOccurs="0" />
+              <xs:element name="VentaMensual" msdata:Caption="ValorHipoteca" type="xs:string" minOccurs="0" />
+              <xs:element name="CostoTotal" msdata:Caption="ValorPrenda" type="xs:string" minOccurs="0" />
+              <xs:element name="Utilidad" msdata:Caption="Excedente" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTableReferCode">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombres" msdata:Caption="Tipo" type="xs:string" minOccurs="0" />
+              <xs:element name="tiporeferencia" msdata:Caption="Conyuge" type="xs:string" minOccurs="0" />
+              <xs:element name="telefonoref" msdata:Caption="OtrosIngresos" type="xs:string" minOccurs="0" />
+              <xs:element name="direccionref" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTableViabilidad">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PruebaAcida" msdata:Caption="Tipo" type="xs:string" minOccurs="0" />
+              <xs:element name="EndeudamientoTotal" msdata:Caption="Conyuge" type="xs:string" minOccurs="0" />
+              <xs:element name="RotacionCuentasXCobrar" msdata:Caption="OtrosIngresos" type="xs:string" minOccurs="0" />
+              <xs:element name="GastosFamiliares" type="xs:string" minOccurs="0" />
+              <xs:element name="RotacionCuentasXPagar" type="xs:string" minOccurs="0" />
+              <xs:element name="RotacionCapitalTrabajo" type="xs:string" minOccurs="0" />
+              <xs:element name="RotacionInventarios" type="xs:string" minOccurs="0" />
+              <xs:element name="PuntoEquilibrio" type="xs:string" minOccurs="0" />
+              <xs:element name="EF" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTableIngEgres">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SueldoSolicitante" type="xs:string" minOccurs="0" />
+              <xs:element name="HonorariosSolicitante" type="xs:string" minOccurs="0" />
+              <xs:element name="ArrendamientosSolicitante" type="xs:string" minOccurs="0" />
+              <xs:element name="OtrosIngresosSolicitante" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalIngresosSolicitante" type="xs:string" minOccurs="0" />
+              <xs:element name="SueldoConyuge" type="xs:string" minOccurs="0" />
+              <xs:element name="HonorariosConyuge" type="xs:string" minOccurs="0" />
+              <xs:element name="ArrendamientosConyuge" type="xs:string" minOccurs="0" />
+              <xs:element name="OtrosIngresosConyuge" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalIngresosConyuge" type="xs:string" minOccurs="0" />
+              <xs:element name="HipotecaSolicitante" type="xs:string" minOccurs="0" />
+              <xs:element name="TarjetaCreditoSolicitante" type="xs:string" minOccurs="0" />
+              <xs:element name="CuotasPresSolicitante" type="xs:string" minOccurs="0" />
+              <xs:element name="GastosFamSolicitante" type="xs:string" minOccurs="0" />
+              <xs:element name="DescuentosSolicitante" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalEgresosSolicitante" type="xs:string" minOccurs="0" />
+              <xs:element name="HipotecaConyuge" type="xs:string" minOccurs="0" />
+              <xs:element name="TarjetaCreditoConyuge" type="xs:string" minOccurs="0" />
+              <xs:element name="CuotasPresConyuge" type="xs:string" minOccurs="0" />
+              <xs:element name="GastosFamConyuge" type="xs:string" minOccurs="0" />
+              <xs:element name="DescuentosConyuge" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalEgresosConyuge" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

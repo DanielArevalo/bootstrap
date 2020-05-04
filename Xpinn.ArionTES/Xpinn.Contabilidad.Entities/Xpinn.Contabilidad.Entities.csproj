@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E784BD0B-D163-43A7-92F7-C65A3B1EC299}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Xpinn.Contabilidad.Entities</RootNamespace>
+    <AssemblyName>Xpinn.Contabilidad.Entities</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.10.0.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.10.0\lib\net40\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BalanceGenComp.cs" />
+    <Compile Include="BalanceGeneral.cs" />
+    <Compile Include="BalanceTerceros.cs" />
+    <Compile Include="BalancePrueba.cs" />
+    <Compile Include="CambioPatrimonio.cs" />
+    <Compile Include="CentroCosto.cs" />
+    <Compile Include="CentroGestion.cs" />
+    <Compile Include="CierreTerceros.cs" />
+    <Compile Include="CierreAnual.cs" />
+    <Compile Include="Cierremensual.cs" />
+    <Compile Include="Comprobante.cs" />
+    <Compile Include="Concepto.cs" />
+    <Compile Include="ErroresCargaContabil.cs" />
+    <Compile Include="EstFlujoEfectivo.cs" />
+    <Compile Include="Par_Cue_Nomina.cs" />
+    <Compile Include="TipoInversiones.cs" />
+    <Compile Include="Inversiones.cs" />
+    <Compile Include="InterfazNomina.cs" />
+    <Compile Include="Par_Cue_LinAho.cs" />
+    <Compile Include="Par_Cue_LinAux.cs" />
+    <Compile Include="par_cue_linser.cs" />
+    <Compile Include="PlanCuentasImpuesto.cs" />
+    <Compile Include="Par_Cue_Obligacion.cs" />
+    <Compile Include="Par_Cue_Otros.cs" />
+    <Compile Include="Par_Cue_LinApo.cs" />
+    <Compile Include="Impuesto.cs" />
+    <Compile Include="ReporteImpuestos.cs" />
+    <Compile Include="DetalleComprobante.cs" />
+    <Compile Include="DetImpuesto.cs" />
+    <Compile Include="EstructuraDetalle.cs" />
+    <Compile Include="LibroAuxiliar.cs" />
+    <Compile Include="LibroDiario.cs" />
+    <Compile Include="LibroDiarioColumnario.cs" />
+    <Compile Include="LibroMayor.cs" />
+    <Compile Include="LibroTerceros.cs" />
+    <Compile Include="Par_Cue_LinCred.cs" />
+    <Compile Include="PlanCuentas.cs" />
+    <Compile Include="ProcesoContable.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PyG.cs" />
+    <Compile Include="PyGComp.cs" />
+    <Compile Include="Reporte.cs" />
+    <Compile Include="SaldosTerceros.cs" />
+    <Compile Include="SucursalBancaria.cs" />
+    <Compile Include="Tercero.cs" />
+    <Compile Include="TipoComprobante.cs" />
+    <Compile Include="TipoImpuesto.cs" />
+    <Compile Include="TipoMoneda.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xpinn.FabricaCreditos.Entities\Xpinn.FabricaCreditos.Entities.csproj">
+      <Project>{B89884F6-511B-466D-9338-51FC7A656792}</Project>
+      <Name>Xpinn.FabricaCreditos.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

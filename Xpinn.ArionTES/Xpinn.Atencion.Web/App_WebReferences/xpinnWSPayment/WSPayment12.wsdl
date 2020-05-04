@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CreatePaymentTransaction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pPaymentRequest" type="tns:PaymentACH" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="PaymentACH">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Type" type="tns:PaymentTypeEnum" />
+          <s:element minOccurs="1" maxOccurs="1" name="Amount" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="VATAmount" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="PaymentID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PaymentDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ServiceCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReferenceNumber1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReferenceNumber2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReferenceNumber3" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="tns:PaymentStatusEnum" />
+          <s:element minOccurs="1" maxOccurs="1" name="ConfirmedGET" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="BankCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BankName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TypeProduct" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NumberProduct" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TrazabilityCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TransactionCycle" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SolicitedDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Identifier" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cod_persona" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cod_ope" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Fecha_Creacion" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Success" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMessage" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="PaymentTypeEnum">
+        <s:restriction base="s:string">
+          <s:enumeration value="normal" />
+          <s:enumeration value="multicredit" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="PaymentStatusEnum">
+        <s:restriction base="s:string">
+          <s:enumeration value="created" />
+          <s:enumeration value="pending" />
+          <s:enumeration value="approved" />
+          <s:enumeration value="rejected" />
+          <s:enumeration value="failed" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="CreatePaymentTransactionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreatePaymentTransactionResult" type="tns:PaymentACH" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePaymentTransaction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pPaymentRequest" type="tns:PaymentACH" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePaymentTransactionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdatePaymentTransactionResult" type="tns:PaymentACH" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultPaymentTransaction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pPaymentFilter" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultPaymentTransactionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultPaymentTransactionResult" type="tns:PaymentACH" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListPaymentTransaction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pPaymentFilter" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListPaymentTransactionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListPaymentTransactionResult" type="tns:PaymentACHResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="PaymentACHResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="PaymentObj" type="tns:PaymentACH" />
+          <s:element minOccurs="0" maxOccurs="1" name="PaymentList" type="tns:ArrayOfPaymentACH" />
+          <s:element minOccurs="1" maxOccurs="1" name="Success" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMessage" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfPaymentACH">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="PaymentACH" nillable="true" type="tns:PaymentACH" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CreatePaymentTransactionSoapIn">
+    <wsdl:part name="parameters" element="tns:CreatePaymentTransaction" />
+  </wsdl:message>
+  <wsdl:message name="CreatePaymentTransactionSoapOut">
+    <wsdl:part name="parameters" element="tns:CreatePaymentTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePaymentTransactionSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdatePaymentTransaction" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePaymentTransactionSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdatePaymentTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultPaymentTransactionSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultPaymentTransaction" />
+  </wsdl:message>
+  <wsdl:message name="ConsultPaymentTransactionSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultPaymentTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListPaymentTransactionSoapIn">
+    <wsdl:part name="parameters" element="tns:ListPaymentTransaction" />
+  </wsdl:message>
+  <wsdl:message name="ListPaymentTransactionSoapOut">
+    <wsdl:part name="parameters" element="tns:ListPaymentTransactionResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WSPaymentSoap">
+    <wsdl:operation name="CreatePaymentTransaction">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Creación de Transacción Pago ACH.</wsdl:documentation>
+      <wsdl:input message="tns:CreatePaymentTransactionSoapIn" />
+      <wsdl:output message="tns:CreatePaymentTransactionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePaymentTransaction">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Modificación de Transacción Pago ACH.</wsdl:documentation>
+      <wsdl:input message="tns:UpdatePaymentTransactionSoapIn" />
+      <wsdl:output message="tns:UpdatePaymentTransactionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultPaymentTransaction">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Consulta Transacción de Pago ACH.</wsdl:documentation>
+      <wsdl:input message="tns:ConsultPaymentTransactionSoapIn" />
+      <wsdl:output message="tns:ConsultPaymentTransactionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListPaymentTransaction">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Lista de Transacciones Pagos ACH.</wsdl:documentation>
+      <wsdl:input message="tns:ListPaymentTransactionSoapIn" />
+      <wsdl:output message="tns:ListPaymentTransactionSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSPaymentSoap" type="tns:WSPaymentSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreatePaymentTransaction">
+      <soap:operation soapAction="http://tempuri.org/CreatePaymentTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePaymentTransaction">
+      <soap:operation soapAction="http://tempuri.org/UpdatePaymentTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultPaymentTransaction">
+      <soap:operation soapAction="http://tempuri.org/ConsultPaymentTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListPaymentTransaction">
+      <soap:operation soapAction="http://tempuri.org/ListPaymentTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSPaymentSoap12" type="tns:WSPaymentSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreatePaymentTransaction">
+      <soap12:operation soapAction="http://tempuri.org/CreatePaymentTransaction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePaymentTransaction">
+      <soap12:operation soapAction="http://tempuri.org/UpdatePaymentTransaction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultPaymentTransaction">
+      <soap12:operation soapAction="http://tempuri.org/ConsultPaymentTransaction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListPaymentTransaction">
+      <soap12:operation soapAction="http://tempuri.org/ListPaymentTransaction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSPayment">
+    <wsdl:port name="WSPaymentSoap" binding="tns:WSPaymentSoap">
+      <soap:address location="http://localhost/WebServices/WSPayment.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSPaymentSoap12" binding="tns:WSPaymentSoap12">
+      <soap12:address location="http://localhost/WebServices/WSPayment.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

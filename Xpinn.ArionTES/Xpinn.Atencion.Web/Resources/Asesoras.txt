@@ -1,0 +1,212 @@
+<div class="row">
+<div class="col-md-12"acute
+<h1 style="text-align: center;"><strong>ADMINISTRATIVO:</strong></h1>
+<p>&nbsp;</p>
+<p><img src="../../Imagenes/Inicio/inicio_Asesoras.jpg" alt="" width="1140" height="440"></p>
+<p>&nbsp;</p>
+<table style="height: 280px; width: 1136px;">
+<tbody>
+<tr style="height: 147px;">
+<td style="width: 371px; height: 147px;">
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;"><strong>MARCELA B&Aacute;EZ</strong></p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;">Gerente General</p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;">Celular: 311 220 9277&nbsp; &nbsp;</p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;"><span id="cloake7f1a88da623e5542840c25ad58c4185"><a href="mailto:marcela.baezpn@ext.cemex.com">marcela.baezpn@ext.cemex.com</a></span><script type="text/javascript">
+				document.getElementById('cloake7f1a88da623e5542840c25ad58c4185').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addye7f1a88da623e5542840c25ad58c4185 = 'm&#97;rc&#101;l&#97;.b&#97;&#101;zpn' + '&#64;';
+				addye7f1a88da623e5542840c25ad58c4185 = addye7f1a88da623e5542840c25ad58c4185 + '&#101;xt' + '&#46;' + 'c&#101;m&#101;x' + '&#46;' + 'c&#111;m';
+				var addy_texte7f1a88da623e5542840c25ad58c4185 = 'm&#97;rc&#101;l&#97;.b&#97;&#101;zpn' + '&#64;' + '&#101;xt' + '&#46;' + 'c&#101;m&#101;x' + '&#46;' + 'c&#111;m';document.getElementById('cloake7f1a88da623e5542840c25ad58c4185').innerHTML += '<a ' + path + '\'' + prefix + ':' + addye7f1a88da623e5542840c25ad58c4185 + '\'>'+addy_texte7f1a88da623e5542840c25ad58c4185+'<\/a>';
+		</script></p>
+</td>
+<td style="width: 376px; height: 147px;">
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;"><strong>LUIS CARLOS TARAZONA</strong></p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;"><span style="font-size: 12.16px;">Gerente Administrativo y Financiero</span></p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;">Celular: 313 210 9600&nbsp;&nbsp;</p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;"><span id="cloakff9e193bdc6d187f2867aa5be86c1a43"><a href="mailto:luis.tarazona@ext.cemex.com">luis.tarazona@ext.cemex.com</a></span><script type="text/javascript">
+				document.getElementById('cloakff9e193bdc6d187f2867aa5be86c1a43').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addyff9e193bdc6d187f2867aa5be86c1a43 = 'l&#117;&#105;s.t&#97;r&#97;z&#111;n&#97;' + '&#64;';
+				addyff9e193bdc6d187f2867aa5be86c1a43 = addyff9e193bdc6d187f2867aa5be86c1a43 + '&#101;xt' + '&#46;' + 'c&#101;m&#101;x' + '&#46;' + 'c&#111;m';
+				var addy_textff9e193bdc6d187f2867aa5be86c1a43 = 'l&#117;&#105;s.t&#97;r&#97;z&#111;n&#97;' + '&#64;' + '&#101;xt' + '&#46;' + 'c&#101;m&#101;x' + '&#46;' + 'c&#111;m';document.getElementById('cloakff9e193bdc6d187f2867aa5be86c1a43').innerHTML += '<a ' + path + '\'' + prefix + ':' + addyff9e193bdc6d187f2867aa5be86c1a43 + '\'>'+addy_textff9e193bdc6d187f2867aa5be86c1a43+'<\/a>';
+		</script>&nbsp;</p>
+</td>
+<td style="width: 367px; height: 147px;">
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;"><strong>WILLIAM SU&Aacute;REZ&nbsp;</strong></p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;">Coordinador de Cr&eacute;dito y Cartera</p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;">Tel&eacute;fono: (1) 6039562</p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;"><span id="cloak85eafb70d8d6a9cf71ea4b34e38630bf"><a href="mailto:william.suarez@ext.cemex.com">william.suarez@ext.cemex.com</a></span><script type="text/javascript">
+				document.getElementById('cloak85eafb70d8d6a9cf71ea4b34e38630bf').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addy85eafb70d8d6a9cf71ea4b34e38630bf = 'w&#105;ll&#105;&#97;m.s&#117;&#97;r&#101;z' + '&#64;';
+				addy85eafb70d8d6a9cf71ea4b34e38630bf = addy85eafb70d8d6a9cf71ea4b34e38630bf + '&#101;xt' + '&#46;' + 'c&#101;m&#101;x' + '&#46;' + 'c&#111;m';
+				var addy_text85eafb70d8d6a9cf71ea4b34e38630bf = 'w&#105;ll&#105;&#97;m.s&#117;&#97;r&#101;z' + '&#64;' + '&#101;xt' + '&#46;' + 'c&#101;m&#101;x' + '&#46;' + 'c&#111;m';document.getElementById('cloak85eafb70d8d6a9cf71ea4b34e38630bf').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy85eafb70d8d6a9cf71ea4b34e38630bf + '\'>'+addy_text85eafb70d8d6a9cf71ea4b34e38630bf+'<\/a>';
+		</script></p>
+</td>
+</tr>
+<tr style="height: 120.031px;">
+<td style="width: 371px; height: 120.031px;">
+<p><strong style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;">GISELA MENDOZA</strong></p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;">Coordinadora de Tesorer&iacute;a</p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;"><span id="cloak9603a7fd886ae797054986fd85678ab2"><a href="mailto:gisela.mendoza@ext.cemex.com">gisela.mendoza@ext.cemex.com</a></span><script type="text/javascript">
+				document.getElementById('cloak9603a7fd886ae797054986fd85678ab2').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addy9603a7fd886ae797054986fd85678ab2 = 'g&#105;s&#101;l&#97;.m&#101;nd&#111;z&#97;' + '&#64;';
+				addy9603a7fd886ae797054986fd85678ab2 = addy9603a7fd886ae797054986fd85678ab2 + '&#101;xt' + '&#46;' + 'c&#101;m&#101;x' + '&#46;' + 'c&#111;m';
+				var addy_text9603a7fd886ae797054986fd85678ab2 = 'g&#105;s&#101;l&#97;.m&#101;nd&#111;z&#97;' + '&#64;' + '&#101;xt' + '&#46;' + 'c&#101;m&#101;x' + '&#46;' + 'c&#111;m';document.getElementById('cloak9603a7fd886ae797054986fd85678ab2').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy9603a7fd886ae797054986fd85678ab2 + '\'>'+addy_text9603a7fd886ae797054986fd85678ab2+'<\/a>';
+		</script></p>
+</td>
+<td style="width: 376px; height: 120.031px;">
+<p><strong style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;">ANDREA P&Eacute;REZ</strong></p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;">Analista de Cr&eacute;dito</p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;"><span id="cloak9b0ee02a8050f5b4a60c08313faf8d7b"><a href="mailto:johana.perez@ext.cemex.com">johana.perez@ext.cemex.com</a></span><script type="text/javascript">
+				document.getElementById('cloak9b0ee02a8050f5b4a60c08313faf8d7b').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addy9b0ee02a8050f5b4a60c08313faf8d7b = 'j&#111;h&#97;n&#97;.p&#101;r&#101;z' + '&#64;';
+				addy9b0ee02a8050f5b4a60c08313faf8d7b = addy9b0ee02a8050f5b4a60c08313faf8d7b + '&#101;xt' + '&#46;' + 'c&#101;m&#101;x' + '&#46;' + 'c&#111;m';
+				var addy_text9b0ee02a8050f5b4a60c08313faf8d7b = 'j&#111;h&#97;n&#97;.p&#101;r&#101;z' + '&#64;' + '&#101;xt' + '&#46;' + 'c&#101;m&#101;x' + '&#46;' + 'c&#111;m';document.getElementById('cloak9b0ee02a8050f5b4a60c08313faf8d7b').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy9b0ee02a8050f5b4a60c08313faf8d7b + '\'>'+addy_text9b0ee02a8050f5b4a60c08313faf8d7b+'<\/a>';
+		</script></p>
+</td>
+<td style="width: 367px; height: 120.031px;">
+<p><strong style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;">LUISA FERNANDA CARMONA</strong></p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;">Asesora de Comunicaciones</p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;">Celular: 311 220 7146</p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;"><span id="cloak2944999a39fa2276906ddd749430c853"><a href="mailto:luisa.carmona@ext.cemex.com">luisa.carmona@ext.cemex.com</a></span><script type="text/javascript">
+				document.getElementById('cloak2944999a39fa2276906ddd749430c853').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addy2944999a39fa2276906ddd749430c853 = 'l&#117;&#105;s&#97;.c&#97;rm&#111;n&#97;' + '&#64;';
+				addy2944999a39fa2276906ddd749430c853 = addy2944999a39fa2276906ddd749430c853 + '&#101;xt' + '&#46;' + 'c&#101;m&#101;x' + '&#46;' + 'c&#111;m';
+				var addy_text2944999a39fa2276906ddd749430c853 = 'l&#117;&#105;s&#97;.c&#97;rm&#111;n&#97;' + '&#64;' + '&#101;xt' + '&#46;' + 'c&#101;m&#101;x' + '&#46;' + 'c&#111;m';document.getElementById('cloak2944999a39fa2276906ddd749430c853').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy2944999a39fa2276906ddd749430c853 + '\'>'+addy_text2944999a39fa2276906ddd749430c853+'<\/a>';
+		</script></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;<strong>ASESORAS COMERCIALES</strong></p>
+<table style="height: 105px;" width="1144">
+<tbody>
+<tr>
+<td style="width: 373px;">
+<h4 class="col-md-12" style="text-align: left;"><strong>ZONA NORTE</strong></h4>
+<h4 class="col-md-12" style="text-align: left;">Asesoras comerciales de Zona Norte</h4>
+</td>
+<td style="width: 374px;">&nbsp;</td>
+<td style="width: 375px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 373px;">
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;"><strong>NATALIA TOB&Oacute;N</strong></p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;">Bucaramanga, C&Uacute;cuta, Costa.</p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;">Celular: 311 220 3391</p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;"><span id="cloake5bc13dcd4d201a641923f912ce4bd0c"><a href="mailto:nubialiliana.botiabernal@ext.cemex.com">natalia.tobondecastro@ext.cemex.com</a></span><script type="text/javascript">
+				document.getElementById('cloake5bc13dcd4d201a641923f912ce4bd0c').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addye5bc13dcd4d201a641923f912ce4bd0c = 'n&#117;b&#105;&#97;l&#105;l&#105;&#97;n&#97;.b&#111;t&#105;&#97;b&#101;rn&#97;l' + '&#64;';
+				addye5bc13dcd4d201a641923f912ce4bd0c = addye5bc13dcd4d201a641923f912ce4bd0c + '&#101;xt' + '&#46;' + 'c&#101;m&#101;x' + '&#46;' + 'c&#111;m';
+				var addy_texte5bc13dcd4d201a641923f912ce4bd0c = 'n&#97;t&#97;l&#105;&#97;.t&#111;b&#111;nd&#101;c&#97;str&#111;' + '&#64;' + '&#101;xt' + '&#46;' + 'c&#101;m&#101;x' + '&#46;' + 'c&#111;m';document.getElementById('cloake5bc13dcd4d201a641923f912ce4bd0c').innerHTML += '<a ' + path + '\'' + prefix + ':' + addye5bc13dcd4d201a641923f912ce4bd0c + '\'>'+addy_texte5bc13dcd4d201a641923f912ce4bd0c+'<\/a>';
+		</script>&nbsp;</p>
+</td>
+<td style="width: 374px;">
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;"><strong>MANUELA ZAPATA</strong></p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;">Maceo, Medell&iacute;n y Pereira.</p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;">Celular: 316 878 5069</p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;"><span id="cloakb98c6775c2757a425bb913300476a219"><a href="mailto:manuelaandrea.zapatamartinez@ext.cemex.com">manuelaandrea.zapatamartinez@ext.cemex.com</a></span><script type="text/javascript">
+				document.getElementById('cloakb98c6775c2757a425bb913300476a219').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addyb98c6775c2757a425bb913300476a219 = 'm&#97;n&#117;&#101;l&#97;&#97;ndr&#101;&#97;.z&#97;p&#97;t&#97;m&#97;rt&#105;n&#101;z' + '&#64;';
+				addyb98c6775c2757a425bb913300476a219 = addyb98c6775c2757a425bb913300476a219 + '&#101;xt' + '&#46;' + 'c&#101;m&#101;x' + '&#46;' + 'c&#111;m';
+				var addy_textb98c6775c2757a425bb913300476a219 = 'm&#97;n&#117;&#101;l&#97;&#97;ndr&#101;&#97;.z&#97;p&#97;t&#97;m&#97;rt&#105;n&#101;z' + '&#64;' + '&#101;xt' + '&#46;' + 'c&#101;m&#101;x' + '&#46;' + 'c&#111;m';document.getElementById('cloakb98c6775c2757a425bb913300476a219').innerHTML += '<a ' + path + '\'' + prefix + ':' + addyb98c6775c2757a425bb913300476a219 + '\'>'+addy_textb98c6775c2757a425bb913300476a219+'<\/a>';
+		</script>&nbsp;</p>
+</td>
+<td style="width: 375px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 373px;">
+<h4 class="col-md-12" style="text-align: left;"><strong>ZONA CENTRO</strong></h4>
+<h4 class="col-md-12" style="text-align: left;">Asesoras comerciales de Zona Centro</h4>
+</td>
+<td style="width: 374px;">&nbsp;</td>
+<td style="width: 375px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 373px;">
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;"><strong>YENNY D&Iacute;AZ</strong></p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;">Bogot&aacute;: Mina Tunjuelo, Sur, Fontib&oacute;n, Sede Connecta, 170, Siberia, Puente Aranda y Pensionados.</p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;">Celular: 311 220 9628</p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;"><span id="cloakc3e270602143373d841e088cb33da889"><a href="mailto:yennymarcela.diazroman@ext.cemex.com">yennymarcela.diazroman@ext.cemex.com</a></span><script type="text/javascript">
+				document.getElementById('cloakc3e270602143373d841e088cb33da889').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addyc3e270602143373d841e088cb33da889 = 'y&#101;nnym&#97;rc&#101;l&#97;.d&#105;&#97;zr&#111;m&#97;n' + '&#64;';
+				addyc3e270602143373d841e088cb33da889 = addyc3e270602143373d841e088cb33da889 + '&#101;xt' + '&#46;' + 'c&#101;m&#101;x' + '&#46;' + 'c&#111;m';
+				var addy_textc3e270602143373d841e088cb33da889 = 'y&#101;nnym&#97;rc&#101;l&#97;.d&#105;&#97;zr&#111;m&#97;n' + '&#64;' + '&#101;xt' + '&#46;' + 'c&#101;m&#101;x' + '&#46;' + 'c&#111;m';document.getElementById('cloakc3e270602143373d841e088cb33da889').innerHTML += '<a ' + path + '\'' + prefix + ':' + addyc3e270602143373d841e088cb33da889 + '\'>'+addy_textc3e270602143373d841e088cb33da889+'<\/a>';
+		</script></p>
+</td>
+<td style="width: 374px;">
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;"><strong>VIVIANA MILA</strong></p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;">Bogot&aacute;: Materias Primas, Soacha, Vista Hermosa, Tocancip&aacute;, 240 y Bosa.</p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;">Celular: 311 220 9232</p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;"><span id="cloak598dfde74905c9fb1e0091d8144cfd34"><a href="mailto:vivianapaola.milaaldana@ext.cemex.com">vivianapaola.milaaldana@ext.cemex.com</a></span><script type="text/javascript">
+				document.getElementById('cloak598dfde74905c9fb1e0091d8144cfd34').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addy598dfde74905c9fb1e0091d8144cfd34 = 'v&#105;v&#105;&#97;n&#97;p&#97;&#111;l&#97;.m&#105;l&#97;&#97;ld&#97;n&#97;' + '&#64;';
+				addy598dfde74905c9fb1e0091d8144cfd34 = addy598dfde74905c9fb1e0091d8144cfd34 + '&#101;xt' + '&#46;' + 'c&#101;m&#101;x' + '&#46;' + 'c&#111;m';
+				var addy_text598dfde74905c9fb1e0091d8144cfd34 = 'v&#105;v&#105;&#97;n&#97;p&#97;&#111;l&#97;.m&#105;l&#97;&#97;ld&#97;n&#97;' + '&#64;' + '&#101;xt' + '&#46;' + 'c&#101;m&#101;x' + '&#46;' + 'c&#111;m';document.getElementById('cloak598dfde74905c9fb1e0091d8144cfd34').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy598dfde74905c9fb1e0091d8144cfd34 + '\'>'+addy_text598dfde74905c9fb1e0091d8144cfd34+'<\/a>';
+		</script></p>
+</td>
+<td style="width: 375px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 373px;">
+<h4 class="col-md-12" style="text-align: left;"><strong>ZONA OCCIDENTE</strong></h4>
+<h4 class="col-md-12" style="text-align: left;">Asesoras comerciales de Zona Occidente</h4>
+</td>
+<td style="width: 374px;">&nbsp;</td>
+<td style="width: 375px;">&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 373px;">
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;"><strong>PATRICIA CARTAGENA</strong></p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;">Ibagu&eacute; (Transportadora)</p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;">Celular: 311 220 9631</p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;"><span id="cloake8bbe0464563b56eb605df227999b47f"><a href="mailto:gloriapatricia.cartagenag@ext.cemex.com">gloriapatricia.cartagenag@ext.cemex.com</a></span><script type="text/javascript">
+				document.getElementById('cloake8bbe0464563b56eb605df227999b47f').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addye8bbe0464563b56eb605df227999b47f = 'gl&#111;r&#105;&#97;p&#97;tr&#105;c&#105;&#97;.c&#97;rt&#97;g&#101;n&#97;g' + '&#64;';
+				addye8bbe0464563b56eb605df227999b47f = addye8bbe0464563b56eb605df227999b47f + '&#101;xt' + '&#46;' + 'c&#101;m&#101;x' + '&#46;' + 'c&#111;m';
+				var addy_texte8bbe0464563b56eb605df227999b47f = 'gl&#111;r&#105;&#97;p&#97;tr&#105;c&#105;&#97;.c&#97;rt&#97;g&#101;n&#97;g' + '&#64;' + '&#101;xt' + '&#46;' + 'c&#101;m&#101;x' + '&#46;' + 'c&#111;m';document.getElementById('cloake8bbe0464563b56eb605df227999b47f').innerHTML += '<a ' + path + '\'' + prefix + ':' + addye8bbe0464563b56eb605df227999b47f + '\'>'+addy_texte8bbe0464563b56eb605df227999b47f+'<\/a>';
+		</script>&nbsp;</p>
+</td>
+<td style="width: 374px;">
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;"><strong style="font-size: 12.16px;">MANUELA ZAPATA</strong></p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;">Cali y Tulu&aacute;</p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;">Celular: <span style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px;">316 878 5069</span></p>
+<p style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12.16px;"><span id="cloakab96a9e4ad35b43942b3de7af93e8b8b"><a style="font-size: 12.16px;" href="mailto:manuelaandrea.zapatamartinez@ext.cemex.com">manuelaandrea.zapatamartinez@ext.cemex.com</a></span><script type="text/javascript">
+				document.getElementById('cloakab96a9e4ad35b43942b3de7af93e8b8b').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addyab96a9e4ad35b43942b3de7af93e8b8b = 'm&#97;n&#117;&#101;l&#97;&#97;ndr&#101;&#97;.z&#97;p&#97;t&#97;m&#97;rt&#105;n&#101;z' + '&#64;';
+				addyab96a9e4ad35b43942b3de7af93e8b8b = addyab96a9e4ad35b43942b3de7af93e8b8b + '&#101;xt' + '&#46;' + 'c&#101;m&#101;x' + '&#46;' + 'c&#111;m';
+				var addy_textab96a9e4ad35b43942b3de7af93e8b8b = 'm&#97;n&#117;&#101;l&#97;&#97;ndr&#101;&#97;.z&#97;p&#97;t&#97;m&#97;rt&#105;n&#101;z' + '&#64;' + '&#101;xt' + '&#46;' + 'c&#101;m&#101;x' + '&#46;' + 'c&#111;m';document.getElementById('cloakab96a9e4ad35b43942b3de7af93e8b8b').innerHTML += '<a style="font-size: 12.16px;" ' + path + '\'' + prefix + ':' + addyab96a9e4ad35b43942b3de7af93e8b8b + '\'>'+addy_textab96a9e4ad35b43942b3de7af93e8b8b+'<\/a>';
+		</script><span style="font-size: 12.16px;">&nbsp;</span></p>
+</td>
+<td style="width: 375px;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<h4 class="col-md-12" style="text-align: left;">&nbsp;</h4>
+<div class="col-md-4 col-xs-12">&nbsp;</div>
+</div>

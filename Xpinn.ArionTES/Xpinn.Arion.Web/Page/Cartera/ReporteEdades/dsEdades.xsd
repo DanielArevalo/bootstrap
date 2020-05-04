@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsEdades" targetNamespace="http://tempuri.org/dsEdades.xsd" xmlns:mstns="http://tempuri.org/dsEdades.xsd" xmlns="http://tempuri.org/dsEdades.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsEdades" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Edades">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="cod_oficina" type="xs:long" minOccurs="0" />
+              <xs:element name="nom_oficina" type="xs:string" minOccurs="0" />
+              <xs:element name="cod_linea" type="xs:string" minOccurs="0" />
+              <xs:element name="nom_linea" type="xs:string" minOccurs="0" />
+              <xs:element name="numero_radicacion" type="xs:long" minOccurs="0" />
+              <xs:element name="cod_deudor" type="xs:long" minOccurs="0" />
+              <xs:element name="identificacion" type="xs:string" minOccurs="0" />
+              <xs:element name="nombres" type="xs:string" minOccurs="0" />
+              <xs:element name="apellidos" type="xs:string" minOccurs="0" />
+              <xs:element name="saldo_capital" type="xs:double" minOccurs="0" />
+              <xs:element name="fecha_proximo_pago" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="cod_asesor" type="xs:long" minOccurs="0" />
+              <xs:element name="nom_asesor" type="xs:string" minOccurs="0" />
+              <xs:element name="monto_aprobado" type="xs:double" minOccurs="0" />
+              <xs:element name="cuota" type="xs:double" minOccurs="0" />
+              <xs:element name="dias_mora" type="xs:long" minOccurs="0" />
+              <xs:element name="clasificacion_mora_1" type="xs:double" minOccurs="0" />
+              <xs:element name="clasificacion_mora_2" type="xs:double" minOccurs="0" />
+              <xs:element name="clasificacion_mora_3" type="xs:double" minOccurs="0" />
+              <xs:element name="clasificacion_mora_4" type="xs:double" minOccurs="0" />
+              <xs:element name="clasificacion_mora_5" type="xs:double" minOccurs="0" />
+              <xs:element name="clasificacion_mora_6" type="xs:double" minOccurs="0" />
+              <xs:element name="clasificacion_mora_7" type="xs:double" minOccurs="0" />
+              <xs:element name="clasificacion_mora_8" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

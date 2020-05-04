@@ -1,0 +1,4 @@
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Scoring.Entities\bin\Debug\Xpinn.Scoring.Entities.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Scoring.Entities\bin\Debug\Xpinn.Scoring.Entities.pdb
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Scoring.Entities\obj\Debug\Xpinn.Scoring.Entities.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Scoring.Entities\obj\Debug\Xpinn.Scoring.Entities.pdb

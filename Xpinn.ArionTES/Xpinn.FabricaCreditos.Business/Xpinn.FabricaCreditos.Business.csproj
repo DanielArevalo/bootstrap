@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6003754E-7475-4DA3-BDD0-6AFDD9AAC60D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Xpinn.FabricaCreditos.Business</RootNamespace>
+    <AssemblyName>Xpinn.FabricaCreditos.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>%24/Financial/Xpinn.ArionTES/Xpinn.FabricaCreditos.Business</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccAuxPath>https://expinntechnology.visualstudio.com</SccAuxPath>
+    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Xpinn.FabricaCreditos.Business.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Xpinn.FabricaCreditos.Business.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActaBusiness.cs" />
+    <Compile Include="ActividadesBusiness.cs" />
+    <Compile Include="AmortizaCreBusiness.cs" />
+    <Compile Include="AnexoCreditoBusiness.cs" />
+    <Compile Include="AprobadorBusiness.cs" />
+    <Compile Include="BalanceFamiliaBusiness.cs" />
+    <Compile Include="BeneficiarioBusiness.cs" />
+    <Compile Include="BeneficiariosBusiness.cs" />
+    <Compile Include="BienesRaicesBusiness.cs" />
+    <Compile Include="CalificacionReferenciasBusiness.cs" />
+    <Compile Include="codeudoresBusiness.cs" />
+    <Compile Include="ComposicionPasivoBusiness.cs" />
+    <Compile Include="consultasdatacreditoBusiness.cs" />
+    <Compile Include="ControlCreditosBusiness.cs" />
+    <Compile Include="ControlTiemposBusiness.cs" />
+    <Compile Include="ConyugeBusiness.cs" />
+    <Compile Include="AvanceBusiness.cs" />
+    <Compile Include="Credito_GiroBusiness.cs" />
+    <Compile Include="CreditoGerencialBusiness.cs" />
+    <Compile Include="DestinacionBusiness.cs" />
+    <Compile Include="DocumentosRequeridosBusiness.cs" />
+    <Compile Include="InformacionAdicionalBusiness.cs" />
+    <Compile Include="ModalidadTasaBusiness.cs" />
+    <Compile Include="OpcionesCreditoBusiness.cs" />
+    <Compile Include="PagoOrdenesBusiness.cs" />
+    <Compile Include="PersonaBiometriaBusiness.cs" />
+    <Compile Include="PersonaEmpresaRecaudoBusiness.cs" />
+    <Compile Include="ProcesosBusiness.cs" />
+    <Compile Include="GarantiasComunitariasBusiness.cs" />
+    <Compile Include="HistoricoTasaBusiness.cs" />
+    <Compile Include="CosteoProductosBusiness.cs" />
+    <Compile Include="CreditoBusiness.cs" />
+    <Compile Include="CreditoPlanBusiness.cs" />
+    <Compile Include="CreditoRecogerBusiness.cs" />
+    <Compile Include="CreditoSolicitadoBusiness.cs" />
+    <Compile Include="CuotasExtrasBusiness.cs" />
+    <Compile Include="DatosAprobadorBusiness.cs" />
+    <Compile Include="DatosClienteBusiness.cs" />
+    <Compile Include="DatosDeDocumentoBusiness.cs" />
+    <Compile Include="DatosPlanPagosBusiness.cs" />
+    <Compile Include="DatosSolicitudBusiness.cs" />
+    <Compile Include="DocumentoBusiness.cs" />
+    <Compile Include="DocumentosAnexosBusiness.cs" />
+    <Compile Include="EgresosFamiliaBusiness.cs" />
+    <Compile Include="EstacionalidadMensualBusiness.cs" />
+    <Compile Include="EstadosFinancierosBusiness.cs" />
+    <Compile Include="FacturaBusiness.cs" />
+    <Compile Include="FamiliaresBusiness.cs" />
+    <Compile Include="FamiliaresPolizasBusiness.cs" />
+    <Compile Include="GarantiasRealesBusiness.cs" />
+    <Compile Include="InformacionFinancieraBusiness.cs" />
+    <Compile Include="GeoreferenciaBusiness.cs" />
+    <Compile Include="InformacionNegocioBusiness.cs" />
+    <Compile Include="IngresosFamiliaBusiness.cs" />
+    <Compile Include="InventarioActivoFijoBusiness.cs" />
+    <Compile Include="InventarioMateriaPrimaBusiness.cs" />
+    <Compile Include="LineasCreditoBusiness.cs" />
+    <Compile Include="MargenVentasBusiness.cs" />
+    <Compile Include="MotivoBusiness.cs" />
+    <Compile Include="OficinaBusiness.cs" />
+    <Compile Include="ParentescoBusiness.cs" />
+    <Compile Include="PeriodicidadBusiness.cs" />
+    <Compile Include="Persona1Business.cs" />
+    <Compile Include="PersonaBusiness.cs" />
+    <Compile Include="PlanCuentasBusiness.cs" />
+    <Compile Include="PlanesSegurosAmparosBusiness.cs" />
+    <Compile Include="PlanesSegurosBusiness.cs" />
+    <Compile Include="PolizasSegurosBusiness.cs" />
+    <Compile Include="PreAnalisisBusiness.cs" />
+    <Compile Include="PresupuestoEmpresarialBusiness.cs" />
+    <Compile Include="PresupuestoFamiliarBusiness.cs" />
+    <Compile Include="ProductoConsumoBusiness.cs" />
+    <Compile Include="ProductosProcesoBusiness.cs" />
+    <Compile Include="ProductosTerminadosBusiness.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReferenciaBusiness.cs" />
+    <Compile Include="RefernciasBusiness.cs" />
+    <Compile Include="ScoringBusiness.cs" />
+    <Compile Include="SimulacionBusiness.cs" />
+    <Compile Include="SolicitudCreditosRecogidosBusiness.cs" />
+    <Compile Include="TipoCupoBusiness.cs" />
+    <Compile Include="TipoGarantiaBusiness.cs" />
+    <Compile Include="TipoLiquidacionBusiness.cs" />
+    <Compile Include="TiposDocumentoBusiness.cs" />
+    <Compile Include="TipoTasaBusiness.cs" />
+    <Compile Include="TipoTasaHistBusiness.cs" />
+    <Compile Include="TomadorPolizaBusiness.cs" />
+    <Compile Include="UsuarioAtribucionesBusiness.cs" />
+    <Compile Include="VehiculosBusiness.cs" />
+    <Compile Include="VentasSemanalesBusiness.cs" />
+    <Compile Include="ViabilidadFinancieraBusiness.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xpinn.Ahorros.Business\Xpinn.Ahorros.Business.csproj">
+      <Project>{EF480A75-99AA-4B61-A129-6735B272D019}</Project>
+      <Name>Xpinn.Ahorros.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Ahorros.Data\Xpinn.Ahorros.Data.csproj">
+      <Project>{db0bd775-17aa-4592-b2a6-38be4fd7fa0a}</Project>
+      <Name>Xpinn.Ahorros.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Ahorros.Entities\Xpinn.Ahorros.Entities.csproj">
+      <Project>{4E822517-4073-457F-9040-3340C7647C3F}</Project>
+      <Name>Xpinn.Ahorros.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Aportes.Data\Xpinn.Aportes.Data.csproj">
+      <Project>{69AD7BA9-9AFC-47A4-A90F-4C58D8D9E543}</Project>
+      <Name>Xpinn.Aportes.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Aportes.Entities\Xpinn.Aportes.Entities.csproj">
+      <Project>{3A1B9D8D-C018-4333-B436-8214C50E7E12}</Project>
+      <Name>Xpinn.Aportes.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Asesores.Entities.Shared\Xpinn.Asesores.Entities.Common.csproj">
+      <Project>{090da451-1225-43e7-a10d-38ac60a73a4c}</Project>
+      <Name>Xpinn.Asesores.Entities.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Asesores.Entities\Xpinn.Asesores.Entities.csproj">
+      <Project>{df1c5f00-ef61-49ba-add1-c5028030f2f5}</Project>
+      <Name>Xpinn.Asesores.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Auxilios.Business\Xpinn.Auxilios.Business.csproj">
+      <Project>{6D350B2C-BC71-4F5B-AAD0-2B0174EA93E0}</Project>
+      <Name>Xpinn.Auxilios.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Auxilios.Data\Xpinn.Auxilios.Data.csproj">
+      <Project>{B26EEBBE-80AD-4E11-85EA-9F2D7C8381F4}</Project>
+      <Name>Xpinn.Auxilios.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Auxilios.Entities\Xpinn.Auxilios.Entities.csproj">
+      <Project>{1FD97C96-74D0-4058-AE6F-9DDEBA9B86C7}</Project>
+      <Name>Xpinn.Auxilios.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Caja.Entities\Xpinn.Caja.Entities.csproj">
+      <Project>{32332397-2618-4b28-9853-1261619fa11c}</Project>
+      <Name>Xpinn.Caja.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Cartera.Data\Xpinn.Cartera.Data.csproj">
+      <Project>{2B5D80E1-E9FA-4BEC-9D5B-98CE9F07E33D}</Project>
+      <Name>Xpinn.Cartera.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Cartera.Entities\Xpinn.Cartera.Entities.csproj">
+      <Project>{D691A0E2-D950-41E3-9AC0-F788288480D8}</Project>
+      <Name>Xpinn.Cartera.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Comun.Data\Xpinn.Comun.Data.csproj">
+      <Project>{35b70c1b-09d0-4408-8803-050d953999ae}</Project>
+      <Name>Xpinn.Comun.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Comun.Entities\Xpinn.Comun.Entities.csproj">
+      <Project>{955A6F00-17CF-4CB4-97F7-B8E98E9B3297}</Project>
+      <Name>Xpinn.Comun.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Contabilidad.Data\Xpinn.Contabilidad.Data.csproj">
+      <Project>{600D29E1-4CBD-4A63-B4AA-FE4E4DE436DE}</Project>
+      <Name>Xpinn.Contabilidad.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Contabilidad.Entities\Xpinn.Contabilidad.Entities.csproj">
+      <Project>{E784BD0B-D163-43A7-92F7-C65A3B1EC299}</Project>
+      <Name>Xpinn.Contabilidad.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.FabricaCreditos.Data\Xpinn.FabricaCreditos.Data.csproj">
+      <Project>{C3286EB8-9CA3-4892-AB91-4216BACD4B9D}</Project>
+      <Name>Xpinn.FabricaCreditos.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.FabricaCreditos.Entities\Xpinn.FabricaCreditos.Entities.csproj">
+      <Project>{B89884F6-511B-466D-9338-51FC7A656792}</Project>
+      <Name>Xpinn.FabricaCreditos.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Imagenes.Data\Xpinn.Imagenes.Data.csproj">
+      <Project>{7F83DB28-7385-4046-91FA-40A12BD33D1A}</Project>
+      <Name>Xpinn.Imagenes.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Riesgo.Data\Xpinn.Riesgo.Data.csproj">
+      <Project>{c99dfad8-e99f-4b2a-8577-cb6c89d374e7}</Project>
+      <Name>Xpinn.Riesgo.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Riesgo.Entities\Xpinn.Riesgo.Entities.csproj">
+      <Project>{02b1b7dc-1f67-464b-8005-0f2fc4f23edd}</Project>
+      <Name>Xpinn.Riesgo.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Servicios.Data\Xpinn.Servicios.Data.csproj">
+      <Project>{9C540AFB-652C-4979-9950-3280706CDB33}</Project>
+      <Name>Xpinn.Servicios.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Servicios.Entities\Xpinn.Servicios.Entities.csproj">
+      <Project>{7E9142D1-4E78-47E8-A557-5566CDC57EEB}</Project>
+      <Name>Xpinn.Servicios.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Tesoreria.Data\Xpinn.Tesoreria.Data.csproj">
+      <Project>{0BCA84AC-F1E6-4DBC-8136-1BB3C9F42E30}</Project>
+      <Name>Xpinn.Tesoreria.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Tesoreria.Entities\Xpinn.Tesoreria.Entities.csproj">
+      <Project>{2682ACEE-0325-4A67-84E4-801E2BB6ABA7}</Project>
+      <Name>Xpinn.Tesoreria.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Util\Xpinn.Util.csproj">
+      <Project>{1DC267F2-1877-46D6-AF5E-F92EB286DFC4}</Project>
+      <Name>Xpinn.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

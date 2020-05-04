@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetCreditos" targetNamespace="http://tempuri.org/DataSetCreditos.xsd" xmlns:mstns="http://tempuri.org/DataSetCreditos.xsd" xmlns="http://tempuri.org/DataSetCreditos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetCreditos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id_informe" type="xs:string" minOccurs="0" />
+              <xs:element name="Codigo_cliente" type="xs:string" minOccurs="0" />
+              <xs:element name="Numero_radicacion" type="xs:string" minOccurs="0" />
+              <xs:element name="Linea" type="xs:string" minOccurs="0" />
+              <xs:element name="Fecha_solicitud" type="xs:string" minOccurs="0" />
+              <xs:element name="Monto_aprobado" type="xs:string" minOccurs="0" />
+              <xs:element name="Saldo" type="xs:string" minOccurs="0" />
+              <xs:element name="Cuota" type="xs:string" minOccurs="0" />
+              <xs:element name="Atributos" type="xs:string" minOccurs="0" />
+              <xs:element name="Plazo" type="xs:string" minOccurs="0" />
+              <xs:element name="Cuotas_pagadas" type="xs:string" minOccurs="0" />
+              <xs:element name="Fecha_proximo_pago" type="xs:string" minOccurs="0" />
+              <xs:element name="Oficina" type="xs:string" minOccurs="0" />
+              <xs:element name="Calif_promedio" type="xs:string" minOccurs="0" />
+              <xs:element name="Calif_cliente" type="xs:string" minOccurs="0" />
+              <xs:element name="Renov_cuotas" type="xs:string" minOccurs="0" />
+              <xs:element name="Renov_montos" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

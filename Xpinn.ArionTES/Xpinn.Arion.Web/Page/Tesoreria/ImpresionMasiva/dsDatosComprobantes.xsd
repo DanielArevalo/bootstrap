@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsDatosComprobantes" targetNamespace="http://tempuri.org/dsDatosComprobantes.xsd" xmlns:mstns="http://tempuri.org/dsDatosComprobantes.xsd" xmlns="http://tempuri.org/dsDatosComprobantes.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsDatosComprobantes" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DatosComprobante">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fecha" type="xs:string" minOccurs="0" />
+              <xs:element name="valor" type="xs:decimal" minOccurs="0" />
+              <xs:element name="nombre1" type="xs:string" minOccurs="0" />
+              <xs:element name="cardinal" type="xs:string" minOccurs="0" />
+              <xs:element name="entidad" type="xs:string" minOccurs="0" />
+              <xs:element name="nit" type="xs:string" minOccurs="0" />
+              <xs:element name="tipoComprobante" type="xs:string" minOccurs="0" />
+              <xs:element name="num_comp" type="xs:int" minOccurs="0" />
+              <xs:element name="identificacion" type="xs:string" minOccurs="0" />
+              <xs:element name="tipo_indetificacion" type="xs:string" minOccurs="0" />
+              <xs:element name="nombres" type="xs:string" minOccurs="0" />
+              <xs:element name="ciudad" type="xs:string" minOccurs="0" />
+              <xs:element name="concepto" type="xs:string" minOccurs="0" />
+              <xs:element name="cod_cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="nom_cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="ident_deta" type="xs:string" minOccurs="0" />
+              <xs:element name="detalle" type="xs:string" minOccurs="0" />
+              <xs:element name="valordebito" type="xs:decimal" minOccurs="0" />
+              <xs:element name="valorcredito" type="xs:decimal" minOccurs="0" />
+              <xs:element name="tipo" type="xs:decimal" minOccurs="0" />
+              <xs:element name="totaldebito" type="xs:decimal" minOccurs="0" />
+              <xs:element name="totalcredito" type="xs:string" minOccurs="0" />
+              <xs:element name="num_cheque" type="xs:string" minOccurs="0" />
+              <xs:element name="detalle_general" type="xs:string" minOccurs="0" />
+              <xs:element name="rptaEgreso" type="xs:string" minOccurs="0" />
+              <xs:element name="CC" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

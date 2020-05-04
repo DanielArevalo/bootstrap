@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataRecaudos" targetNamespace="http://tempuri.org/DataRecaudos.xsd" xmlns:mstns="http://tempuri.org/DataRecaudos.xsd" xmlns="http://tempuri.org/DataRecaudos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataRecaudos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TipoProducto" msdata:Caption="codigo_diligencia" type="xs:string" minOccurs="0" />
+              <xs:element name="Linea" msdata:Caption="fecha_diligencia" type="xs:string" minOccurs="0" />
+              <xs:element name="NumeroProducto" msdata:Caption="tipo_diligencia" type="xs:string" minOccurs="0" />
+              <xs:element name="CodigoCliente" msdata:Caption="atendio" type="xs:string" minOccurs="0" />
+              <xs:element name="Identificacion" msdata:Caption="respuesta" type="xs:string" minOccurs="0" />
+              <xs:element name="Nombres" msdata:Caption="acuerdo" type="xs:string" minOccurs="0" />
+              <xs:element name="Apellidos" type="xs:string" minOccurs="0" />
+              <xs:element name="Fechaproxpago" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtNovedadesNew">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TipoProducto" msdata:Caption="codigo_diligencia" type="xs:string" minOccurs="0" />
+              <xs:element name="Linea" msdata:Caption="fecha_diligencia" type="xs:string" minOccurs="0" />
+              <xs:element name="NumeroProducto" msdata:Caption="tipo_diligencia" type="xs:string" minOccurs="0" />
+              <xs:element name="CodigoCliente" msdata:Caption="atendio" type="xs:string" minOccurs="0" />
+              <xs:element name="Identificacion" msdata:Caption="respuesta" type="xs:string" minOccurs="0" />
+              <xs:element name="Nombres" msdata:Caption="acuerdo" type="xs:string" minOccurs="0" />
+              <xs:element name="Apellidos" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaNovedad" msdata:Caption="Fechaproxpago" type="xs:string" minOccurs="0" />
+              <xs:element name="Valor" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaFinNove" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoNovedad" type="xs:string" minOccurs="0" />
+              <xs:element name="VrTotal" type="xs:string" minOccurs="0" />
+              <xs:element name="NumCuotas" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTableResumudo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodigoCliente" msdata:Caption="codigo_diligencia" type="xs:string" minOccurs="0" />
+              <xs:element name="Identificacion" msdata:Caption="respuesta" type="xs:string" minOccurs="0" />
+              <xs:element name="Nombres" msdata:Caption="acuerdo" type="xs:string" minOccurs="0" />
+              <xs:element name="Apellidos" type="xs:string" minOccurs="0" />
+              <xs:element name="Fijos" msdata:Caption="Valor" type="xs:double" minOccurs="0" />
+              <xs:element name="Prestamos" type="xs:double" minOccurs="0" />
+              <xs:element name="Int_Corriente" type="xs:double" minOccurs="0" />
+              <xs:element name="Mora" type="xs:double" minOccurs="0" />
+              <xs:element name="Seguro" type="xs:double" minOccurs="0" />
+              <xs:element name="Otros" type="xs:double" minOccurs="0" />
+              <xs:element name="Total" type="xs:double" minOccurs="0" />
+              <xs:element name="Capital" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

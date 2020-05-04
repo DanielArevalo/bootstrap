@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9091945E-46A2-4DEA-8441-22B9FEEA3EB5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Xpinn.Aportes.Business</RootNamespace>
+    <AssemblyName>Xpinn.Aportes.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AporteBusiness.cs" />
+    <Compile Include="AutorizacionData.cs" />
+    <Compile Include="AfiliacionBusiness.cs" />
+    <Compile Include="CierreHisAportesBusiness.cs" />
+    <Compile Include="CiudadBusiness.cs" />
+    <Compile Include="DirectivoBusiness.cs" />
+    <Compile Include="FormatoDocumentoBusiness.cs" />
+    <Compile Include="ImagenesPersonaBusiness.cs" />
+    <Compile Include="ParametrizacionProcesoAfiliacionBussines.cs" />
+    <Compile Include="PersonaActDatosBusiness.cs" />
+    <Compile Include="PlanesTelefonicosBusiness.cs" />
+    <Compile Include="SolicitudPersonaAfiBusiness.cs" />
+    <Compile Include="Persona_infcertificadoBusiness.cs" />
+    <Compile Include="EscalafonSalarialBusiness.cs" />
+    <Compile Include="LineaAporteBusiness.cs" />
+    <Compile Include="MotivoExcepcion.cs" />
+    <Compile Include="Oficina_ciudadBusiness.cs" />
+    <Compile Include="ParametrosAfiliacionBusiness.cs" />
+    <Compile Include="ParametrosAporteBusiness.cs" />
+    <Compile Include="OperacionApoBusiness.cs" />
+    <Compile Include="PersonaAutorizacionBusiness.cs" />
+    <Compile Include="RevalorizacionAporteBusiness.cs" />
+    <Compile Include="TipoProductoBusiness.cs" />
+    <Compile Include="GrupoLineaAporteBusiness.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TipoLiqAporteBusiness.cs" />
+    <Compile Include="TranAporteBusiness.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xpinn.Aportes.Data\Xpinn.Aportes.Data.csproj">
+      <Project>{69AD7BA9-9AFC-47A4-A90F-4C58D8D9E543}</Project>
+      <Name>Xpinn.Aportes.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Aportes.Entities\Xpinn.Aportes.Entities.csproj">
+      <Project>{3A1B9D8D-C018-4333-B436-8214C50E7E12}</Project>
+      <Name>Xpinn.Aportes.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.CDATS.Data\Xpinn.CDATS.Data.csproj">
+      <Project>{3e0f2c50-60eb-4200-8b96-630307e5e15d}</Project>
+      <Name>Xpinn.CDATS.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.CDATS.Entities\Xpinn.CDATS.Entities.csproj">
+      <Project>{d4d94212-bf5a-4e4e-bf90-bbd2b39c5e97}</Project>
+      <Name>Xpinn.CDATS.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Comun.Business\Xpinn.Comun.Business.csproj">
+      <Project>{0A706125-BC3F-473E-8708-8BB2104E0C6B}</Project>
+      <Name>Xpinn.Comun.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Comun.Data\Xpinn.Comun.Data.csproj">
+      <Project>{35b70c1b-09d0-4408-8803-050d953999ae}</Project>
+      <Name>Xpinn.Comun.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Comun.Entities\Xpinn.Comun.Entities.csproj">
+      <Project>{955A6F00-17CF-4CB4-97F7-B8E98E9B3297}</Project>
+      <Name>Xpinn.Comun.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.FabricaCreditos.Data\Xpinn.FabricaCreditos.Data.csproj">
+      <Project>{C3286EB8-9CA3-4892-AB91-4216BACD4B9D}</Project>
+      <Name>Xpinn.FabricaCreditos.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.FabricaCreditos.Entities\Xpinn.FabricaCreditos.Entities.csproj">
+      <Project>{B89884F6-511B-466D-9338-51FC7A656792}</Project>
+      <Name>Xpinn.FabricaCreditos.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Imagenes.Data\Xpinn.Imagenes.Data.csproj">
+      <Project>{7f83db28-7385-4046-91fa-40a12bd33d1a}</Project>
+      <Name>Xpinn.Imagenes.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.RecaudosMasivos.Data\Xpinn.RecaudosMasivos.Data.csproj">
+      <Project>{1f25252d-55b4-4329-ad11-64045072634d}</Project>
+      <Name>Xpinn.RecaudosMasivos.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.RecaudosMasivos.Entities\Xpinn.RecaudosMasivos.Entities.csproj">
+      <Project>{c120c5d1-323a-4da9-9e68-1daac8d2f099}</Project>
+      <Name>Xpinn.RecaudosMasivos.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Riesgo.Business\Xpinn.Riesgo.Business.csproj">
+      <Project>{a7aeba44-743d-43df-bbb5-6252f9cfd3eb}</Project>
+      <Name>Xpinn.Riesgo.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Riesgo.Data\Xpinn.Riesgo.Data.csproj">
+      <Project>{c99dfad8-e99f-4b2a-8577-cb6c89d374e7}</Project>
+      <Name>Xpinn.Riesgo.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Riesgo.Entities\Xpinn.Riesgo.Entities.csproj">
+      <Project>{02b1b7dc-1f67-464b-8005-0f2fc4f23edd}</Project>
+      <Name>Xpinn.Riesgo.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Servicios.Data\Xpinn.Servicios.Data.csproj">
+      <Project>{9c540afb-652c-4979-9950-3280706cdb33}</Project>
+      <Name>Xpinn.Servicios.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Servicios.Entities\Xpinn.Servicios.Entities.csproj">
+      <Project>{7e9142d1-4e78-47e8-a557-5566cdc57eeb}</Project>
+      <Name>Xpinn.Servicios.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Tesoreria.Business\Xpinn.Tesoreria.Business.csproj">
+      <Project>{05829843-7AB8-484A-B31A-83099F92A1A1}</Project>
+      <Name>Xpinn.Tesoreria.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Tesoreria.Data\Xpinn.Tesoreria.Data.csproj">
+      <Project>{0BCA84AC-F1E6-4DBC-8136-1BB3C9F42E30}</Project>
+      <Name>Xpinn.Tesoreria.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Tesoreria.Entities\Xpinn.Tesoreria.Entities.csproj">
+      <Project>{2682ACEE-0325-4A67-84E4-801E2BB6ABA7}</Project>
+      <Name>Xpinn.Tesoreria.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Util\Xpinn.Util.csproj">
+      <Project>{1dc267f2-1877-46d6-af5e-f92eb286dfc4}</Project>
+      <Name>Xpinn.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

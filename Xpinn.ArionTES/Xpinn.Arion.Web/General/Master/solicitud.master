@@ -1,0 +1,324 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="solicitud.master.cs" Inherits="Site1" %>
+
+<%@ Register Src="../Controles/header.ascx" TagName="header" TagPrefix="uc1" %>
+<%@ Register Src="../Controles/ctlauditoria.ascx" TagName="auditoria" TagPrefix="uc2" %>
+<%@ Register Src="../Controles/menu.ascx" TagName="menu" TagPrefix="uc3" %>
+<!DOCTYPE HTML>
+<html>
+<head id="Head1" runat="server">
+    <title>Financial Software</title>
+    <!--METAS-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--SECCION ESTILOS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../Styles/StyleMaster.css" />
+    <link rel="stylesheet" href="../../Styles/StyleHeader.css" />
+    <link href="../../Styles/Styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="master">
+
+    <script src="<%=ResolveUrl("~/Scripts/jquery.numeric.js")%>" type="text/javascript"></script>
+
+
+    <script type="text/javascript">
+        //<![CDATA[
+        var theForm = document.forms['ctl01'];
+        if (!theForm) {
+            theForm = document.ctl01;
+        }
+        function __doPostBack(eventTarget, eventArgument) {
+            if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                theForm.__EVENTTARGET.value = eventTarget;
+                theForm.__EVENTARGUMENT.value = eventArgument;
+                theForm.submit();
+            }
+        }
+    //]]>
+
+        function autoResize(id) {
+            var newheight;
+            if (document.getElementById) {
+                newheight = document.getElementById(id).contentWindow.document.body.scrollHeight;
+            }
+            document.getElementById(id).height = (newheight) + "px";
+function AjustarMenu() {
+            $('#menuPrincipal').hoverAccordion({
+                activateitem: '1',
+                speed: 'fast'
+            });
+            $('#menuPrincipal').children('li:first').addClass('firstitem');
+            $('#menuPrincipal').children('li:last').addClass('lastitem');
+        }
+	        }
+
+ var contadorClickGuardar = 0;
+        var contadorClickConsulta = 0;
+        var contadorClickEliminar = 0;
+        function EvitarClickeoLocos() {
+            if (contadorClickGuardar == 0) {
+ $("#btnGuardar").hide()
+                contadorClickGuardar += 1;
+                return true;
+            }
+            return false;
+  $("#btnGuardar").show();
+        }
+
+        function EvitarClickeoLocosConsulta() {
+            if (contadorClickConsulta == 0) {
+                contadorClickConsulta += 1;
+                return true;
+            }
+            return false;
+        }
+
+        function EvitarClickeoLocosEliminar() {
+            if (contadorClickEliminar == 0) {
+                contadorClickEliminar += 1;
+                return true;
+            }
+            return false;
+        }
+
+        var contadorClickGuardar = 0;
+        var contadorClickConsulta = 0;
+        var contadorClickEliminar = 0;
+        $(document).ready(function () {
+
+            // Algo global para evitar el trolleo de que clickeen al boton de guardar 100 veces y 100 veces guarde,
+            // Ya me han pedido mucho esto asi que lo globalizo
+            // Cuando el servidor responda el 'contadorClickGuardar' volvera a estar en 0 asi se podra clickear el boton solo luego que el servidor responda :D
+            $("#btnGuardar").click(EvitarClickeoLocos);
+            $("#btnConsultar").click(EvitarClickeoLocosConsulta);
+            $("#btnEliminar").click(EvitarClickeoLocosEliminar);
+
+           
+        });
+    </script>
+    <form id="Form1" runat="server">
+        <uc1:header ID="header1" runat="server" />
+
+        <div style="display: flex;">
+            <div>
+                <uc3:menu ID="menu1" runat="server" />
+            </div>
+            <div>
+                <button id="side_open_btn" class="openbtn_sidebar" onclick="CloseNav(event)">☰</button>
+                <br />
+            </div>
+            <div class="colDer fl-lt">
+                <div class="breadcrumb">
+                    <span>
+                        <asp:HyperLink runat="server" ID="home" NavigateUrl="~/General/Global/modulos.aspx" Text="Inicio" />
+                    </span>
+                    <asp:Label ID="lblModulo" runat="server" Text="Fabrica de Créditos" />
+                </div>
+                <h2>
+                    <asp:Label ID="lblOpcion" CssClass="sidebar_title" runat="server" /></h2>
+                <br/>
+                <table>
+                    <tr>
+                        <td style="text-align: left; width: 40%">
+                            <strong>Cliente:</strong>
+                            <asp:Label ID="lblNombresApellidos" runat="server"></asp:Label>
+                        </td>
+                        <td></td>
+                        <td style="text-align: left; width: 20%">
+                            <strong>Identificación:</strong>
+                            <asp:Label ID="lblIdCliente" runat="server"></asp:Label><asp:Label ID="lblCod_Cliente"
+                                runat="server" Visible="False"></asp:Label>
+                            
+                        </td>
+                        <td style="text-align: right; width: 40%">
+                            <div id="divHerramientas" class="herramientas">
+                                <asp:DropDownList ID="ddlAcciones" runat="server" OnSelectedIndexChanged="ddlAcciones_SelectedIndexChanged" />
+
+
+                                <asp:LinkButton ID="btnGuardar" OnClick="btnGuardar_Click" runat="server" CssClass="btn btn-small btn-outline-success btn-master">
+                        <i class="icon icon-ok">
+                            <svg class="svg-master" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M17.354 4.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3-3a.5.5 0 11.708-.708L10 11.293l6.646-6.647a.5.5 0 01.708 0z" clip-rule="evenodd"></path>
+                              <path fill-rule="evenodd" d="M3.5 15A1.5 1.5 0 005 16.5h10a1.5 1.5 0 001.5-1.5v-5a.5.5 0 00-1 0v5a.5.5 0 01-.5.5H5a.5.5 0 01-.5-.5V5a.5.5 0 01.5-.5h8a.5.5 0 000-1H5A1.5 1.5 0 003.5 5v10z" clip-rule="evenodd"></path>
+                            </svg>Guardar
+                        </i>
+                                </asp:LinkButton>
+
+                                <asp:LinkButton ID="btnNuevo" OnClick="btnNuevo_Click" runat="server" CssClass="btn btn-small btn-outline-success btn-master">
+                        <i class="icon icon-ok">
+                            <svg class="svg-master"  viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M10 5.5a.5.5 0 01.5.5v4a.5.5 0 01-.5.5H6a.5.5 0 010-1h3.5V6a.5.5 0 01.5-.5z" clip-rule="evenodd"></path>
+                              <path fill-rule="evenodd" d="M9.5 10a.5.5 0 01.5-.5h4a.5.5 0 010 1h-3.5V14a.5.5 0 01-1 0v-4z" clip-rule="evenodd"></path>
+                            </svg>Nuevo
+                        </i>
+                                </asp:LinkButton>
+
+
+                                <asp:LinkButton ID="btnEditar" OnClick="btnEditar_Click" runat="server" CssClass="btn btn-small btn-outline-warning btn-master">
+                        <i class="icon icon-ok">
+                            <svg class="svg-master" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M13.293 3.293a1 1 0 011.414 0l2 2a1 1 0 010 1.414l-9 9a1 1 0 01-.39.242l-3 1a1 1 0 01-1.266-1.265l1-3a1 1 0 01.242-.391l9-9zM14 4l2 2-9 9-3 1 1-3 9-9z" clip-rule="evenodd"></path>
+                              <path fill-rule="evenodd" d="M14.146 8.354l-2.5-2.5.708-.708 2.5 2.5-.708.708zM5 12v.5a.5.5 0 00.5.5H6v.5a.5.5 0 00.5.5H7v.5a.5.5 0 00.5.5H8v-1.5a.5.5 0 00-.5-.5H7v-.5a.5.5 0 00-.5-.5H5z" clip-rule="evenodd"></path>
+                            </svg>Editar
+                        </i>
+                                </asp:LinkButton>
+
+                                <asp:LinkButton ID="btnEliminar" OnClick="btnEliminar_Click" runat="server" CssClass="btn btn-small btn-outline-danger btn-master">
+                        <i class="icon icon-ok">
+                            <svg  class="bi bi-trash" width="1em" height="1em" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M7.5 7.5A.5.5 0 018 8v6a.5.5 0 01-1 0V8a.5.5 0 01.5-.5zm2.5 0a.5.5 0 01.5.5v6a.5.5 0 01-1 0V8a.5.5 0 01.5-.5zm3 .5a.5.5 0 00-1 0v6a.5.5 0 001 0V8z"></path>
+                              <path fill-rule="evenodd" d="M16.5 5a1 1 0 01-1 1H15v9a2 2 0 01-2 2H7a2 2 0 01-2-2V6h-.5a1 1 0 01-1-1V4a1 1 0 011-1H8a1 1 0 011-1h2a1 1 0 011 1h3.5a1 1 0 011 1v1zM6.118 6L6 6.059V15a1 1 0 001 1h6a1 1 0 001-1V6.059L13.882 6H6.118zM4.5 5V4h11v1h-11z" clip-rule="evenodd"></path>
+                            </svg>Eliminar
+                        </i>
+                                </asp:LinkButton>
+
+                                <asp:LinkButton ID="btnConsultar" ValidationGroup="vgConsultar" OnClick="btnConsultar_Click" runat="server" CssClass="btn btn-small btn-outline-info btn-master">
+                        <i class="icon icon-ok">
+                            <svg class="svg-master" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M18 10s-3-5.5-8-5.5S2 10 2 10s3 5.5 8 5.5 8-5.5 8-5.5zM3.173 10a13.133 13.133 0 001.66 2.043C6.12 13.332 7.88 14.5 10 14.5c2.12 0 3.879-1.168 5.168-2.457A13.133 13.133 0 0016.828 10a13.133 13.133 0 00-1.66-2.043C13.879 6.668 12.119 5.5 10 5.5c-2.12 0-3.879 1.168-5.168 2.457A13.133 13.133 0 003.172 10z" clip-rule="evenodd"></path>
+                              <path fill-rule="evenodd" d="M10 7.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM6.5 10a3.5 3.5 0 117 0 3.5 3.5 0 01-7 0z" clip-rule="evenodd"></path>
+                            </svg>Consultar
+                        </i>
+                                </asp:LinkButton>
+
+                                <asp:LinkButton ID="btnCancelar" OnClick="btnCancelar_Click" runat="server" CssClass="btn btn-small btn-outline-danger btn-master">
+                        <i class="icon icon-ok">
+                            <svg class="svg-master" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M5.646 5.646a.5.5 0 000 .708l8 8a.5.5 0 00.708-.708l-8-8a.5.5 0 00-.708 0z" clip-rule="evenodd"></path>
+                              <path fill-rule="evenodd" d="M14.354 5.646a.5.5 0 010 .708l-8 8a.5.5 0 01-.708-.708l8-8a.5.5 0 01.708 0z" clip-rule="evenodd"></path>
+                            </svg>Cancelar
+                        </i>
+                                </asp:LinkButton>
+
+                                <asp:LinkButton ID="btnRegresar" OnClick="btnRegresar_Click" runat="server" CssClass="btn btn-small btn-outline-danger btn-master">
+                        <i class="icon icon-ok">
+                            <svg class="svg-master" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M8.603 4h7.08a1 1 0 011 1v10a1 1 0 01-1 1h-7.08a1 1 0 01-.76-.35L3 10l4.844-5.65A1 1 0 018.603 4zm7.08-1a2 2 0 012 2v10a2 2 0 01-2 2h-7.08a2 2 0 01-1.519-.698L2.241 10.65a1 1 0 010-1.302L7.084 3.7A2 2 0 018.603 3h7.08z" clip-rule="evenodd"></path>
+                              <path fill-rule="evenodd" d="M7.83 7.146a.5.5 0 000 .708l5 5a.5.5 0 00.707-.708l-5-5a.5.5 0 00-.708 0z" clip-rule="evenodd"></path>
+                              <path fill-rule="evenodd" d="M13.537 7.146a.5.5 0 010 .708l-5 5a.5.5 0 01-.708-.708l5-5a.5.5 0 01.707 0z" clip-rule="evenodd"></path>
+                            </svg>Regresar
+                        </i>
+                                </asp:LinkButton>
+
+                                <asp:LinkButton ID="btnLimpiar" OnClick="btnLimpiar_Click" runat="server" CssClass="btn btn-small btn-outline-secondary btn-master">
+                        <i class="icon icon-ok">
+                            <svg class="svg-master" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M4 9.5a.5.5 0 00-.5.5 6.5 6.5 0 0012.13 3.25.5.5 0 00-.866-.5A5.5 5.5 0 014.5 10a.5.5 0 00-.5-.5z" clip-rule="evenodd"></path>
+                              <path fill-rule="evenodd" d="M4.354 9.146a.5.5 0 00-.708 0l-2 2a.5.5 0 00.708.708L4 10.207l1.646 1.647a.5.5 0 00.708-.708l-2-2zM15.947 10.5a.5.5 0 00.5-.5 6.5 6.5 0 00-12.13-3.25.5.5 0 10.866.5A5.5 5.5 0 0115.448 10a.5.5 0 00.5.5z" clip-rule="evenodd"></path>
+                              <path fill-rule="evenodd" d="M18.354 8.146a.5.5 0 00-.708 0L16 9.793l-1.646-1.647a.5.5 0 00-.708.708l2 2a.5.5 0 00.708 0l2-2a.5.5 0 000-.708z" clip-rule="evenodd"></path>
+                            </svg>Limpiar
+                        </i>
+                                </asp:LinkButton>
+
+                                <asp:LinkButton ID="btnImprimir" OnClick="btnImprimir_Click" runat="server" CssClass="btn btn-small btn-outline-secondary btn-master">
+                        <i class="icon icon-ok">
+                            <svg class="svg-master" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M6 3h8a2 2 0 012 2v10a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2zm0 1a1 1 0 00-1 1v10a1 1 0 001 1h8a1 1 0 001-1V5a1 1 0 00-1-1H6z" clip-rule="evenodd"></path>
+                              <path fill-rule="evenodd" d="M6.5 14a.5.5 0 01.5-.5h3a.5.5 0 010 1H7a.5.5 0 01-.5-.5zm0-2a.5.5 0 01.5-.5h6a.5.5 0 010 1H7a.5.5 0 01-.5-.5zm0-2a.5.5 0 01.5-.5h6a.5.5 0 010 1H7a.5.5 0 01-.5-.5zm0-2a.5.5 0 01.5-.5h6a.5.5 0 010 1H7a.5.5 0 01-.5-.5zm0-2a.5.5 0 01.5-.5h6a.5.5 0 010 1H7a.5.5 0 01-.5-.5z" clip-rule="evenodd"></path>
+                            </svg>Imprimir
+                        </i>
+                                </asp:LinkButton>
+
+                                <asp:LinkButton ID="btnExportar" OnClick="btnExportar_Click" runat="server" CssClass="btn btn-small btn-outline-dark btn-master">
+                        <i class="icon icon-ok">
+                            <svg class="svg-master" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M2.5 10a.5.5 0 01.5.5V14a1 1 0 001 1h12a1 1 0 001-1v-3.5a.5.5 0 011 0V14a2 2 0 01-2 2H4a2 2 0 01-2-2v-3.5a.5.5 0 01.5-.5z" clip-rule="evenodd"></path>
+                              <path fill-rule="evenodd" d="M7 9.5a.5.5 0 01.707 0L10 11.793 12.293 9.5a.5.5 0 01.707.707l-2.646 2.647a.5.5 0 01-.708 0L7 10.207A.5.5 0 017 9.5z" clip-rule="evenodd"></path>
+                              <path fill-rule="evenodd" d="M10 3a.5.5 0 01.5.5v8a.5.5 0 01-1 0v-8A.5.5 0 0110 3z" clip-rule="evenodd"></path>
+                            </svg>Exportar
+                        </i>
+                                </asp:LinkButton>
+
+                                <asp:LinkButton ID="btnCopiar" OnClick="btnCopiar_Click" runat="server" CssClass="btn btn-small btn-outline-secondary btn-master">
+                        <i class="icon icon-ok">
+                            <svg class="svg-master" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M5 4h8a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2zm0 1a1 1 0 00-1 1v10a1 1 0 001 1h8a1 1 0 001-1V6a1 1 0 00-1-1H5z" clip-rule="evenodd"></path>
+                              <path d="M7 2h8a2 2 0 012 2v10a2 2 0 01-2 2v-1a1 1 0 001-1V4a1 1 0 00-1-1H7a1 1 0 00-1 1H5a2 2 0 012-2z"></path>
+                            </svg>Copiar
+                        </i>
+                                </asp:LinkButton>
+
+                                <asp:LinkButton ID="btnCargar" OnClick="btnCargar_Click" runat="server" CssClass="btn btn-small btn-outline-success btn-master">
+                        <i class="icon icon-ok">
+                            <svg class="svg-master" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M6.887 8.2l-.964-.165A2.5 2.5 0 105.5 13H8v1H5.5a3.5 3.5 0 11.59-6.95 5.002 5.002 0 119.804 1.98A2.501 2.501 0 0115.5 14H12v-1h3.5a1.5 1.5 0 00.237-2.982L14.7 9.854l.216-1.028a4 4 0 10-7.843-1.587l-.185.96z"></path>
+                              <path fill-rule="evenodd" d="M7 10.854a.5.5 0 00.707 0L10 8.56l2.293 2.293a.5.5 0 00.707-.707L10.354 7.5a.5.5 0 00-.708 0L7 10.146a.5.5 0 000 .708z" clip-rule="evenodd"></path>
+                              <path fill-rule="evenodd" d="M10 8a.5.5 0 01.5.5v8a.5.5 0 01-1 0v-8A.5.5 0 0110 8z" clip-rule="evenodd"></path>
+                            </svg>>Cargar
+                        </i>
+                                </asp:LinkButton>
+
+                                <asp:LinkButton ID="btnImportar" OnClick="btnImportar_Click" runat="server" CssClass="btn btn-small btn-outline-dark btn-master">
+                        <i class="icon icon-ok">
+                            <svg class="svg-master" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M2.125 13.17A.5.5 0 012.5 13H8a.5.5 0 01.5.5 1.5 1.5 0 003 0 .5.5 0 01.5-.5h5.5a.5.5 0 01.496.562l-.39 3.124A1.5 1.5 0 0116.117 18H3.883a1.5 1.5 0 01-1.489-1.314l-.39-3.124a.5.5 0 01.121-.393zm.941.83l.32 2.562a.5.5 0 00.497.438h12.234a.5.5 0 00.496-.438l.32-2.562H12.45a2.5 2.5 0 01-4.9 0H3.066zM5.81 2.563A1.5 1.5 0 016.98 2h6.04a1.5 1.5 0 011.17.563l3.7 4.625a.5.5 0 11-.78.624l-3.7-4.624A.5.5 0 0013.02 3H6.98a.5.5 0 00-.39.188l-3.7 4.624a.5.5 0 11-.78-.624l3.7-4.625z" clip-rule="evenodd"></path>
+                              <path fill-rule="evenodd" d="M2.125 7.17A.5.5 0 012.5 7H8a.5.5 0 01.5.5 1.5 1.5 0 003 0A.5.5 0 0112 7h5.5a.5.5 0 01.496.562l-.39 3.124A1.5 1.5 0 0116.117 12H3.883a1.5 1.5 0 01-1.489-1.314l-.39-3.124a.5.5 0 01.121-.393zm.941.83l.32 2.562a.5.5 0 00.497.438h12.234a.5.5 0 00.496-.438L16.933 8H12.45a2.5 2.5 0 01-4.9 0H3.066z" clip-rule="evenodd"></path>
+                            </svg>Importar
+                        </i>
+                                </asp:LinkButton>
+                            </div>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+                <div>
+                    <asp:Panel ID="plError" runat="server" Visible="False">
+                        <asp:Label ID="lblError" runat="server" Style="text-align: left" Visible="False" Width="100%" ForeColor="Red"></asp:Label>
+                    </asp:Panel>
+                </div>
+                <br />
+                <div></div>
+                <img src="<%=ResolveUrl("~/Images/loading.gif")%>" name="imgLoading" id="imgLoading" class="loading" alt="imagen" />
+                <div class="contenidoVariable">
+                    <asp:ContentPlaceHolder ID="cphMain" runat="server">
+                    </asp:ContentPlaceHolder>
+                    <table>
+                        <tr>
+                            <td class="style1">
+                                <asp:ImageButton ID="btnAtras" runat="server" ImageUrl="~/Images/iconAnterior.jpg"
+                                    OnClick="btnAtras_Click" />
+                            </td>
+                            <td class="style1">
+                                <asp:ImageButton ID="btnAdelante" runat="server" OnClick="btnAdelante_Click" ValidationGroup="vgGuardar" />
+                            </td>
+                            <td class="style1">
+                                <asp:ImageButton ID="btnAdelante2" runat="server" OnClick="btnAdelante2_Click" ValidationGroup="vgGuardar" />
+                            </td>
+                        </tr>
+                    </table>
+                    <asp:HiddenField ID="hfObj" runat="server" />
+                </div>
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+    </form>
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="<%=ResolveUrl("~/Scripts/jquery-3.4.1.min.js")%>"></script>
+    <script src="<%=ResolveUrl("~/Scripts/bootstrap.min.js")%>"></script>
+    <script src="<%=ResolveUrl("~/Scripts/PCLBryan.js")%>"></script>
+    <script src="<%=ResolveUrl("~/Scripts/JsNav.js")%>"></script>
+    <!--SCRIPTS BOOTSTRAP-->
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    $(document).ready(function () {
+        $(".CustomTabStyle").removeClass("ajax__tab_xp");
+    })
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel_menu = this.nextElementSibling;
+            if (panel_menu.style.maxHeight) {
+                panel_menu.style.maxHeight = null;
+            } else {
+                panel_menu.style.maxHeight = panel_menu.scrollHeight + "px";
+            }
+        });
+    }
+    </script>
+</body>
+</html>

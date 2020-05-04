@@ -1,0 +1,14 @@
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Reporteador.Entities\bin\Debug\Xpinn.Reporteador.Entities.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Reporteador.Entities\bin\Debug\Xpinn.Reporteador.Entities.pdb
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Reporteador.Entities\bin\Debug\Xpinn.Util.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Reporteador.Entities\bin\Debug\itextsharp.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Reporteador.Entities\bin\Debug\Microsoft.Web.Services3.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Reporteador.Entities\bin\Debug\Newtonsoft.Json.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Reporteador.Entities\bin\Debug\Xpinn.Util.pdb
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Reporteador.Entities\bin\Debug\Xpinn.Util.dll.config
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Reporteador.Entities\bin\Debug\itextsharp.xml
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Reporteador.Entities\bin\Debug\Newtonsoft.Json.xml
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Reporteador.Entities\obj\Debug\Xpinn.Reporteador.Entities.csprojAssemblyReference.cache
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Reporteador.Entities\obj\Debug\Xpinn.Reporteador.Entities.csproj.CopyComplete
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Reporteador.Entities\obj\Debug\Xpinn.Reporteador.Entities.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Reporteador.Entities\obj\Debug\Xpinn.Reporteador.Entities.pdb

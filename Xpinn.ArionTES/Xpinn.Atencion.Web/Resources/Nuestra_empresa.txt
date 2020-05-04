@@ -1,0 +1,13 @@
+ <div class="row">
+    <div class="col-md-6 col-xs-12">
+        <p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="../../Imagenes/Inicio/inicio_NuestraEmpresa.jpg" alt="" width="419" height="278"></p>
+    </div>
+    <div class="col-md-6 col-xs-12">
+        <p style="margin: 31.0938px 0px 10px 13.3281px; padding: 0px; box-sizing: border-box; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 17px; text-align: justify;">Somos una empresa sin &aacute;nimo de lucro vigilada por la Superintendencia de Econom&iacute;a Solidaria, dedicada a brindar servicios dirigidos a mejorar la calidad de vida de los asociados y sus familias.<br/>
+        <br/>
+        Nuestra misi&oacute;n es servir de instrumento empresarial para el mejoramiento de la calidad de vida de los asociados y de sus familias, partiendo desde sus necesidades b&aacute;sicas hasta llegar a apoyar en la construcci&oacute;n de un futuro s&oacute;lido para ellos.<br/>
+        <br/>
+        Nuestra visi&oacute;n es contribuir de manera sostenible al mejoramiento de la calidad de vida de los asociados y de sus familias, ofreciendo soluciones que generen bienestar y convirti&eacute;ndose en su principal aliado.</p>
+        <p style="margin: 31.0938px 0px 10px 13.3281px; padding: 0px; box-sizing: border-box; color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 17px; text-align: justify;">&nbsp;</p>
+    </div>
+</div>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DT_Extracto" targetNamespace="http://tempuri.org/DT_Extracto.xsd" xmlns:mstns="http://tempuri.org/DT_Extracto.xsd" xmlns="http://tempuri.org/DT_Extracto.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DT_Extracto" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DT_Extracto">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="codigo" type="xs:int" minOccurs="0" />
+              <xs:element name="identificacion" type="xs:string" minOccurs="0" />
+              <xs:element name="nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="ciudad" type="xs:string" minOccurs="0" />
+              <xs:element name="direccion" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha_oper" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="fecha_pago" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="saldo" type="xs:decimal" minOccurs="0" />
+              <xs:element name="tipo_mov" type="xs:string" minOccurs="0" />
+              <xs:element name="linea" type="xs:string" minOccurs="0" />
+              <xs:element name="nomtipo_ope" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="valor" type="xs:decimal" minOccurs="0" />
+              <xs:element name="rutaImagen" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="iddetalle" type="xs:int" minOccurs="0" />
+              <xs:element name="idextracto" type="xs:string" minOccurs="0" />
+              <xs:element name="cod_ope" type="xs:string" minOccurs="0" />
+              <xs:element name="saldo_total" type="xs:string" minOccurs="0" />
+              <xs:element name="nombres" type="xs:string" minOccurs="0" />
+              <xs:element name="NumeroCuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="Abonos" type="xs:string" minOccurs="0" />
+              <xs:element name="Cargos" type="xs:string" minOccurs="0" />
+              <xs:element name="InteresesRecibidos" type="xs:string" minOccurs="0" />
+              <xs:element name="CuatroPorMil" type="xs:string" minOccurs="0" />
+              <xs:element name="Retenciones" type="xs:string" minOccurs="0" />
+              <xs:element name="SaldoMesAnterior" type="xs:string" minOccurs="0" />
+              <xs:element name="AbonosContador" type="xs:string" minOccurs="0" />
+              <xs:element name="CargosContador" type="xs:string" minOccurs="0" />
+              <xs:element name="InteresesContador" type="xs:string" minOccurs="0" />
+              <xs:element name="CuatroPorMilContador" type="xs:string" minOccurs="0" />
+              <xs:element name="RetencionesContador" type="xs:string" minOccurs="0" />
+              <xs:element name="NombreOficina" type="xs:string" minOccurs="0" />
+              <xs:element name="DireccionOficina" type="xs:string" minOccurs="0" />
+              <xs:element name="TelefonoOficina" type="xs:string" minOccurs="0" />
+              <xs:element name="doc_soporte" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

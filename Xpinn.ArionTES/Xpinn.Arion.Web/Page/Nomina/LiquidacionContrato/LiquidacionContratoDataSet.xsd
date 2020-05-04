@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LiquidacionContratoDataSet" targetNamespace="http://tempuri.org/LiquidacionContratoDataSet.xsd" xmlns:mstns="http://tempuri.org/LiquidacionContratoDataSet.xsd" xmlns="http://tempuri.org/LiquidacionContratoDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="LiquidacionContratoDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTableDetalleEmpleado">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NombreEmpleado" type="xs:string" minOccurs="0" />
+              <xs:element name="Cedula" type="xs:string" minOccurs="0" />
+              <xs:element name="Cargo" type="xs:string" minOccurs="0" />
+              <xs:element name="Sueldo" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalPagos" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalDescuentos" type="xs:string" minOccurs="0" />
+              <xs:element name="NetoPagar" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoConcepto" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionPago" type="xs:string" minOccurs="0" />
+              <xs:element name="ValorPago" type="xs:string" minOccurs="0" />
+              <xs:element name="DescripcionDescuento" type="xs:string" minOccurs="0" />
+              <xs:element name="ValorDescuento" type="xs:string" minOccurs="0" />
+              <xs:element name="TipoContrato" type="xs:string" minOccurs="0" />
+              <xs:element name="NumeroLiquidacion" type="xs:string" minOccurs="0" />
+              <xs:element name="DiasLaborados" type="xs:string" minOccurs="0" />
+              <xs:element name="MotivoRetiro" type="xs:string" minOccurs="0" />
+              <xs:element name="PrimaCalculo" type="xs:string" minOccurs="0" />
+              <xs:element name="PrimaDias" type="xs:string" minOccurs="0" />
+              <xs:element name="VacacionesCalculo" type="xs:string" minOccurs="0" />
+              <xs:element name="VacacionesDias" type="xs:string" minOccurs="0" />
+              <xs:element name="CesantiasCalculo" type="xs:string" minOccurs="0" />
+              <xs:element name="CesantiasDias" type="xs:string" minOccurs="0" />
+              <xs:element name="FechaIngreso" type="xs:string" minOccurs="0" />
+              <xs:element name="Valorletras" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EB5F10D3-D611-4587-9150-45CC4C931831}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Xpinn.Nomina.Services</RootNamespace>
+    <AssemblyName>Xpinn.Nomina.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actividad_NominaService.cs" />
+    <Compile Include="CargosService.cs" />
+    <Compile Include="AreaService.cs" />
+    <Compile Include="AumentoSueldoService.cs" />
+    <Compile Include="CajaDeCompensacionService.cs" />
+    <Compile Include="ConceptoNominaService.cs" />
+    <Compile Include="Empleado_FamiliarService.cs" />
+    <Compile Include="HorasExtrasEmpleadosService.cs" />
+    <Compile Include="IngresoPersonalService.cs" />
+    <Compile Include="LiquidacionContratoService.cs" />
+    <Compile Include="LiquidacionNominaService.cs" />
+    <Compile Include="DetalleDotacionService.cs" />
+    <Compile Include="DotacionService.cs" />
+    <Compile Include="Empleado_EstudiosService.cs" />
+    <Compile Include="Experiencia_LaboralService.cs" />
+    <Compile Include="InactividadesService.cs" />
+    <Compile Include="LiquidacionCesantiasServices.cs" />
+    <Compile Include="LiquidacionPrimaServices.cs" />
+    <Compile Include="LiquidacionVacacionesEmpleadoService.cs" />
+    <Compile Include="NovedadPrimaService.cs" />
+    <Compile Include="PagosDescuentosFijosService.cs" />
+    <Compile Include="EmpleadoServices.cs" />
+    <Compile Include="Empresa_SucursalService.cs" />
+    <Compile Include="NominaEntidadService.cs" />
+    <Compile Include="RangosRetencionServices.cs" />
+    <Compile Include="RangosFondoSolidaridadServices.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RetroactivoService.cs" />
+    <Compile Include="SeguridadSocialServices.cs" />
+    <Compile Include="NominaEmpleadoService.cs" />
+    <Compile Include="ParametrosArlService.cs" />
+    <Compile Include="TipoCotizante.cs" />
+    <Compile Include="TipoContratoService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xpinn.Contabilidad.Business\Xpinn.Contabilidad.Business.csproj">
+      <Project>{1c37228b-41b6-4309-b3d4-d8a05dd0da18}</Project>
+      <Name>Xpinn.Contabilidad.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Contabilidad.Entities\Xpinn.Contabilidad.Entities.csproj">
+      <Project>{e784bd0b-d163-43a7-92f7-c65a3b1ec299}</Project>
+      <Name>Xpinn.Contabilidad.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.FabricaCreditos.Business\Xpinn.FabricaCreditos.Business.csproj">
+      <Project>{6003754e-7475-4da3-bdd0-6afdd9aac60d}</Project>
+      <Name>Xpinn.FabricaCreditos.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.FabricaCreditos.Entities\Xpinn.FabricaCreditos.Entities.csproj">
+      <Project>{b89884f6-511b-466d-9338-51fc7a656792}</Project>
+      <Name>Xpinn.FabricaCreditos.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.FabricaCreditos.Entities\Xpinn.FabricaCreditos.Entities.csproj">
+      <Project>{b89884f6-511b-466d-9338-51fc7a656792}</Project>
+      <Name>Xpinn.FabricaCreditos.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Nomina.Business\Xpinn.Nomina.Business.csproj">
+      <Project>{ab347516-5ebd-4e16-8fe6-521f19a6389c}</Project>
+      <Name>Xpinn.Nomina.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Nomina.Entities\Xpinn.Nomina.Entities.csproj">
+      <Project>{74fe8625-e8d7-4bbe-aa8d-f9ec71c2efda}</Project>
+      <Name>Xpinn.Nomina.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Tesoreria.Entities\Xpinn.Tesoreria.Entities.csproj">
+      <Project>{2682acee-0325-4a67-84e4-801e2bb6aba7}</Project>
+      <Name>Xpinn.Tesoreria.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Util\Xpinn.Util.csproj">
+      <Project>{1dc267f2-1877-46d6-af5e-f92eb286dfc4}</Project>
+      <Name>Xpinn.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetDetalleComp" targetNamespace="http://tempuri.org/DataSetDetalleComp.xsd" xmlns:mstns="http://tempuri.org/DataSetDetalleComp.xsd" xmlns="http://tempuri.org/DataSetDetalleComp.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetDetalleComp" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DataSetDetalleComp" msprop:Generator_UserDSName="DataSetDetalleComp">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTableDetalleComp" msprop:Generator_TableClassName="DataTableDetalleCompDataTable" msprop:Generator_TableVarName="tableDataTableDetalleComp" msprop:Generator_RowChangedName="DataTableDetalleCompRowChanged" msprop:Generator_TablePropName="DataTableDetalleComp" msprop:Generator_RowDeletingName="DataTableDetalleCompRowDeleting" msprop:Generator_RowChangingName="DataTableDetalleCompRowChanging" msprop:Generator_RowEvHandlerName="DataTableDetalleCompRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTableDetalleCompRowDeleted" msprop:Generator_RowClassName="DataTableDetalleCompRow" msprop:Generator_UserTableName="DataTableDetalleComp" msprop:Generator_RowEvArgName="DataTableDetalleCompRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CodCuenta" msprop:Generator_ColumnVarNameInTable="columnCodCuenta" msprop:Generator_ColumnPropNameInRow="CodCuenta" msprop:Generator_ColumnPropNameInTable="CodCuentaColumn" msprop:Generator_UserColumnName="CodCuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="NomCuenta" msprop:Generator_ColumnVarNameInTable="columnNomCuenta" msprop:Generator_ColumnPropNameInRow="NomCuenta" msprop:Generator_ColumnPropNameInTable="NomCuentaColumn" msprop:Generator_UserColumnName="NomCuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="Identificacion" msprop:Generator_ColumnVarNameInTable="columnIdentificacion" msprop:Generator_ColumnPropNameInRow="Identificacion" msprop:Generator_ColumnPropNameInTable="IdentificacionColumn" msprop:Generator_UserColumnName="Identificacion" type="xs:string" minOccurs="0" />
+              <xs:element name="Detalle" msprop:Generator_ColumnVarNameInTable="columnDataColumn1" msprop:Generator_ColumnPropNameInRow="DataColumn1" msprop:Generator_ColumnPropNameInTable="DataColumn1Column" msprop:Generator_UserColumnName="DataColumn1" type="xs:string" minOccurs="0" />
+              <xs:element name="ValorDebito" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ValorCredito" type="xs:decimal" minOccurs="0" />
+              <xs:element name="tipo" type="xs:string" minOccurs="0" />
+              <xs:element name="CC" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DataTableListadoComp">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="num_comp" type="xs:long" minOccurs="0" />
+              <xs:element name="tipo_comp" type="xs:int" minOccurs="0" />
+              <xs:element name="nomtipo_comp" type="xs:string" minOccurs="0" />
+              <xs:element name="fecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="identificacion" type="xs:string" minOccurs="0" />
+              <xs:element name="nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="concepto" type="xs:string" minOccurs="0" />
+              <xs:element name="cod_cuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="nomcuenta" type="xs:string" minOccurs="0" />
+              <xs:element name="centro_costo" type="xs:int" minOccurs="0" />
+              <xs:element name="valordebito" type="xs:decimal" minOccurs="0" />
+              <xs:element name="valorcredito" type="xs:decimal" minOccurs="0" />
+              <xs:element name="detalle" type="xs:string" minOccurs="0" />
+              <xs:element name="tercero" type="xs:string" minOccurs="0" />
+              <xs:element name="nomtercero" type="xs:string" minOccurs="0" />
+              <xs:element name="soporte" type="xs:string" minOccurs="0" />
+              <xs:element name="elaboro" type="xs:string" minOccurs="0" />
+              <xs:element name="Observaciones" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

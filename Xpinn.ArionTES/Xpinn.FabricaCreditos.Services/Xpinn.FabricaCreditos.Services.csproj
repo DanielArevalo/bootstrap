@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{283FA80B-FCB4-4025-AEF1-E552A4714A22}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Xpinn.FabricaCreditos.Services</RootNamespace>
+    <AssemblyName>Xpinn.FabricaCreditos.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>%24/Financial/Xpinn.ArionTES/Xpinn.FabricaCreditos.Services</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccAuxPath>https://expinntechnology.visualstudio.com</SccAuxPath>
+    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Xpinn.FabricaCreditos.Services.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Xpinn.FabricaCreditos.Services.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\Xpinn.Asesores.Service\bin\Debug\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Vbe.Interop, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>E:\Nueva carpeta\Microsoft.Vbe.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="OFFICE, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>E:\Nueva carpeta\OFFICE.DLL</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActasService.cs" />
+    <Compile Include="ActividadesServices.cs" />
+    <Compile Include="AmortizacionCreService.cs" />
+    <Compile Include="AnexoCreditoService.cs" />
+    <Compile Include="AprobadorService.cs" />
+    <Compile Include="BalanceFamiliaService.cs" />
+    <Compile Include="BeneficiarioServices.cs" />
+    <Compile Include="BeneficiariosService.cs" />
+    <Compile Include="BienesRaicesService.cs" />
+    <Compile Include="CalificacionReferenciasService.cs" />
+    <Compile Include="codeudoresService.cs" />
+    <Compile Include="ComposicionPasivoService.cs" />
+    <Compile Include="consultasdatacreditoService.cs" />
+    <Compile Include="ControlCreditosService.cs" />
+    <Compile Include="ControlTiemposService.cs" />
+    <Compile Include="ConyugeService.cs" />
+    <Compile Include="AvanceService.cs" />
+    <Compile Include="Credito_GiroService.cs" />
+    <Compile Include="CreditoGerencialService.cs" />
+    <Compile Include="DestinacionServices.cs" />
+    <Compile Include="DocumentosRequeridosServices.cs" />
+    <Compile Include="InformacionAdicionalServices.cs" />
+    <Compile Include="ModalidadTasaService.cs" />
+    <Compile Include="OpcionesCreditoService.cs" />
+    <Compile Include="PagoOrdenesService.cs" />
+    <Compile Include="PersonaBiometriaServices.cs" />
+    <Compile Include="PersonaEmpresaRecaudoServices.cs" />
+    <Compile Include="ProcesosService.cs" />
+    <Compile Include="GarantiasComunitariasService.cs" />
+    <Compile Include="HistoricoTasaService.cs" />
+    <Compile Include="CosteoProductosService.cs" />
+    <Compile Include="CreditoPlanService.cs" />
+    <Compile Include="CreditoRecogerService.cs" />
+    <Compile Include="CreditoService.cs" />
+    <Compile Include="CreditoSolicitadoService.cs" />
+    <Compile Include="CuotasExtrasService.cs" />
+    <Compile Include="DatosAprobadorService.cs" />
+    <Compile Include="DatosClienteService.cs" />
+    <Compile Include="DatosDeDocumentoService.cs" />
+    <Compile Include="DatosPlanPagosService.cs" />
+    <Compile Include="DatosSolicitudService.cs" />
+    <Compile Include="DocumentosAnexosService.cs" />
+    <Compile Include="DocumentoService.cs" />
+    <Compile Include="EgresosFamiliaService.cs" />
+    <Compile Include="EstacionalidadMensualService.cs" />
+    <Compile Include="EstadosFinancierosService.cs" />
+    <Compile Include="ExcelServiceFC.cs" />
+    <Compile Include="FacturaService.cs" />
+    <Compile Include="FamiliaresPolizasService.cs" />
+    <Compile Include="FamiliaresService.cs" />
+    <Compile Include="GarantiaRealesService.cs" />
+    <Compile Include="InformacionFinancieraService.cs" />
+    <Compile Include="GeoreferenciaService.cs" />
+    <Compile Include="InformacionNegocioService.cs" />
+    <Compile Include="IngresosFamiliaService.cs" />
+    <Compile Include="InventarioActivoFijoService.cs" />
+    <Compile Include="InventarioMateriaPrimaService.cs" />
+    <Compile Include="LineasCreditoService.cs" />
+    <Compile Include="MargenVentasService.cs" />
+    <Compile Include="MotivoService.cs" />
+    <Compile Include="OficinaService.cs" />
+    <Compile Include="ParentescoService.cs" />
+    <Compile Include="PeriodicidadService.cs" />
+    <Compile Include="Persona1Service.cs" />
+    <Compile Include="PersonaService.cs" />
+    <Compile Include="PlanCuentasService.cs" />
+    <Compile Include="PlanesSegurosAmparosService.cs" />
+    <Compile Include="PlanesSegurosService.cs" />
+    <Compile Include="PolizasSegurosService.cs" />
+    <Compile Include="PreAnalisisService.cs" />
+    <Compile Include="PresupuestoEmpresarialService.cs" />
+    <Compile Include="PresupuestoFamiliarService.cs" />
+    <Compile Include="ProductoConsumoService.cs" />
+    <Compile Include="ProductosProcesoService.cs" />
+    <Compile Include="ProductosTerminadosService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReferenciaService.cs" />
+    <Compile Include="RefernciasService.cs" />
+    <Compile Include="ScoringService.cs" />
+    <Compile Include="SimulacionService.cs" />
+    <Compile Include="SolicitudCreditosRecogidosService.cs" />
+    <Compile Include="TipoCupoService.cs" />
+    <Compile Include="TipoGarantiaService.cs" />
+    <Compile Include="TipoLiquidacionService.cs" />
+    <Compile Include="TiposDocumentoService.cs" />
+    <Compile Include="TiposGarantiaService.cs" />
+    <Compile Include="TipoTasaHistService.cs" />
+    <Compile Include="TipoTasaService.cs" />
+    <Compile Include="TomadorPolizaService.cs" />
+    <Compile Include="UsuarioAtribucionesService.cs" />
+    <Compile Include="VehiculosService.cs" />
+    <Compile Include="VentasSemanalesService.cs" />
+    <Compile Include="ViabilidadFinancieraService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xpinn.Aportes.Entities\Xpinn.Aportes.Entities.csproj">
+      <Project>{3A1B9D8D-C018-4333-B436-8214C50E7E12}</Project>
+      <Name>Xpinn.Aportes.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Asesores.Entities.Shared\Xpinn.Asesores.Entities.Common.csproj">
+      <Project>{090da451-1225-43e7-a10d-38ac60a73a4c}</Project>
+      <Name>Xpinn.Asesores.Entities.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Asesores.Entities\Xpinn.Asesores.Entities.csproj">
+      <Project>{df1c5f00-ef61-49ba-add1-c5028030f2f5}</Project>
+      <Name>Xpinn.Asesores.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Auxilios.Entities\Xpinn.Auxilios.Entities.csproj">
+      <Project>{1FD97C96-74D0-4058-AE6F-9DDEBA9B86C7}</Project>
+      <Name>Xpinn.Auxilios.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Cartera.Entities\Xpinn.Cartera.Entities.csproj">
+      <Project>{D691A0E2-D950-41E3-9AC0-F788288480D8}</Project>
+      <Name>Xpinn.Cartera.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.CDATS.Business\Xpinn.CDATS.Business.csproj">
+      <Project>{9BE53038-D0DD-4580-9812-CDE2A4220501}</Project>
+      <Name>Xpinn.CDATS.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Comun.Entities\Xpinn.Comun.Entities.csproj">
+      <Project>{955A6F00-17CF-4CB4-97F7-B8E98E9B3297}</Project>
+      <Name>Xpinn.Comun.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Contabilidad.Entities\Xpinn.Contabilidad.Entities.csproj">
+      <Project>{E784BD0B-D163-43A7-92F7-C65A3B1EC299}</Project>
+      <Name>Xpinn.Contabilidad.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.FabricaCreditos.Business\Xpinn.FabricaCreditos.Business.csproj">
+      <Project>{6003754E-7475-4DA3-BDD0-6AFDD9AAC60D}</Project>
+      <Name>Xpinn.FabricaCreditos.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.FabricaCreditos.Entities\Xpinn.FabricaCreditos.Entities.csproj">
+      <Project>{B89884F6-511B-466D-9338-51FC7A656792}</Project>
+      <Name>Xpinn.FabricaCreditos.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.RecaudosMasivos.Entities\Xpinn.RecaudosMasivos.Entities.csproj">
+      <Project>{C120C5D1-323A-4DA9-9E68-1DAAC8D2F099}</Project>
+      <Name>Xpinn.RecaudosMasivos.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Util\Xpinn.Util.csproj">
+      <Project>{1DC267F2-1877-46D6-AF5E-F92EB286DFC4}</Project>
+      <Name>Xpinn.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

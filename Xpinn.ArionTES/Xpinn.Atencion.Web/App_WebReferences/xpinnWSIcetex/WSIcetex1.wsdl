@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ValidacionRequisitos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pCod_Persona" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="pFecha" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidacionRequisitosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidacionRequisitosResult" type="tns:ArrayOfConvocatoriaRequerido" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfConvocatoriaRequerido">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ConvocatoriaRequerido" nillable="true" type="tns:ConvocatoriaRequerido" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ConvocatoriaRequerido">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="cod_convreq" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_convocatoria" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_proceso" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_requisito" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="descripcion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="obligatorio" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="mensaje" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsVisible" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="observacion" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CrearConvocatoriaRequerido">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pRequerido" type="tns:ConvocatoriaRequerido" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CrearConvocatoriaRequeridoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CrearConvocatoriaRequeridoResult" type="tns:ConvocatoriaRequerido" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CrearCreditoIcetex">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCreditoIcetex" type="tns:CreditoIcetex" />
+            <s:element minOccurs="0" maxOccurs="1" name="lstDocumentos" type="tns:ArrayOfCreditoIcetexDocumento" />
+            <s:element minOccurs="1" maxOccurs="1" name="pOpcion" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CreditoIcetex">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="numero_credito" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_convocatoria" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_persona" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="identific_asoc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_asoc" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_solicitud" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipo_beneficiario" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="identificacion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="codtipoidentificacion" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="primer_nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="segundo_nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="primer_apellido" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="segundo_apellido" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="direccion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="telefono" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="estrato" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="cod_universidad" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="cod_programa" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_programa" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="valor" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="periodos" nillable="true" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="estado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_tipo_beneficiario" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_tipoidentificacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_tipo_programa" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_universidad" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_programa_univ" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nom_estado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="observacion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_inscripcion" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="esconforme" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="tipo_aprobacion" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCreditoIcetexDocumento">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CreditoIcetexDocumento" nillable="true" type="tns:CreditoIcetexDocumento" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CreditoIcetexDocumento">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="cod_credoc" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="numero_credito" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_tipo_doc" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="pregunta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="respuesta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="imagen" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="observacion" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CrearCreditoIcetexResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CrearCreditoIcetexResult" type="tns:CreditoIcetex" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CrearCreditoIcetexDocumento">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="lstDocumentos" type="tns:ArrayOfCreditoIcetexDocumento" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CrearCreditoIcetexDocumentoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CrearCreditoIcetexDocumentoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarConvocatoriaDocumentos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pFiltro" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarConvocatoriaDocumentosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarConvocatoriaDocumentosResult" type="tns:ArrayOfIcetexDocumentos" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfIcetexDocumentos">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="IcetexDocumentos" nillable="true" type="tns:IcetexDocumentos" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="IcetexDocumentos">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="cod_convdoc" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_convocatoria" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="cod_tipo_doc" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="pregunta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="descripcion" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListarCreditosIcetex">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pFiltro" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarCreditosIcetexResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarCreditosIcetexResult" type="tns:ArrayOfCreditoIcetex" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCreditoIcetex">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CreditoIcetex" nillable="true" type="tns:CreditoIcetex" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ConsultarConvocatoriaIcetex">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarConvocatoriaIcetexResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultarConvocatoriaIcetexResult" type="tns:ConvocatoriaIcetex" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ConvocatoriaIcetex">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="cod_convocatoria" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_convocatoria" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="descripcion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_inicio" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="fecha_final" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="mensaje_solicitud" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="numero_creditos" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="fec_ini_inscripcion" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="fec_fin_inscripcion" nillable="true" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ConsultarCreditoIcetex">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pFiltro" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConsultarCreditoIcetexResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConsultarCreditoIcetexResult" type="tns:CreditoIcetex" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarDocumentosIcetex">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pFiltro" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListarDocumentosIcetexResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListarDocumentosIcetexResult" type="tns:ArrayOfListadosIcetex" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfListadosIcetex">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ListadosIcetex" nillable="true" type="tns:ListadosIcetex" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ListadosIcetex">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="codigo" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="columna" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="descripcion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="archivo" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="observacion" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ValidacionRequisitosSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidacionRequisitos" />
+  </wsdl:message>
+  <wsdl:message name="ValidacionRequisitosSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidacionRequisitosResponse" />
+  </wsdl:message>
+  <wsdl:message name="CrearConvocatoriaRequeridoSoapIn">
+    <wsdl:part name="parameters" element="tns:CrearConvocatoriaRequerido" />
+  </wsdl:message>
+  <wsdl:message name="CrearConvocatoriaRequeridoSoapOut">
+    <wsdl:part name="parameters" element="tns:CrearConvocatoriaRequeridoResponse" />
+  </wsdl:message>
+  <wsdl:message name="CrearCreditoIcetexSoapIn">
+    <wsdl:part name="parameters" element="tns:CrearCreditoIcetex" />
+  </wsdl:message>
+  <wsdl:message name="CrearCreditoIcetexSoapOut">
+    <wsdl:part name="parameters" element="tns:CrearCreditoIcetexResponse" />
+  </wsdl:message>
+  <wsdl:message name="CrearCreditoIcetexDocumentoSoapIn">
+    <wsdl:part name="parameters" element="tns:CrearCreditoIcetexDocumento" />
+  </wsdl:message>
+  <wsdl:message name="CrearCreditoIcetexDocumentoSoapOut">
+    <wsdl:part name="parameters" element="tns:CrearCreditoIcetexDocumentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListarConvocatoriaDocumentosSoapIn">
+    <wsdl:part name="parameters" element="tns:ListarConvocatoriaDocumentos" />
+  </wsdl:message>
+  <wsdl:message name="ListarConvocatoriaDocumentosSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarConvocatoriaDocumentosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListarCreditosIcetexSoapIn">
+    <wsdl:part name="parameters" element="tns:ListarCreditosIcetex" />
+  </wsdl:message>
+  <wsdl:message name="ListarCreditosIcetexSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarCreditosIcetexResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarConvocatoriaIcetexSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultarConvocatoriaIcetex" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarConvocatoriaIcetexSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultarConvocatoriaIcetexResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarCreditoIcetexSoapIn">
+    <wsdl:part name="parameters" element="tns:ConsultarCreditoIcetex" />
+  </wsdl:message>
+  <wsdl:message name="ConsultarCreditoIcetexSoapOut">
+    <wsdl:part name="parameters" element="tns:ConsultarCreditoIcetexResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListarDocumentosIcetexSoapIn">
+    <wsdl:part name="parameters" element="tns:ListarDocumentosIcetex" />
+  </wsdl:message>
+  <wsdl:message name="ListarDocumentosIcetexSoapOut">
+    <wsdl:part name="parameters" element="tns:ListarDocumentosIcetexResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WSIcetexSoap">
+    <wsdl:operation name="ValidacionRequisitos">
+      <wsdl:input message="tns:ValidacionRequisitosSoapIn" />
+      <wsdl:output message="tns:ValidacionRequisitosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearConvocatoriaRequerido">
+      <wsdl:input message="tns:CrearConvocatoriaRequeridoSoapIn" />
+      <wsdl:output message="tns:CrearConvocatoriaRequeridoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearCreditoIcetex">
+      <wsdl:input message="tns:CrearCreditoIcetexSoapIn" />
+      <wsdl:output message="tns:CrearCreditoIcetexSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CrearCreditoIcetexDocumento">
+      <wsdl:input message="tns:CrearCreditoIcetexDocumentoSoapIn" />
+      <wsdl:output message="tns:CrearCreditoIcetexDocumentoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarConvocatoriaDocumentos">
+      <wsdl:input message="tns:ListarConvocatoriaDocumentosSoapIn" />
+      <wsdl:output message="tns:ListarConvocatoriaDocumentosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarCreditosIcetex">
+      <wsdl:input message="tns:ListarCreditosIcetexSoapIn" />
+      <wsdl:output message="tns:ListarCreditosIcetexSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarConvocatoriaIcetex">
+      <wsdl:input message="tns:ConsultarConvocatoriaIcetexSoapIn" />
+      <wsdl:output message="tns:ConsultarConvocatoriaIcetexSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarCreditoIcetex">
+      <wsdl:input message="tns:ConsultarCreditoIcetexSoapIn" />
+      <wsdl:output message="tns:ConsultarCreditoIcetexSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarDocumentosIcetex">
+      <wsdl:input message="tns:ListarDocumentosIcetexSoapIn" />
+      <wsdl:output message="tns:ListarDocumentosIcetexSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSIcetexSoap" type="tns:WSIcetexSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidacionRequisitos">
+      <soap:operation soapAction="http://tempuri.org/ValidacionRequisitos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearConvocatoriaRequerido">
+      <soap:operation soapAction="http://tempuri.org/CrearConvocatoriaRequerido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearCreditoIcetex">
+      <soap:operation soapAction="http://tempuri.org/CrearCreditoIcetex" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearCreditoIcetexDocumento">
+      <soap:operation soapAction="http://tempuri.org/CrearCreditoIcetexDocumento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarConvocatoriaDocumentos">
+      <soap:operation soapAction="http://tempuri.org/ListarConvocatoriaDocumentos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarCreditosIcetex">
+      <soap:operation soapAction="http://tempuri.org/ListarCreditosIcetex" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarConvocatoriaIcetex">
+      <soap:operation soapAction="http://tempuri.org/ConsultarConvocatoriaIcetex" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarCreditoIcetex">
+      <soap:operation soapAction="http://tempuri.org/ConsultarCreditoIcetex" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarDocumentosIcetex">
+      <soap:operation soapAction="http://tempuri.org/ListarDocumentosIcetex" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSIcetexSoap12" type="tns:WSIcetexSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidacionRequisitos">
+      <soap12:operation soapAction="http://tempuri.org/ValidacionRequisitos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearConvocatoriaRequerido">
+      <soap12:operation soapAction="http://tempuri.org/CrearConvocatoriaRequerido" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearCreditoIcetex">
+      <soap12:operation soapAction="http://tempuri.org/CrearCreditoIcetex" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CrearCreditoIcetexDocumento">
+      <soap12:operation soapAction="http://tempuri.org/CrearCreditoIcetexDocumento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarConvocatoriaDocumentos">
+      <soap12:operation soapAction="http://tempuri.org/ListarConvocatoriaDocumentos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarCreditosIcetex">
+      <soap12:operation soapAction="http://tempuri.org/ListarCreditosIcetex" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarConvocatoriaIcetex">
+      <soap12:operation soapAction="http://tempuri.org/ConsultarConvocatoriaIcetex" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConsultarCreditoIcetex">
+      <soap12:operation soapAction="http://tempuri.org/ConsultarCreditoIcetex" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarDocumentosIcetex">
+      <soap12:operation soapAction="http://tempuri.org/ListarDocumentosIcetex" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSIcetex">
+    <wsdl:port name="WSIcetexSoap" binding="tns:WSIcetexSoap">
+      <soap:address location="http://financialsoftware.com.co/WebServicesFecem/WSIcetex.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSIcetexSoap12" binding="tns:WSIcetexSoap12">
+      <soap12:address location="http://financialsoftware.com.co/WebServicesFecem/WSIcetex.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

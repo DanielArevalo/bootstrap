@@ -1,0 +1,35 @@
+<div class="row" style="width: 98%; margin-left: auto; margin-right: auto;">
+<div class="col-md-6 col-xs-12">
+<p style="text-align: justify;"><strong>SOAT</strong></p>
+<p style="text-align: justify;">Además de ser una obligación legal contar con este seguro, éste te permite contar con protección para todas las víctimas en caso de un accidente de tránsito, independientemente de quién tuvo la responsabilidad del evento.</p>
+<p style="text-align: justify;"><strong>Para más información:</strong><span style="font-size: 12.16px;">&nbsp;</span></p>
+<p style="text-align: justify;">GABRIEL MARTÍNEZ BRACHO</p>
+<p style="text-align: justify;"><strong>Oficina:</strong> +57 (1) 603 9173</p>
+<p style="text-align: justify;"><strong>Celular:</strong> +(57) 321 960 3577</p>
+<p style="text-align: justify;"><strong>Dirección:</strong> Corporativo Bogotá, Piso 8</p>
+<p style="text-align: justify;"><strong>E-Mail:</strong> <span id="cloak994274753c7e1cdb01cefd46a946fe26"><a href="mailto:gabriel.martinezbracho@ext.cemex.com">gabriel.martinezbracho@ext.cemex.com</a></span><script type="text/javascript">
+				document.getElementById('cloak994274753c7e1cdb01cefd46a946fe26').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addy994274753c7e1cdb01cefd46a946fe26 = 'g&#97;br&#105;&#101;l.m&#97;rt&#105;n&#101;zbr&#97;ch&#111;' + '&#64;';
+				addy994274753c7e1cdb01cefd46a946fe26 = addy994274753c7e1cdb01cefd46a946fe26 + '&#101;xt' + '&#46;' + 'c&#101;m&#101;x' + '&#46;' + 'c&#111;m';
+				var addy_text994274753c7e1cdb01cefd46a946fe26 = 'g&#97;br&#105;&#101;l.m&#97;rt&#105;n&#101;zbr&#97;ch&#111;' + '&#64;' + '&#101;xt' + '&#46;' + 'c&#101;m&#101;x' + '&#46;' + 'c&#111;m';document.getElementById('cloak994274753c7e1cdb01cefd46a946fe26').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy994274753c7e1cdb01cefd46a946fe26 + '\'>'+addy_text994274753c7e1cdb01cefd46a946fe26+'<\/a>';
+		</script></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">DANNA LORENA MARTÍNEZ ÁLVAREZ</p>
+<p style="text-align: justify;"><strong>Oficina:</strong> +57 (8) 709 269</p>
+<p style="text-align: justify;"><strong>Celular:</strong> +(57) 321 960 35 39</p>
+<p style="text-align: justify;"><strong>Dirección:</strong> Km 25 via Ibagué - Espinal</p>
+<p style="text-align: justify;"><strong>E-Mail:</strong> <span id="cloak98c6e15edc0754f7938eb8e4b02f281f"><a href="mailto:dannalorena.alvarez@ext.cemex.com">dannalorena.alvarez@ext.cemex.com</a></span><script type="text/javascript">
+				document.getElementById('cloak98c6e15edc0754f7938eb8e4b02f281f').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addy98c6e15edc0754f7938eb8e4b02f281f = 'd&#97;nn&#97;l&#111;r&#101;n&#97;.&#97;lv&#97;r&#101;z' + '&#64;';
+				addy98c6e15edc0754f7938eb8e4b02f281f = addy98c6e15edc0754f7938eb8e4b02f281f + '&#101;xt' + '&#46;' + 'c&#101;m&#101;x' + '&#46;' + 'c&#111;m';
+				var addy_text98c6e15edc0754f7938eb8e4b02f281f = 'd&#97;nn&#97;l&#111;r&#101;n&#97;.&#97;lv&#97;r&#101;z' + '&#64;' + '&#101;xt' + '&#46;' + 'c&#101;m&#101;x' + '&#46;' + 'c&#111;m';document.getElementById('cloak98c6e15edc0754f7938eb8e4b02f281f').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy98c6e15edc0754f7938eb8e4b02f281f + '\'>'+addy_text98c6e15edc0754f7938eb8e4b02f281f+'<\/a>';
+		</script></p>
+</div>
+<div class="col-md-6 col-xs-12">
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="../../Imagenes/Inicio/inicio_Seguros.png" alt="" width="419" height="278"></p>
+</div>
+</div>

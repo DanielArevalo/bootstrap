@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{772E1BB6-6AE9-4C7A-875E-0780EFE8C23E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Xpinn.Asesores.Services</RootNamespace>
+    <AssemblyName>Xpinn.Asesores.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\Xpinn.FabricaCreditos.Services\bin\Release\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Vbe.Interop, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\Windows\assembly\GAC_MSIL\Microsoft.Vbe.Interop\15.0.0.0__71E9BCE111E9429C\Microsoft.Vbe.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcodeudadoService.cs" />
+    <Compile Include="ActividadServices.cs" />
+    <Compile Include="AgendaActividadService.cs" />
+    <Compile Include="AgendaAlarmaService.cs" />
+    <Compile Include="AgendaHoraService.cs" />
+    <Compile Include="AgendaTipoActividadService.cs" />
+    <Compile Include="AtributoService.cs" />
+    <Compile Include="CiudadService.cs" />
+    <Compile Include="ClienteExtractoService.cs" />
+    <Compile Include="ClientePotencialService.cs" />
+    <Compile Include="CobrosCreditoService.cs" />
+    <Compile Include="CodeudorService.cs" />
+    <Compile Include="ComentarioService.cs" />
+    <Compile Include="ComprobantePagoExtractoService.cs" />
+    <Compile Include="CreacionMensajeService.cs" />
+    <Compile Include="CreditosService.cs" />
+    <Compile Include="DiasNoHabilesService.cs" />
+    <Compile Include="TiposDocCobranzasServices.cs" />
+    <Compile Include="Usuario_LinkService.cs" />
+    <Compile Include="ExtractoService.cs" />
+    <Compile Include="DetallePagoService.cs" />
+    <Compile Include="DetalleProductoService.cs" />
+    <Compile Include="DetalleTransaccionesExtractoService.cs" />
+    <Compile Include="DiligenciaService.cs" />
+    <Compile Include="EnvioDeCorreoExtractoService.cs" />
+    <Compile Include="EstadoCuentaService.cs" />
+    <Compile Include="ExcelService.cs" />
+    <Compile Include="GarantiaService.cs" />
+    <Compile Include="ImpresionTarjetaService.cs" />
+    <Compile Include="InformacionFinancieraService.cs" />
+    <Compile Include="MotivoGeneracionExtractoService.cs" />
+    <Compile Include="MotivosCambioService.cs" />
+    <Compile Include="MovGralCreditoService.cs" />
+    <Compile Include="NegocioService.cs" />
+    <Compile Include="PersonaService.cs" />
+    <Compile Include="ProcesosCobroService.cs" />
+    <Compile Include="ProductoService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ClienteService.cs" />
+    <Compile Include="EjecutivoService.cs" />
+    <Compile Include="EjecutivoMetaService.cs" />
+    <Compile Include="ParametricaService.cs" />
+    <Compile Include="RegistroGeneraciónExtractoService.cs" />
+    <Compile Include="ReporteService.cs" />
+    <Compile Include="ResumenExtractosService.cs" />
+    <Compile Include="TipoDiligenciaService.cs" />
+    <Compile Include="TiposDeFiltroService.cs" />
+    <Compile Include="TrasladoClientesService.cs" />
+    <Compile Include="UsuarioAseService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xpinn.ActivosFijos.Entities\Xpinn.ActivosFijos.Entities.csproj">
+      <Project>{056d6b80-ccd1-4194-86e8-467fbf1a48aa}</Project>
+      <Name>Xpinn.ActivosFijos.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Asesores.Business\Xpinn.Asesores.Business.csproj">
+      <Project>{86E6AA4A-F797-45FD-B933-8E16B210D398}</Project>
+      <Name>Xpinn.Asesores.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Asesores.Entities.Shared\Xpinn.Asesores.Entities.Common.csproj">
+      <Project>{090DA451-1225-43E7-A10D-38AC60A73A4C}</Project>
+      <Name>Xpinn.Asesores.Entities.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Asesores.Entities\Xpinn.Asesores.Entities.csproj">
+      <Project>{DF1C5F00-EF61-49BA-ADD1-C5028030F2F5}</Project>
+      <Name>Xpinn.Asesores.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Comun.Entities\Xpinn.Comun.Entities.csproj">
+      <Project>{955A6F00-17CF-4CB4-97F7-B8E98E9B3297}</Project>
+      <Name>Xpinn.Comun.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.FabricaCreditos.Entities\Xpinn.FabricaCreditos.Entities.csproj">
+      <Project>{B89884F6-511B-466D-9338-51FC7A656792}</Project>
+      <Name>Xpinn.FabricaCreditos.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xpinn.Util\Xpinn.Util.csproj">
+      <Project>{1DC267F2-1877-46D6-AF5E-F92EB286DFC4}</Project>
+      <Name>Xpinn.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,16 @@
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Nomina.Data\bin\Debug\Xpinn.Nomina.Data.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Nomina.Data\bin\Debug\Xpinn.Nomina.Data.pdb
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Nomina.Data\bin\Debug\Xpinn.Nomina.Entities.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Nomina.Data\bin\Debug\Xpinn.Util.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Nomina.Data\bin\Debug\itextsharp.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Nomina.Data\bin\Debug\Microsoft.Web.Services3.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Nomina.Data\bin\Debug\Newtonsoft.Json.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Nomina.Data\bin\Debug\Xpinn.Nomina.Entities.pdb
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Nomina.Data\bin\Debug\Xpinn.Util.pdb
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Nomina.Data\bin\Debug\Xpinn.Util.dll.config
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Nomina.Data\bin\Debug\itextsharp.xml
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Nomina.Data\bin\Debug\Newtonsoft.Json.xml
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Nomina.Data\obj\Debug\Xpinn.Nomina.Data.csprojAssemblyReference.cache
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Nomina.Data\obj\Debug\Xpinn.Nomina.Data.csproj.CopyComplete
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Nomina.Data\obj\Debug\Xpinn.Nomina.Data.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Nomina.Data\obj\Debug\Xpinn.Nomina.Data.pdb

@@ -1,0 +1,279 @@
+<section style="font-family: arial; text-align: justify;">
+<p>Solución de movilidad</p>
+<a href="javascript:animatedcollapse.show('movilidad')">Mostrar</a> || <a href="javascript:animatedcollapse.hide('movilidad')">Ocultar</a>
+<div id="movilidad" style="width:100%">
+<div style="width: 100%">
+<p><strong>Crédito para vehículo</strong> </p>
+<p><strong>Destino: </strong>financiar hasta el 80% del valor de un vehículo nuevo o usado.</p>
+<p><strong>Antigüedad en FECEM:</strong> mayor a seis (6) meses.</p>
+<p><strong>Plazo:</strong> hasta sesenta (60) meses.</p>
+<p><strong>Tasa de interés:</strong> 1.15 % MVSS.</p>
+<p><strong>Monto máximo:</strong> dependerá de la capacidad de endeudamiento de cada asociado con un tope hasta de cien millones de pesos ($100.000.000) y corresponderá máximo hasta al 80% del valor del vehículo verificado en Fasecolda.</p>
+<p><span style="margin: 0px; padding: 0px; box-sizing: border-box; font-weight: bold;">Requisitos especiales:</span></p>
+<p>Para la adquisición de vehículo nuevo se requiere:   </p>
+<ul>
+<li>Factura pro-forma.</li>
+</ul>
+<p>Para la adquisición de vehículo usado se requiere:</p>
+<ul>
+<li>Resultado inspección vehicular de la aseguradora (aval para asegurabilidad en póliza colectiva).</li>
+<li>Fotocopia de la tarjeta de propiedad del vehículo a adquirir</li>
+<li>Promesa de compra-venta.</li>
+<li>Revisión técnica del vehículo o peritaje.</li>
+<li>Certificado de revisión de la Dijin.</li>
+<li>Fotocopia cédulas de ciudadanía de comprador y vendedor.</li>
+</ul>
+</div>
+
+<!-- Subgrupo -->
+<p>Ahorro para movilidad</p>
+<a href="javascript:animatedcollapse.show('ahorromovilidad')">Mostrar</a> || <a href="javascript:animatedcollapse.hide('ahorromovilidad')">Ocultar</a>
+<div id="ahorromovilidad" style="width:100%">
+	<br>
+<b>FECEM</b> diseñó una línea de ahorro para la cuota inicial de vehículo en la cual el asociado ahorrará mínimo el 20% del valor del carro que desea adquirir. Se debe definir el plazo del ahorro, el monto mensual que autoriza descontar, y el nombre y la cédula del beneficiario del ahorro en caso de que el tomador llegara a faltar.
+</div>
+
+
+<p>Crédito para vehículo</p>
+<a href="javascript:animatedcollapse.show('creditovehiculo')">Mostrar</a> || <a href="javascript:animatedcollapse.hide('creditovehiculo')">Ocultar</a>
+<div id="creditovehiculo" style="width:100%">
+	<br>
+<b>FECEM</b> diseñó una línea de ahorro para la cuota inicial de vehículo en la cual el asociado ahorrará mínimo el 20% del valor del carro que desea adquirir. Se debe definir el plazo del ahorro, el monto mensual que autoriza descontar, y el nombre y la cédula del beneficiario del ahorro en caso de que el tomador llegara a faltar.
+</div>
+
+
+<p>Crédito para Motocicleta</p>
+<a href="javascript:animatedcollapse.show('creditomoto')">Mostrar</a> || <a href="javascript:animatedcollapse.hide('creditomoto')">Ocultar</a>
+<div id="creditomoto" style="width:100%">
+	<br>
+	<div style="width: 100%">
+
+<p><strong>Destino:</strong> financiar la compra de moto nueva incluyendo los gastos de matrícula de la misma.</p>
+<p><strong>Antigüedad en FECEM:</strong> mayor a seis (6) meses.</p>
+<p><strong>Plazo:</strong> Hasta cuarenta y ocho (48) meses.</p>
+<p><strong>Tasa de Interés:</strong> 1.2 % MVSS.</p>
+<p><strong>Monto máximo:</strong> Hasta $60.000.000</p>
+<p><strong>Requisitos especiales:</strong> Para la adquisición de moto nueva se requiere: factura de venta.</p>
+</div>
+</div>
+
+
+<p>Impuesto Movilidad</p>
+<a href="javascript:animatedcollapse.show('impuestomovilidad')">Mostrar</a> || <a href="javascript:animatedcollapse.hide('impuestomovilidad')">Ocultar</a>
+<div id="impuestomovilidad" style="width:100%">
+	<br>
+	<div style="width: 100%">
+<p> </p>
+<p><strong>Impuesto de vehículo</strong></p>
+<p><strong>Destino:</strong> Tramita con tu asesora comercial el pago de tu impuesto de vehículo</p>
+<p><strong>Antigüedad en FECEM:</strong> Mayor a dos (2) meses. </p>
+<p><strong>Plazo:</strong></p>
+<p>A un (1) mes - <strong>Tasa de interés:</strong> 0% MVSS.</p>
+<p>De 2 a 4 meses - <strong>Tasa de interés:</strong> 0.8% MVSS.</p>
+<p>De 5 a 11 meses - <strong>Tasa de interés:</strong> 1.2% MVSS.</p>
+<p>Solo aplica para los impuestos del año que está corriendo.</p>
+<p class="MsoNormal" style="margin-left: 54.0pt; text-align: justify;"> </p>
+</div>
+</div>
+
+
+<p>Feria de la Movilidad</p>
+<a href="javascript:animatedcollapse.show('feriamovilidad')">Mostrar</a> || <a href="javascript:animatedcollapse.hide('feriamovilidad')">Ocultar</a>
+<div id="feriamovilidad" style="width:100%">
+	<br>
+	<div style="width: 100%">
+<p><strong>Feria de la movilidad</strong></p>
+<p style="text-align: justify;">FECEM realiza anualmente la feria de la movilidad con el fin de ofrecer a los asociados los mejores precios y tasas de interés preferenciales para los créditos de vehículo y motocicleta.</p>
+</div>
+</div>
+
+<!-- -->
+</div>
+
+<p>Solución de vivienda</p>
+<a href="javascript:animatedcollapse.show('vivienda')">Mostrar</a> || <a href="javascript:animatedcollapse.hide('vivienda')">Ocultar</a>
+<div id="vivienda" style="width:100%">
+
+<div style="width: 100%">
+<p><strong>Crédito para vivienda</strong></p>
+<p><strong>Destino:</strong><span lang="ES-CO" style="text-align: justify;"> compra de vivienda nueva o usada, compra de lote o construcción de vivienda y remodelaciones, mejoras o ampliaciones de la vivienda a nombre del asociado, su esposa o sus padres en caso de asociados solteros. </p>
+<p><strong>Antigüedad en FECEM:</strong> mayor a doce (12) meses.</p>
+<p><strong>Plazo:</strong> hasta sesenta (60) meses. </p>
+<p><strong>Tasa de Interés</strong><strong>:</strong> 1.1 % MVSS.</p>
+<p><strong>Monto máximo</strong><strong>:</strong> dependerá de la capacidad de endeudamiento de cada asociado con un tope de hasta cien millones de pesos ($100.000.000). </p>
+<p><strong>Requisitos</strong><strong>:</strong></p>
+<p><strong>Para compra de vivienda nueva: </strong></p>
+<p>1. Fotocopia de la cédula del asociado y su cónyuge o compañera permanente </p>
+<p>2. Factura pro forma. </p>
+<p>3. Escritura del inmueble. </p>
+<p><strong>Para compra de vivienda usada: </strong></p>
+<p>1. Fotocopia de la cédula del asociado y su cónyuge o compañera permanente </p>
+<p>2. Fotocopia de la escritura pública donde aparece la descripción, cabida y linderos del lote para vivienda usada. En caso de que el inmueble sea un apartamento, se debe anexar además copia del reglamento de propiedad horizontal. </p>
+<p>3. Promesa de compra - venta. </p>
+<p>4. Avalúo comercial del inmueble. </p>
+<p>5. Certificado de libertad y tradición del inmueble con una vigencia no mayor a 30 días de expedido. </p>
+<p>6. Paz y salvo de pago de impuesto predial. </p>
+<p>7. Paz y salvo de pago de valorización. </p>
+</div>
+<div style="width: 100%">
+<p><strong>Para construcción de vivienda: </strong></p>
+<p>1. Fotocopia de la cédula del asociado y su cónyuge o compañera permanente </p>
+<p>2. Certificado de libertad y tradición del inmueble con una vigencia no mayor a 30 días de expedido. </p>
+<p>3. Avalúo comercial del lote. </p>
+<p>4. Licencia de construcción. </p>
+<p>5. Contrato de mano de obra y cotización de materiales. </p>
+<p><strong>Para compra de lote: </strong></p>
+<p>1. Fotocopia de la cédula del asociado y su cónyuge o compañera permanente </p>
+<p>2. Certificado de libertad y tradición del inmueble con una vigencia no mayor a 30 días de expedido. </p>
+<p>3. Promesa de compra - venta o factura de compra. </p>
+<p>4. Avalúo comercial del inmueble. </p>
+<p><strong>Para mejoras de vivienda: </strong></p>
+<p>1. Fotocopia de la cédula del asociado y su cónyuge o compañera permanente </p>
+<p>2. Certificado de libertad y tradición del inmueble con una vigencia no mayor a 30 días de expedido. </p>
+<p>3. Contrato de mano de obra y cotización de materiales. </p>
+</div>
+
+
+<p>Ahorro para vivienda</p>
+<a href="javascript:animatedcollapse.show('ahorroparavivienda')">Mostrar</a> || <a href="javascript:animatedcollapse.hide('ahorroparavivienda')">Ocultar</a>
+<div id="ahorroparavivienda" style="width:100%">
+<div style="width: 100%">
+<p><strong>Ahorro para vivienda</strong> </p>
+<p style="text-align: justify;">FECEM diseñó una línea de ahorro para la cuota inicial de vivienda. Se debe definir el plazo del ahorro, el monto mensual que se autoriza descontar, y el nombre y la cédula del beneficiario del ahorro en caso de que el tomador llegara a faltar. </p>
+</div>
+</div>
+
+
+
+<p>Impuesto de vivienda</p>
+<a href="javascript:animatedcollapse.show('impuestodevivienda')">Mostrar</a> || <a href="javascript:animatedcollapse.hide('impuestodevivienda')">Ocultar</a>
+<div id="impuestodevivienda" style="width:100%">
+<div style="width: 100%">
+<p> </p>
+<p><strong>Impuesto de vivienda</strong></p>
+<p><strong>Destino:</strong> Tramita con tu asesora comercial el pago de tu impuesto predial.</p>
+<p><strong>Antigüedad en FECEM:</strong> Mayor a dos (2) meses. </p>
+<p><strong>Plazo:</strong></p>
+<p>A un (1) mes - <strong>Tasa de interés:</strong> 0% MVSS.</p>
+<p>De 2 a 4 meses - <strong>Tasa de interés:</strong> 0.8% MVSS.</p>
+<p>De 5 a 11 meses - <strong>Tasa de interés:</strong> 1.2% MVSS.</p>
+<p>Solo aplica para los impuestos del año que está corriendo.</p>
+<p class="MsoNormal" style="margin-left: 54.0pt; text-align: justify;"> </p>
+</div>
+</div>
+
+
+
+<p>Feria del hogar</p>
+<a href="javascript:animatedcollapse.show('feriadelhogar')">Mostrar</a> || <a href="javascript:animatedcollapse.hide('feriadelhogar')">Ocultar</a>
+<div id="feriadelhogar" style="width:100%">
+<div style="width: 100%">
+<p><strong>Feria del hogar </strong></p>
+<p style="text-align: justify;">FECEM realiza anualmente la feria del hogar con el fin de ofrecer a los asociados variedad de productos a los mejores precios, excelentes proveedores, y una tasa de interés preferencial para sus créditos.</p>
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- -->
+<p>Solución de finanzas</p>
+<a href="javascript:animatedcollapse.show('finanzas')">Mostrar</a> || <a href="javascript:animatedcollapse.hide('finanzas')">Ocultar</a>
+<div id="finanzas" style="width:100%">
+<div style="width: 100%">
+<p style="text-align: justify;"><strong>Ahorro contractual permanente</strong></p>
+<p style="text-align: justify;">Los ahorros permanentes son las sumas de dinero que en forma periódica está obligado a depositar el asociado, en el porcentaje definido para tal fin de sus ingresos salariales o pensionales. </p>
+<p style="text-align: justify;"> </p>
+<table style="width: 90%; color: #ffffff; background-color: #d21c67; margin-bottom: 0px; height: auto; margin-left: auto; margin-right: auto;" cellpadding="#D21C67">
+<tbody>
+<tr style="height: 37px;">
+<td style="text-align: center; width: 130px; height: 37px;">
+<p>Rango salarial</p>
+</td>
+<td style="text-align: center; width: 130px; height: 37px;">
+<p>Cuota de aporte</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center;"> </p>
+<table style="border-color: #d21c67; width: 90%; margin-top: -35px; height: auto; margin-left: auto; margin-right: auto;" border="1px" cellpadding="#D21C67">
+<tbody>
+<tr style="height: 15px;">
+<td style="height: 15px; text-align: center; width: 32%;">Menor a 3 SMMLV</td>
+<td style="height: 15px; width: 30.4905%; text-align: center;">$28.100</td>
+</tr>
+<tr style="height: 15px;">
+<td style="height: 15px; text-align: center; width: 32%;">Entre 3 y 6 SMMLV</td>
+<td style="height: 15px; width: 30.4905%; text-align: center;">$56.200</td>
+</tr>
+<tr style="height: 15px;">
+<td style="height: 15px; text-align: center; width: 32%;">Mayor a 6 SMMLV</td>
+<td style="height: 15px; width: 30.4905%; text-align: center;">$84.300</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"> </p>
+<p style="text-align: justify;">Dichos ahorros quedarán afectados desde su origen a favor de FECEM como garantía de las obligaciones que el asociado contraiga con éste, serán inembargables y no podrán ser gravados ni transferidos a otros asociados o a terceros. </p>
+</div>
+
+
+<p>Ahorro contractual programado</p>
+<a href="javascript:animatedcollapse.show('ahorrocontraactualprogramado')">Mostrar</a> || <a href="javascript:animatedcollapse.hide('ahorrocontraactualprogramado')">Ocultar</a>
+<div id="ahorrocontraactualprogramado" style="width:100%">
+<div style="width: 100%">
+<p style="text-align: justify;"><strong>Ahorro contractual programado</strong><br /><br />El Ahorro Contractual programado son los depósitos voluntarios que hace el asociado cuando se compromete a ahorrar una suma periódica y constante de dinero por un tiempo determinado, hasta completar un monto de dinero, con un fin específico después de lo cual podrá retirar la totalidad de la suma ahorrada y los intereses acumulados durante el tiempo determinado.</p>
+<p style="text-align: justify;"><strong><span lang="ES-CO">Intereses:</span></strong><span lang="ES-CO"> La tasa de interés será fija durante el periodo de liquidación del respectivo ahorro y solo podrá modificarse para los periodos subsiguientes.</span></p>
+<p style="text-align: justify;"><strong><span lang="ES-CO">Cuota de Ahorro Mensual:</span></strong><span lang="ES-CO"> El asociado que se comprometa a efectuar el ahorro programado, determinará el monto de su ahorro mensual que no podrá ser inferior a diez mil pesos ($10.000) y el valor máximo dependerá de su capacidad de pago.</span></p>
+</div>
+
+
+<p>Ahorro CDAT</p>
+<a href="javascript:animatedcollapse.show('cdat')">Mostrar</a> || <a href="javascript:animatedcollapse.hide('cdat')">Ocultar</a>
+<div id="cdat" style="width:100%">
+<div style="width: 100%">
+<p style="text-align: justify;"><strong>Ahorro CDAT</strong></p>
+<p style="text-align: justify;">Los Depósitos a Término (CDT) son aquellas sumas de dinero que depositan los asociados con el compromiso de ser devueltos al vencimiento de un periodo fijo establecido en el momento de constituirse el ahorro.</p>
+<p style="text-align: justify;"><strong><span lang="ES-CO">Plazos:</span></strong><span lang="ES-CO"> el término mínimo del depósito de Ahorro será de noventa (90) días y el máximo de quinientos cuarenta (540) días calendario, contados a partir del día siguiente en que se recibe.</span><br /><br /><strong><span lang="ES-CO">Constitución:</span></strong><span lang="ES-CO"> el CDT deberá constituirse o prorrogarse por una cuantía no inferior al 50% de un (1) SMMLV, aproximado al múltiplo de mil más cercano. </span></p>
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+<p>Solución de bienestar</p>
+<a href="javascript:animatedcollapse.show('bienestar')">Mostrar</a> || <a href="javascript:animatedcollapse.hide('bienestar')">Ocultar</a>
+<div id="bienestar" style="width:100%">
+Rabbits are ground dwellers that live in environments ranging from desert to tropical forest and wetland. Their natural geographic range encompasses the middle latitudes of the Western Hemisphere. In the Eastern Hemisphere rabbits are found in Europe, portions of Central and Southern Africa, the Indian subcontinent, Sumatra, and Japan.
+</div>
+
+<p>Solución de salud</p>
+<a href="javascript:animatedcollapse.show('salud')">Mostrar</a> || <a href="javascript:animatedcollapse.hide('salud')">Ocultar</a>
+<div id="salud" style="width:100%">
+Rabbits are ground dwellers that live in environments ranging from desert to tropical forest and wetland. Their natural geographic range encompasses the middle latitudes of the Western Hemisphere. In the Eastern Hemisphere rabbits are found in Europe, portions of Central and Southern Africa, the Indian subcontinent, Sumatra, and Japan.
+</div>
+
+<p>procedimiento para crédito</p>
+<a href="javascript:animatedcollapse.show('credito')">Mostrar</a> || <a href="javascript:animatedcollapse.hide('credito')">Ocultar</a>
+<div id="credito" style="width:100%">
+Rabbits are ground dwellers that live in environments ranging from desert to tropical forest and wetland. Their natural geographic range encompasses the middle latitudes of the Western Hemisphere. In the Eastern Hemisphere rabbits are found in Europe, portions of Central and Southern Africa, the Indian subcontinent, Sumatra, and Japan.
+</div>
+
+<p>Seguros FECEM</p>
+<a href="javascript:animatedcollapse.show('seguros')">Mostrar</a> || <a href="javascript:animatedcollapse.hide('seguros')">Ocultar</a>
+<div id="seguros" style="width:100%">
+Rabbits are ground dwellers that live in environments ranging from desert to tropical forest and wetland. Their natural geographic range encompasses the middle latitudes of the Western Hemisphere. In the Eastern Hemisphere rabbits are found in Europe, portions of Central and Southern Africa, the Indian subcontinent, Sumatra, and Japan.
+</div>
+
+<p>Portafolio de servicios</p>
+<a href="javascript:animatedcollapse.show('servicios')">Mostrar</a> || <a href="javascript:animatedcollapse.hide('servicios')">Ocultar</a>
+<div id="servicios" style="width:100%">
+Rabbits are ground dwellers that live in environments ranging from desert to tropical forest and wetland. Their natural geographic range encompasses the middle latitudes of the Western Hemisphere. In the Eastern Hemisphere rabbits are found in Europe, portions of Central and Southern Africa, the Indian subcontinent, Sumatra, and Japan.
+</div>
+
+</section>

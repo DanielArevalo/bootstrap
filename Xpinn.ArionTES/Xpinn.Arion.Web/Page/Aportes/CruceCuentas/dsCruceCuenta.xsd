@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCruceCuenta" targetNamespace="http://tempuri.org/DataSet.xsd" xmlns:mstns="http://tempuri.org/DataSet.xsd" xmlns="http://tempuri.org/DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCruceCuenta" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtCruceCuentas">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="numProducto" type="xs:string" minOccurs="0" />
+              <xs:element name="lineaProducto" type="xs:string" minOccurs="0" />
+              <xs:element name="concepto" type="xs:string" minOccurs="0" />
+              <xs:element name="capital" type="xs:string" minOccurs="0" />
+              <xs:element name="intMora" type="xs:string" minOccurs="0" />
+              <xs:element name="otros" type="xs:string" minOccurs="0" />
+              <xs:element name="retencion" type="xs:string" minOccurs="0" />
+              <xs:element name="intCausados" type="xs:string" minOccurs="0" />
+              <xs:element name="retCausados" type="xs:string" minOccurs="0" />
+              <xs:element name="saldoPendiente" type="xs:string" minOccurs="0" />
+              <xs:element name="totalAcausar" type="xs:string" minOccurs="0" />
+              <xs:element name="Codeudor" type="xs:string" minOccurs="0" />
+              <xs:element name="intRendimiento" type="xs:string" minOccurs="0" />
+              <xs:element name="signo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

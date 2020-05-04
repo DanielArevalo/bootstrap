@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCuentasXpagar" targetNamespace="http://tempuri.org/dsCuentasXpagar.xsd" xmlns:mstns="http://tempuri.org/dsCuentasXpagar.xsd" xmlns="http://tempuri.org/dsCuentasXpagar.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCuentasXpagar" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Encabezado">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="codigo" type="xs:int" minOccurs="0" />
+              <xs:element name="num_factura" type="xs:string" minOccurs="0" />
+              <xs:element name="fechaingreso" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="fechavencimiento" type="xs:string" minOccurs="0" />
+              <xs:element name="identificacion" type="xs:string" minOccurs="0" />
+              <xs:element name="nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="vrtotal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="por_desc" type="xs:decimal" minOccurs="0" />
+              <xs:element name="por_iva" type="xs:decimal" minOccurs="0" />
+              <xs:element name="por_reten" type="xs:decimal" minOccurs="0" />
+              <xs:element name="por_retenIva" type="xs:decimal" minOccurs="0" />
+              <xs:element name="por_retenTim" type="xs:decimal" minOccurs="0" />
+              <xs:element name="vr_neto" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Detalle">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="iddetalle" type="xs:string" minOccurs="0" />
+              <xs:element name="nom_deta" type="xs:string" minOccurs="0" />
+              <xs:element name="cantidad" type="xs:int" minOccurs="0" />
+              <xs:element name="vr_unitario" type="xs:decimal" minOccurs="0" />
+              <xs:element name="codigo" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RangoPago">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="al30" type="xs:string" minOccurs="0" />
+              <xs:element name="al60" type="xs:string" minOccurs="0" />
+              <xs:element name="mayor60" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Hola" xml:space="preserve">
+    <value>Hola</value>
+  </data>
+  <data name="Adios" xml:space="preserve">
+    <value>Chao</value>
+  </data>
+  <data name="Usuario" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="Contraseña" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="Mensaje_Bienvenida" xml:space="preserve">
+    <value>Bienvenido a Financial Software Web</value>
+  </data>
+  <data name="Ingresar" xml:space="preserve">
+    <value>Ingresar</value>
+  </data>
+  <data name="Acceder" xml:space="preserve">
+    <value>Acceda a su cuenta</value>
+  </data>
+  <data name="Cambiar_Contraseña" xml:space="preserve">
+    <value>Cambiar Contraseña</value>
+  </data>
+  <data name="Seguridad" xml:space="preserve">
+    <value>Seguridad</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="iconFabrica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\iconFabrica.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Campo_Requerido" xml:space="preserve">
+    <value>Campo Requerido</value>
+  </data>
+  <data name="Financial" xml:space="preserve">
+    <value>Financial Software Web</value>
+  </data>
+  <data name="Seleccione_Idioma" xml:space="preserve">
+    <value>Selecione un idioma</value>
+  </data>
+  <data name="Ingles" xml:space="preserve">
+    <value>Inglés</value>
+  </data>
+  <data name="Español" xml:space="preserve">
+    <value>Español</value>
+  </data>
+  <data name="Frances" xml:space="preserve">
+    <value>Francés</value>
+  </data>
+  <data name="Olvide_contraseña" xml:space="preserve">
+    <value>Olvide mi contraseña</value>
+  </data>
+  <data name="Fabrica_Creditos" xml:space="preserve">
+    <value>Fábrica de créditos</value>
+  </data>
+  <data name="Asesores_Comerciales" xml:space="preserve">
+    <value>Asesores comerciales</value>
+  </data>
+  <data name="Scoring" xml:space="preserve">
+    <value>Scoring</value>
+  </data>
+  <data name="Contabilidad" xml:space="preserve">
+    <value>Contabilidad</value>
+  </data>
+  <data name="Reporteador" xml:space="preserve">
+    <value>Reporteador</value>
+  </data>
+  <data name="Gestion_Riesgo" xml:space="preserve">
+    <value>Gestión de riesgo</value>
+  </data>
+  <data name="Obligaciones_Financieras" xml:space="preserve">
+    <value>Obligaciones financieras</value>
+  </data>
+  <data name="Indicadores_Gerenciales" xml:space="preserve">
+    <value>Indicadores gerenciales</value>
+  </data>
+  <data name="Caja_Financiera" xml:space="preserve">
+    <value>Caja financiera</value>
+  </data>
+  <data name="Cartera" xml:space="preserve">
+    <value>Cartera</value>
+  </data>
+  <data name="Activos_fijos" xml:space="preserve">
+    <value>Activos fijos</value>
+  </data>
+  <data name="NIIF" xml:space="preserve">
+    <value>NIIF</value>
+  </data>
+  <data name="Tesoreria" xml:space="preserve">
+    <value>Tesorería</value>
+  </data>
+  <data name="Recaudos_Masivos" xml:space="preserve">
+    <value>Recaudos masivos</value>
+  </data>
+  <data name="Aportes_Sociales" xml:space="preserve">
+    <value>Gestión social</value>
+  </data>
+  <data name="Nomina_Empleados" xml:space="preserve">
+    <value>Nomina de empleados</value>
+  </data>
+  <data name="Depositos" xml:space="preserve">
+    <value>Depósitos</value>
+  </data>
+  <data name="Transferencia_Solidaria" xml:space="preserve">
+    <value>Transferencia solidaria</value>
+  </data>
+  <data name="Error_Inesperado" xml:space="preserve">
+    <value>Error inesperado</value>
+  </data>
+  <data name="Mensaje_ErrorExplicacion" xml:space="preserve">
+    <value>Estamos trabajando para resolver el error</value>
+  </data>
+  <data name="Enviar_Error" xml:space="preserve">
+    <value>Enviar Error</value>
+  </data>
+  <data name="Mensaje_volver" xml:space="preserve">
+    <value>Volver a la página anterior</value>
+  </data>
+  <data name="Ver_Error" xml:space="preserve">
+    <value>Ver error</value>
+  </data>
+  <data name="Mensaje_Error_Inesperado" xml:space="preserve">
+    <value>Tienes un error Inesperado!</value>
+  </data>
+  <data name="Revisar_Codigo" xml:space="preserve">
+    <value>Revisa tu código</value>
+  </data>
+  <data name="Nombre_Empresa" xml:space="preserve">
+    <value>Nombre empresa</value>
+  </data>
+  <data name="Descripcion" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="Sesion_expirada" xml:space="preserve">
+    <value>Su sesión ha expirado</value>
+  </data>
+  <data name="Mensaje_sesion" xml:space="preserve">
+    <value>Por seguridad vuelva a iniciar sesión en el sistema para poder acceder</value>
+  </data>
+  <data name="Iniciar_sesion" xml:space="preserve">
+    <value>Iniciar sesión</value>
+  </data>
+  <data name="Cerrar_Sesion" xml:space="preserve">
+    <value>Cerrar sesión</value>
+  </data>
+  <data name="Tipo_Perfil" xml:space="preserve">
+    <value>Tipo perfil</value>
+  </data>
+  <data name="Oficina" xml:space="preserve">
+    <value>Oficina</value>
+  </data>
+</root>

@@ -1,0 +1,4 @@
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Package.Entities\bin\Debug\Xpinn.Package.Entities.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Package.Entities\bin\Debug\Xpinn.Package.Entities.pdb
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Package.Entities\obj\Debug\Xpinn.Package.Entities.dll
+D:\ExpinnTechnology\Financial\Xpinn.ArionTES\Xpinn.Package.Entities\obj\Debug\Xpinn.Package.Entities.pdb
